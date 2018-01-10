@@ -1,0 +1,33 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #FFFFFF
+  font-size: 30px
+}
+
+#main-container{
+    height: 100%;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 60px;
+    background-color: #003E66;
+    color: #FFFFFF
+}
+
+#main-text{
+
+}
+
+#about-us-text{
+  margin-left: 200;
+  max-width: 700;
+}
+
+h1{
+  text-align:center;
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+}
