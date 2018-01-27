@@ -2,32 +2,31 @@ body{
   padding: 0px;
   margin: 0px;
   background-color: #FFFFFF
-  font-size: 30px
 }
 
 #main-container{
     height: 100%;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 60px;
     background-color: #003E66;
     color: #FFFFFF
 }
 
-#main-text{
-
+#titleImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 #about-us-text{
-  margin-left: 200;
-  max-width: 700;
+  max-width: 1000;
 }
 
-h1{
-  text-align:center;
+h2{
   font-size: 40px;
 }
 
 p{
-  font-size: 20px;
+  font-size: 30px;
 }
