@@ -1,0 +1,32 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #FFFFFF
+}
+
+#main-container{
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 60px;
+    background-color: #003E66;
+    color: #FFFFFF
+}
+
+#titleImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#about-us-text{
+  max-width: 1000;
+}
+
+h2{
+  font-size: 40px;
+}
+
+p{
+  font-size: 30px;
+}
