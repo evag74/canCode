@@ -19,7 +19,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to #003E66 (blue of background) on hover */
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #003E66;
 }
