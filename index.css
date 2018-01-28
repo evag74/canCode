@@ -39,3 +39,13 @@ h2{
 p{
   font-size: 30px;
 }
+
+#mazeGame{
+	width: 480px;
+	margin: 0 auto;
+	
+}
+#feature{
+	width:750px;
+	margin: 0 auto;
+}
