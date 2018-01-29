@@ -1,0 +1,51 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #FFFFFF
+}
+
+#main-container{
+    margin-left: 100px;
+    margin-right: 100px;
+	margin-bottom: 75px;
+	margin-top: 25px;
+    background-color: #003E66;
+	padding-top: 25px;
+	border-radius: 20px;
+	padding-bottom: 25px;
+    color: #FFFFFF
+}
+
+#main-text{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#titleImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+#about-us-text{
+  max-width: 1000;
+}
+
+h2{
+  font-size: 40px;
+}
+
+p{
+  font-size: 30px;
+}
+
+#mazeGame{
+	width: 480px;
+	margin: 0 auto;
+	
+}
+#feature{
+	width:750px;
+	margin: 0 auto;
+}
