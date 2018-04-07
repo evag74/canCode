@@ -1,0 +1,146 @@
+body {
+	background-color: #FFFFFF;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+	font-family: Courier, Lucida Console, monospace!important;
+	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	position: fixed;
+	background-color: #F5F5F5
+}
+
+div.navbar:after {
+	content: "\a\a";
+	white-space: pre;
+}
+
+div.parallax {
+	min-height: 350px;
+	max-width: 1250px;
+	padding: 0px!important;
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.panel {
+	max-width: 800px;
+	min-width: 200px;
+	padding: 10px;
+    text-align: center;
+    background-color: #2C50AF;
+    color: white;
+    font-size: 24px;
+    border: solid 1px #A6BAD8;
+    margin: auto;
+}
+div.panel:hover {
+	background-color: #1C409F;
+}
+.hidden {
+	display: none;
+}
+.hidden:hover {
+	background-color: #2C50AF!important;
+}
+
+tr, td {
+	padding: 20px;
+}
+
+p {
+	font-size: 24px;
+	font-family: Baskerville, Georgia, Times New Roman, serif;
+	margin-left: 64px;
+	margin-right: 64px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Courier, Lucida Console, monospace;
+    font-weight: normal;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+h1 {
+	font-size: 46px;
+}
+h2 {
+	font-size: 38px;
+}
+h3 {
+	font-size: 30px;
+}
+
+a {
+	color: steelblue;
+	text-decoration: none;
+}
+a:visited {
+	color: steelblue;
+}
+a:hover {
+	color: blue;
+}
+a:active {
+	color: red;
+}
+
+a.button {
+	display: block;
+	padding:10px 16px;
+	float:right;
+	width:auto;
+	border:none;
+	outline:0;
+}
+a.button:hover {
+	background-color: #CCCCCC;
+}
+a.button:active {
+	background-color: #CCCCCC;
+}
+a.left {
+	float:left!important;
+}
+
+img.coolPicture {
+	border-radius: 5%;
+	border: 5px solid blue;
+}
+
+img.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+	border: 5px solid steelblue;
+}
+
+div.divTable {
+	display: block;
+	width: 100%
+	background-color: #CCCCCC
+}
+
+div.cellLeft {
+	float: left;
+	clear: left;
+	overflow: hidden;
+	padding: 16px;
+	width: 50%;
+}
+div.cellRight {
+	float: right;
+	clear: right;
+	overflow: hidden;
+	padding: 16px;
+	width: 50%;
+}
