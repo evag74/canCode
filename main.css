@@ -2,72 +2,94 @@ body {
 	background-color: #FFFFFF;
 }
 
+/* Navigation bar is really an unordered list (ul) */
 ul {
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 40px;
-    width: 100%;
-    overflow: hidden;
-	font-family: Courier, Lucida Console, monospace!important;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+	font-family: "Courier", "Lucida Console", monospace;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
-	z-index: 1;
+	z-index: 1; /* Put navigation bar on top of content */
 	position: fixed;
 	background-color: #F5F5F5
 }
 
+/* Include two blank spaces after the navigation bar so the navigation bar doesn't get in the way of content */
 div.navbar:after {
 	content: "\a\a";
 	white-space: pre;
 }
+
+/* Big pictures with shadow and border */
 div.bigPicture {
 	max-width: 1100px;
 	max-height: 300px;
-	overflow: hidden;
+	overflow: hidden; /* Doesn't show any part of a picture outside the frame */
 	border: 5px solid #777777;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
+}
+/* Taller pictures to go at the top of a page */
+div.tallHeading {
+	max-height: 340px;
+}
+div.tallerHeading {
+	max-height: 400px;
+}
+/* Limits content to a certain width and centers content */
+div.limitContent {
+	max-width: 1100px;
+	margin: auto;
 }
 div.noBox {
 	border: 0px solid #FFFFFF;
 	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
 }
 div.bigPicture img {
-	width: 100%;
+	width: 100%; /* Images inside a div.bigPicture frame will be as wide as possible within the frame */
 }
 
+/* Box that contains each game that you can click on in the student section */
+div.gameBox {
+	margin: auto;
+	max-width: 1100px;
+}
+
+/* Boxes that are used in the student section for challenges */
 div.panel {
 	max-width: 800px;
 	min-width: 200px;
 	padding: 10px;
-    text-align: center;
-    background-color: #2C50AF;
-    color: white;
-    font-size: 24px;
-    border: solid 1px #A6BAD8;
-    margin: auto;
+  text-align: center;
+  background-color: #2C50AF;
+  color: white;
+  font-size: 24px;
+  border: solid 1px #A6BAD8;
+  margin: auto;
 }
 div.panel:hover {
 	background-color: #1C409F;
 }
-.hidden {
-	display: none;
+div.solution {
+	display: none; /* This means the solution is invisible, it is only made visible by JavaScript */
 }
-.hidden:hover {
-	background-color: #2C50AF!important;
+div.solution:hover {
+	background-color: #2C50AF;
 }
-
-tr, td {
-	padding: 20px;
+div.showSolution {
+	cursor: pointer; /* Sets the cursor to a hand when clicking on the show solution button */
 }
 
 p {
 	font-size: 20px;
-	font-family: Baskerville, Georgia, Times New Roman, serif;
+	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 	margin-left: 64px;
 	margin-right: 64px;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family: Courier, Lucida Console, monospace;
+    font-family: "Courier", "Lucida Console", monospace;
     font-weight: normal;
     margin-left: 64px;
     margin-right: 64px;
@@ -81,19 +103,28 @@ h2 {
 h3 {
 	font-size: 30px;
 }
+h1,h2,p.center {
+	text-align: center;
+}
+p.left {
+	text-align: left;
+}
+p.small {
+	font-size: 12px;
+}
 
 a {
 	color: #1177CC;
-	text-decoration: none;
+	text-decoration: none; /* Don't underline links */
 }
 a:visited {
-	color: #1177CC;
+	color: #1177CC; /* Links don't change color when visited */
 }
 a:hover {
 	color: #666666;
 }
 a:active {
-	color: red;
+	color: red; /* Links turn red when clicked on */
 }
 
 a.button {
@@ -113,19 +144,22 @@ a.button:hover {
 a.button:active {
 	background-color: #CCCCCC;
 }
+
 a.left {
-	float:left!important;
+	float:left;
 }
 
-
+/* Image with a frame */
 img.coolPicture {
 	border: 5px solid #777777;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
 }
+/* Centered image */
 img.center {
     margin-left: auto;
     margin-right: auto;
 }
+/* Images inside table cells will be automatically centered and not be over 500px wide */
 div.divTableCell img {
 	display: block;
 	max-width: 500px;
@@ -133,15 +167,21 @@ div.divTableCell img {
 	margin-right: auto;
 }
 
+/* iframes (like Scratch projects inside the website) have a border and shadow */
 iframe {
 	border: 5px solid #777777;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
 }
+/* Setting the height of iframes inside a table cell */
 div.divTableCell iframe {
 	height: 300px;
 	width: 355px;
 }
+div.centerContents {
+	text-align: center;
+}
 
+/* the divTable, divTableRow, etc. are divs that function as tags for tables like <table>, <tr>, etc. */
 .divTable{
 	display: table;
 	width: 100%;

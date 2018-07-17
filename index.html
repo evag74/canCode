@@ -9,59 +9,64 @@
 <!-- Navbar (sit on top) -->
 <div class="navbar">
 	<ul>
-      <a href="index.html" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
-      <a href="teacher.html" class="button">Teachers</a>
-      <a href="parent.html" class="button">Parent</a>
-      <a href="student.html" class="button">Student</a>
-      <a href="index.html" class="button">Home</a>
-    </ul>
+	  <a href="index.html" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
+	  <a href="teacher.html" class="button">Teachers</a>
+	  <a href="parent.html" class="button">Parent</a>
+	  <a href="student.html" class="button">Student</a>
+	  <a href="index.html" class="button">Home</a>
+  </ul>
 </div>
 
 <!-- Page content -->
 
 <div>
 <br><div class="bigPicture noBox"><img src="Images/canCodePlain1.png"></div><br><br>
-<div class="divTable"><!-- About Section -->
+<div class="divTable"> <!-- About Section uses the divTable class so it behaves like a table -->
 <div class="divTableBody">
-<div class="divTableRow">
-<div class="divTableCell"><img class="coolPicture" src="Images/canCodeFeature_report.png" alt="Noah Rubin teaches">
-<p style="font-size: 12px;">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p>
-</div>
-<div class="divTableCell">
-<h1 style="text-align: center;">About canCode</h1>
-<p>canCode is a group of high school students committed to helping young children learn computer programming. We use Scratch, a fun and interactive free online coding environment developed by MIT.<br /><br /> Why is learning to code important?<br /> Computers already influence almost every area of our lives, from cars to smartphones to video games. Knowing how to code lets you give the instructions that computers need for all these technologies and so much more.</p>
-<h1 style="text-align: center;">Mission</h1>
-<p>canCode's mission is to spark an interest in Computer Science and to make coding fun.</p>
-</div>
-</div>
-<!-- Maze game -->
-<div class="divTableRow">
-<div class="divTableCell">
-<h2 style="text-align: center;">Student Spotlight&mdash; Kevin!</h2>
-<p>Try out a game made by Kevin R, a 2nd Grader. Made in canCode's Maze Game Workshop at the Youth Activity Center.</p>
-</div>
-<div class="divTableCell"><h1 style="text-align: center;"><iframe src="http://scratch.mit.edu/projects/embed/122540125/?autostart=false" frameborder="0"></iframe></h1></div>
-</div>
+	<div class="divTableRow"> <!-- The table is split into rows, each with multiple cells -->
+		<div class="divTableCell">
+			<img class="coolPicture" src="Images/canCodeFeature_report.png" alt="Noah Rubin teaches">
+			<p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p>
+		</div>
+		<div class="divTableCell">
+			<h1 class="center">About canCode</h1>
+			<p>canCode is a group of high school students committed to helping young children learn computer programming. We use Scratch, a fun and interactive free online coding environment developed by MIT.<br /><br /> Why is learning to code important?<br /> Computers already influence almost every area of our lives, from cars to smartphones to video games. Knowing how to code lets you give the instructions that computers need for all these technologies and so much more.</p>
+			<h1 class="center">Mission</h1>
+			<p>canCode's mission is to spark an interest in Computer Science and to make coding fun.</p>
+		</div>
+	</div>
+	<!-- Maze game -->
+	<div class="divTableRow">
+		<div class="divTableCell">
+			<h2 class="center">Student Spotlight&mdash; Kevin!</h2>
+			<p>Try out a game made by Kevin R, a 2nd Grader. Made in canCode's Maze Game Workshop at the Youth Activity Center.</p>
+		</div>
+		<div class="divTableCell centerContents">
+			<iframe src="http://scratch.mit.edu/projects/embed/122540125/?autostart=false" class="center" frameborder="0">
+			</iframe>
+		</div>
+	</div>
 
 
   <!-- Contact Section -->
   <div class="divTableRow" id="contact">
-  <div class="divTableCell">
-    <h1 style="text-align: center;">Signup</h1>
-    <p>We are looking for new teachers to help us on our mission. We need people in 8th grade and up who are passionate about computer programming,
-		and specifically about teaching children how to code. Would you like to sign up? If so, please fill in the form below.</p>
-  </div>
-  <div class="divTableCell"></div>
+	  <div class="divTableCell">
+	    <!-- <h1 class="center">Signup</h1>
+	    <p>We are looking for new teachers to help us on our mission. We need people in 8th grade and up who are passionate about computer programming,
+			and specifically about teaching children how to code. Would you like to sign up? If so, please fill in the form below.</p> -->
+	  </div>
+	  <div class="divTableCell"></div>
   </div>
   <div class="divTableRow">
-  <div class="divTableCell">
-	<h1 style="text-align: center;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe></h1>
-  </div>
-  <div class="divTableCell">
-    <h1 style="text-align: center;">Contact Information</h1>
-    <p style="text-align: center;"><b>Phone</b>: 561-251-7700</p>
-    <p style="text-align: center;"><b>Email</b>: info.cancode@gmail.com</p>
-  </div>
+	  <div class="divTableCell">
+			<!-- <h1 class="center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe></h1> -->
+			<!-- I commented out the signup form so we can figure out how we are going to handle signups -->
+	  </div>
+	  <div class="divTableCell">
+	    <h1 class="center">Contact Information</h1>
+	    <p class="center"><b>Phone</b>: 561-251-7700</p>
+	    <p class="center"><b>Email</b>: info.cancode@gmail.com</p>
+	  </div>
   </div>
 </div>
 </div>
