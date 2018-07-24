@@ -12,8 +12,10 @@ ul {
   overflow: hidden;
 	font-family: "Courier", "Lucida Console", monospace;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
-	z-index: 1; /* Put navigation bar on top of content */
+	z-index: 100; /* Put navigation bar on top of content */
 	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: #F5F5F5
 }
 
@@ -30,8 +32,14 @@ div.bigPicture {
 	overflow: hidden; /* Doesn't show any part of a picture outside the frame */
 	border: 5px solid #777777;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
+	margin: auto;
 }
-/* Taller pictures to go at the top of a page */
+div.bigPicture img {
+	width: 100%; /* Images inside a div.bigPicture frame will be as wide as possible within the frame */
+	margin: 0 auto;
+	display: block;
+}
+/* Pictures to go at the top of a page, taller than div.bigPicture */
 div.tallHeading {
 	max-height: 340px;
 }
@@ -40,15 +48,12 @@ div.tallerHeading {
 }
 /* Limits content to a certain width and centers content */
 div.limitContent {
-	max-width: 1100px;
+	max-width: 1500px;
 	margin: auto;
 }
 div.noBox {
 	border: 0px solid #FFFFFF;
 	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
-}
-div.bigPicture img {
-	width: 100%; /* Images inside a div.bigPicture frame will be as wide as possible within the frame */
 }
 
 /* Box that contains each game that you can click on in the student section */
@@ -184,7 +189,8 @@ div.centerContents {
 /* the divTable, divTableRow, etc. are divs that function as tags for tables like <table>, <tr>, etc. */
 .divTable{
 	display: table;
-	width: 100%;
+	width: auto;
+	margin: 0px auto;
 }
 .divTableRow {
 	display: table-row;
