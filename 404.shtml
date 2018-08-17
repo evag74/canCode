@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>File Not Found</title>
+<title>Page Not Found</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
 body {
-  background-color: #eee;
+  background-color: #FFFFFF;
 }
 
 body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Baskerville", "Georgia", "Times New Roman", serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body, h1, p {
 .container {
   margin-left:  auto;
   margin-right:  auto;
-  margin-top: 177px;
+  margin-top: 20px;
   max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
@@ -43,6 +43,7 @@ h1 {
   font-size: 48px;
   font-weight: 300;
   margin: 0 0 20px 0;
+  font-family: "Courier New", monospace;
 }
 
 .lead {
@@ -53,11 +54,42 @@ h1 {
 
 p {
   margin: 0 0 10px;
+  font-size: 14px;
+}
+p.faded {
+  color: #888888;
 }
 
 a {
   color: #3282e6;
   text-decoration: none;
+}
+img.scary {
+  width: 250px;
+}
+div#scary {
+  opacity: 0;
+  -moz-transition: opacity 3s;
+  -webkit-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  transition: opacity 3s;
+}
+div.loaded#scary {
+  opacity: 1;
+}
+a {
+	color: #1177CC;
+  cursor: pointer;
+	text-decoration: none; /* Don't underline links */
+}
+a:visited {
+	color: #1177CC; /* Links don't change color when visited */
+}
+a:hover {
+	color: #666666;
+}
+a:active {
+	color: red; /* Links turn red when clicked on */
 }
 </style>
 </head>
@@ -71,15 +103,26 @@ a {
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>File not found (404 error)</h1>
+      <h1>Page not found<br>(404 error)</h1>
+      <div id="scary">
+        <img class="scary" src="Images/scarypicture.jpg">
+        <p class="faded">(Please don't tell him I put that here)</p>
+      </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-push-3">
-      <p class="lead">If you think what you're looking for should be here, please contact the site owner.</p>
+      <p class="lead">If you think what you're looking for should be here, please contact us at <a>info.cancode@gmail.com</a>.</p>
+      <p class="lead">In the meantime, why don't you check out our <a href="index.html">main page</a>?</p>
     </div>
   </div>
 </div>
+
+<script>
+window.onload = function() {
+  document.getElementById("scary").className += "loaded";
+}
+</script>
 
 </body>
 </html>

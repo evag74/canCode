@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>canCode</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="shortcut icon" href="Images/small_icon.png" />
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="navbar">
+	<ul>
+	  <a href="index.html" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
+		<a href="photos.html" class="button">Photos</a>
+		<a href="teacher.html" class="button">Teachers</a>
+	  <a href="parent.html" class="button">Parent</a>
+	  <a href="student.html" class="button">Student</a>
+	  <a href="index.html" class="button">Home</a>
+  </ul>
+</div>
+
+<!-- Page content -->
+<div class="limitContent">
+<h1>Photos</h1>
+<h2>Our latest instagram posts</h2>
+<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4dc7197d6fd753deb49b439a63c9697b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+<p>For our full instagram account, see <a href="https://www.instagram.com/cancodeus">canCode (@cancodeus)</a> on Instagram.</p> <!-- When we make a location form we will put it here -->
+
+<!-- End page content -->
+</div>
+
+<script src="jquery-3.2.1.min.js"></script> <!-- Import JQuery to get the external html content -->
+
+<script>
+var token = 'your access token', // learn how to obtain it below
+    userid = 1362124742, // User ID - get it in source HTML of your Instagram profile or look at the next example :)
+    num_photos = 4; // how much photos do you want to get
+
+$.ajax({
+	var token = 'your access token',
+	    username = 'rudrastyh', // rudrastyh - my username :)
+	    num_photos = 4;
+
+	$.ajax({ // the first ajax request returns the ID of user rudrastyh
+		url: 'https://api.instagram.com/v1/users/search',
+		dataType: 'jsonp',
+		type: 'GET',
+		data: {access_token: token, q: username}, // actually it is just the search by username
+		success: function(data){
+			console.log(data);
+			$.ajax({
+				url: 'https://api.instagram.com/v1/users/' + data.data[0].id + '/media/recent', // specify the ID of the first found user
+				dataType: 'jsonp',
+				type: 'GET',
+				data: {access_token: token, count: num_photos},
+				success: function(data2){
+					console.log(data2);
+					for(x in data2.data){
+						$('ul').append('<li><img src="'+data2.data[x].images.thumbnail.url+'"></li>');
+					}
+	    			},
+				error: function(data2){
+					console.log(data2);
+				}
+			});
+		},
+		error: function(data){
+			console.log(data);
+		}
+	});
+</script>
+
+</body>
+</html>

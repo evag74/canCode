@@ -120,6 +120,7 @@ p.small {
 
 a {
 	color: #1177CC;
+	cursor: pointer;
 	text-decoration: none; /* Don't underline links */
 }
 a:visited {
@@ -176,6 +177,7 @@ div.divTableCell img {
 iframe {
 	border: 5px solid #777777;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
+	overflow: scroll;
 }
 /* Setting the height of iframes inside a table cell */
 div.divTableCell iframe {
