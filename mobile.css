@@ -3,7 +3,7 @@ because they are still too small to block content */
 body.mobile ul {
 	height: 35px;
 }
-a.button.left img {
+body.mobile a.button.left img {
 	height: 15px;
 }
 
