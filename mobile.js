@@ -1,4 +1,4 @@
-var mobileLimit = 1100;
+var mobileLimit = 950;
 function mobileFormat(event){
   var body = document.getElementsByTagName("BODY")[0];
   console.log(window.location.pathname);

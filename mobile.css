@@ -1,14 +1,23 @@
 /* Big pictures take up more of the screen in mobile
 because they are still too small to block content */
 body.mobile div.bigPicture {
-	max-width: 100%;
-	width: 100%;
-	margin: 0;
+	max-width: calc(100vw - 50px);
+	margin: 0 20px;
 }
 /* Don't limit content on mobile */
 body.mobile div.limitContent {
-	max-width: 100%;
-	width: 100%;
+	max-width: 100vw;
+	width: 100vw;
+}
+body.mobile img.coolPicture {
+	max-width: calc(100vw - 50px);
+	margin: 0 20px;
+}
+body.mobile div.divTableCell img {
+	margin: 0 auto;
+}
+body.mobile div.gameBox, body.mobile iframe {
+	max-width: calc(100vw - 50px);
 }
 
 /* Smaller font sizes and margins for mobile */
@@ -28,6 +37,7 @@ body.mobile h3 {
 
 body.mobile a.button {
 	font-size: 12px;
+	padding: 10px 8px;
 }
 body.mobile a.button.left {
 	display: none; /* The canCode button on the left of the navigation bar disappears */
