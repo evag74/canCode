@@ -27,7 +27,7 @@ body.mobile h3 {
 }
 
 body.mobile a.button {
-	font-size: 15px;
+	font-size: 12px;
 }
 body.mobile a.button.left {
 	display: none; /* The canCode button on the left of the navigation bar disappears */
