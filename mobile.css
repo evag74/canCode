@@ -11,6 +11,7 @@ body.mobile div.limitContent {
 }
 body.mobile img.coolPicture {
 	max-width: calc(100vw - 50px);
+	width: 90%;
 	margin: 0 20px;
 }
 body.mobile div.divTableCell img {
