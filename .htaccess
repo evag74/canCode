@@ -7,3 +7,4 @@ RewriteRule ^photos/?$ photos.html
 RewriteRule ^student/maze_game/?$ maze_game.html
 RewriteRule ^contribute/?$ contribute.html
 RewriteRule ^sponsors/?$ sponsors.html
+RewriteRule ^resources/?$ resources.html
