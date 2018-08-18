@@ -1,0 +1,91 @@
+/* Used for error pages */
+
+body {
+  background-color: #FFFFFF;
+}
+
+body, h1, p {
+  font-family: "Baskerville", "Georgia", "Times New Roman", serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 20px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-push-3 {
+  margin-left: 25%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  font-family: "Courier New", monospace;
+}
+h3 {
+	font-family: "Courier New", monospace;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+p.faded {
+  color: #888888;
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+img.scary {
+  width: 250px;
+}
+div#scary {
+  opacity: 0;
+  -moz-transition: opacity 3s;
+  -webkit-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  transition: opacity 3s;
+}
+div.loaded#scary {
+  opacity: 1;
+}
+a {
+	color: #1177CC;
+  cursor: pointer;
+	text-decoration: none; /* Don't underline links */
+}
+a:visited {
+	color: #1177CC; /* Links don't change color when visited */
+}
+a:hover {
+	color: #666666;
+}
+a:active {
+	color: red; /* Links turn red when clicked on */
+}
