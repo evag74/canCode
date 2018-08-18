@@ -77,6 +77,9 @@ div.panel {
 div.panel:hover {
 	background-color: #1C409F;
 }
+div.panel img {
+	max-width: 100%;
+}
 div.solution {
 	display: none; /* This means the solution is invisible, it is only made visible by JavaScript */
 }

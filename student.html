@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="mobile.css">
 <link rel="shortcut icon" href="Images/small_icon.png" />
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="navbar">
 	<ul>
-	  <a href="index.html" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
-		<a href="photos.html" class="button">Photos</a>
-		<a href="teacher.html" class="button">Teachers</a>
-	  <a href="parent.html" class="button">Parent</a>
-	  <a href="student.html" class="button highlight">Student</a>
-	  <a href="index.html" class="button">Home</a>
+	  <a href="/" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
+		<a href="photos" class="button">Photos</a>
+		<a href="teachers" class="button">Teachers</a>
+	  <a href="parent" class="button">Parent</a>
+	  <a href="student" class="button highlight">Student</a>
+	  <a href="/" class="button">Home</a>
   </ul>
 </div>
 
@@ -33,7 +34,7 @@
   <!-- Table of lessons, with links to challenges for those lessons -->
   <div class="divTableRow">
     <div class="divTableCell">
-      <h2 class="center"><a href="maze_game.html">Maze Game</a></h2>
+      <h2 class="center"><a href="maze_game">Maze Game</a></h2>
     </div>
 
     <div class="divTableCell">
@@ -41,7 +42,7 @@
     </div>
   </div>
   <div class="divTableRow">
-    <div class="divTableCell"><a href="maze_game.html"><img src="Images/maze_game.png" class="coolPicture center"></a></div>
+    <div class="divTableCell"><a href="maze_game"><img src="Images/maze_game.png" class="coolPicture center"></a></div>
 
     <div class="divTableCell"><!-- Picture of Game 2 as a link to the Game 2 page --></div>
   </div>
@@ -51,6 +52,12 @@
 
 <!-- End page content -->
 </div>
+
+<!-- Mobile compatibility -->
+<script src="mobile.js"></script>
+<script>
+mobileLimit = 675;
+</script>
 
 </body>
 </html>

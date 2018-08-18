@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="mobile.css">
 <link rel="shortcut icon" href="Images/small_icon.png" />
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="navbar">
 	<ul>
-	  <a href="index.html" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
-		<a href="photos.html" class="button">Photos</a>
-		<a href="teacher.html" class="button">Teachers</a>
-	  <a href="parent.html" class="button highlight">Parent</a>
-	  <a href="student.html" class="button">Student</a>
-	  <a href="index.html" class="button">Home</a>
+	  <a href="/" class="button left"><img src="Images/canCodePlain1.png" height=20></a>
+		<a href="photos" class="button">Photos</a>
+		<a href="teachers" class="button">Teachers</a>
+	  <a href="parent" class="button highlight">Parent</a>
+	  <a href="student" class="button">Student</a>
+	  <a href="/" class="button">Home</a>
   </ul>
 </div>
 
@@ -34,6 +35,12 @@ Would you like us to teach at your location? Ask your location to fill out <a>th
 
 <!-- End page content -->
 </div>
+
+<!-- Mobile compatibility -->
+<script src="mobile.js"></script>
+<script>
+mobileLimit = 650;
+</script>
 
 </body>
 </html>

@@ -1,0 +1,59 @@
+/* Big pictures take up more of the screen in mobile
+because they are still too small to block content */
+body.mobile div.bigPicture {
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+/* Don't limit content on mobile */
+body.mobile div.limitContent {
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Smaller font sizes and margins for mobile */
+body.mobile p,h1,h2,h3,h4,h5,h6 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+body.mobile h1 {
+	font-size: 38px;
+}
+body.mobile h2 {
+	font-size: 30px;
+}
+body.mobile h3 {
+	font-size: 24px;
+}
+
+body.mobile a.button {
+	font-size: 15px;
+}
+body.mobile a.button.left {
+	display: none; /* The canCode button on the left of the navigation bar disappears */
+}
+
+/* the divTable, divTableRow, etc. don't work as tables in mobile */
+body.mobile .divTable{
+	display: block;
+	width: 100%;
+}
+body.mobile .divTableRow {
+	display: block;
+}
+body.mobile .divTableHeading {
+	display: block;
+}
+body.mobile .divTableCell, body.mobile .divTableHead {
+	display: block;
+}
+body.mobile .divTableHeading {
+	display: block;
+}
+body.mobile .divTableFoot {
+	display: block;
+}
+body.mobile .divTableBody.centerMobile {
+	margin: 0 auto;
+	display: block;
+}
