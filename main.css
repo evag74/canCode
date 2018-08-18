@@ -18,6 +18,9 @@ ul {
 	left: 0;
 	background-color: #F5F5F5
 }
+a.button.left img {
+	height: 20px;
+}
 
 /* Include two blank spaces after the navigation bar so the navigation bar doesn't get in the way of content */
 div.navbar:after {

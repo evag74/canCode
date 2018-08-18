@@ -1,5 +1,12 @@
 /* Big pictures take up more of the screen in mobile
 because they are still too small to block content */
+body.mobile ul {
+	height: 35px;
+}
+a.button.left img {
+	height: 15px;
+}
+
 body.mobile div.bigPicture {
 	max-width: calc(100vw - 50px);
 	margin: 0 20px;
