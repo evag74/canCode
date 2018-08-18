@@ -1,10 +1,14 @@
 /* Big pictures take up more of the screen in mobile
 because they are still too small to block content */
-body.mobile ul {
+body.mobile div.navbar ul {
 	height: 35px;
 }
 body.mobile a.button.left img {
 	height: 15px;
+}
+body.mobile div.largeButton {
+	margin: 0 auto;
+	width: 90%;
 }
 
 body.mobile div.bigPicture {

@@ -3,7 +3,7 @@ body {
 }
 
 /* Navigation bar is really an unordered list (ul) */
-ul {
+div.navbar ul {
 	list-style-type: none;
   margin: 0;
   padding: 0;
@@ -165,6 +165,26 @@ a.button:active {
 }
 a.button.highlight {
 	color: #11BBFF;
+}
+
+div.largeButton {
+	background-color: #2C50AF;
+	font-size: 24px;
+	height: 60px;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 30px;
+	padding: 10px;
+	cursor: pointer;
+}
+div.largeButton:hover {
+	background-color: #1C409F;
+}
+div.largeButton a {
+	color: #FFFFFF;
 }
 
 a.left {
