@@ -1,8 +1,8 @@
 var mobileLimit = 950;
 var iconLinkLimit = 475;
+var body = document.getElementsByTagName("body")[0];
+var imageLink = document.getElementsByClassName("button left")[0];
 function mobileFormat(event){
-  var body = document.getElementsByTagName("body")[0];
-  var imageLink = document.getElementsByClassName(".button.left")[0];
   console.log(window.location.pathname);
   if (document.documentElement.clientWidth <= mobileLimit) {
     body.className = "mobile";
