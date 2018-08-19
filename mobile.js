@@ -1,5 +1,6 @@
 var mobileLimit = 950;
 var resourceButtonLimit = 525;
+var resourceWordLimit = 350;
 var body = document.getElementsByTagName("body")[0];
 var buttons = document.getElementsByClassName("button");
 function buttonHighlight(site, button) {
@@ -43,6 +44,11 @@ function mobileFormat(event){
     buttons[4].style.display = "block";
     buttons[5].style.display = "block";
     buttons[6].style.display = "none";
+  }
+  if (document.documentElement.clientWidth <= resourceWordLimit) {
+    buttons[6].innerText = "More";
+  } else {
+    buttons[6].innerText = "Resources";
   }
 }
 mobileFormat(null);
