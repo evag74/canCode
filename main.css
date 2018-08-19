@@ -183,7 +183,7 @@ div.largeButton {
 div.largeButton:hover {
 	background-color: #1C409F;
 }
-div.largeButton a {
+a div.largeButton {
 	color: #FFFFFF;
 }
 
