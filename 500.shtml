@@ -25,9 +25,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 col-md-push-3">
-      <p class="lead">We are having an error with our servers. If you have any questions, please contact us at <a>info.cancode@gmail.com</a>. We will try to fix this as soon as possible</p>
-      <p class="lead">In the meantime, why don't you check out our <a href="http://cancode.us">main page</a>?</p>
+    <div class="info">
+      <p class="lead">We are having an error with our servers. If you have any questions, please contact us at <a>info.cancode@gmail.com</a>. We will try to fix this as soon as possible.</p>
     </div>
   </div>
 </div>

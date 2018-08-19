@@ -26,12 +26,9 @@ body, h1, p {
   content: " ";
 }
 
-.col-md-6 {
-  width: 50%;
-}
-
-.col-md-push-3 {
-  margin-left: 25%;
+div.info {
+  width: 80%;
+  margin-left: 10%;
 }
 
 h1 {
