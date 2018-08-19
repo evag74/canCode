@@ -33,7 +33,7 @@ body.mobile div.gameBox, body.mobile iframe {
 }
 
 /* Smaller font sizes and margins for mobile */
-body.mobile p,h1,h2,h3,h4,h5,h6 {
+body.mobile p, body.mobile h1, body.mobile h2, body.mobile h3, body.mobile h4, body.mobile h5, body.mobile h6 {
     margin-left: 20px;
     margin-right: 20px;
 }
