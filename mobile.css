@@ -49,6 +49,7 @@ body.mobile h3 {
 
 body.mobile a.button {
 	font-size: 12px;
+	height: 35px;
 	padding: 10px 8px;
 }
 
