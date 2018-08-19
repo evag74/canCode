@@ -19,6 +19,8 @@ document.getElementsByClassName("navbar")[0].innerHTML =
     '<a href="http://canCode.us/resources" class="button">Resources</a>' +
     '<a href="http://canCode.us/contribute" class="button">Contribute</a>' +
   '</ul>';
+buttonHighlight("/", 0);
+buttonHighlight("sponsors", 1);
 buttonHighlight("photos", 2);
 buttonHighlight("teachers", 3);
 buttonHighlight("parent", 4);
