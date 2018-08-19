@@ -1,4 +1,7 @@
 RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?cancode\.us
+RewriteRule ^(.*)$ https://www.cancode.us/$1 [R,L]
 RewriteBase /
 RewriteRule ^student/?$ student.html
 RewriteRule ^parent/?$ parent.html
