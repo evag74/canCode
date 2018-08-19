@@ -10,14 +10,14 @@ function buttonHighlight(site, button) {
 }
 document.getElementsByClassName("navbar")[0].innerHTML =
   '<ul>' +
-    '<a href="/" class="button left"><img src="http://canCode.us/Images/canCodePlain1.png"></a>' +
-    '<a href="http://canCode.us/sponsors" class="button left">Sponsors</a>' +
-    '<a href="http://canCode.us/photos" class="button">Photos</a>' +
-    '<a href="http://canCode.us/teachers" class="button">Teachers</a>' +
-    '<a href="http://canCode.us/parent" class="button">Parent</a>' +
-    '<a href="http://canCode.us/student" class="button">Student</a>' +
-    '<a href="http://canCode.us/resources" class="button">Resources</a>' +
-    '<a href="http://canCode.us/contribute" class="button">Contribute</a>' +
+    '<a href="/" class="button left"><img src="https://canCode.us/Images/canCodePlain1.png"></a>' +
+    '<a href="https://canCode.us/sponsors" class="button left">Sponsors</a>' +
+    '<a href="https://canCode.us/photos" class="button">Photos</a>' +
+    '<a href="https://canCode.us/teachers" class="button">Teachers</a>' +
+    '<a href="https://canCode.us/parent" class="button">Parent</a>' +
+    '<a href="https://canCode.us/student" class="button">Student</a>' +
+    '<a href="https://canCode.us/resources" class="button">Resources</a>' +
+    '<a href="https://canCode.us/contribute" class="button">Contribute</a>' +
   '</ul>';
 buttonHighlight("", 0); buttonHighlight("index", 0);
 buttonHighlight("sponsors", 1);
