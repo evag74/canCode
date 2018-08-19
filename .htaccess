@@ -6,7 +6,7 @@ RewriteRule ^(.*)$ https://www.cancode.us/$1 [L,R=301]
 RewriteBase /
 RewriteRule ^student/?$ student.html
 RewriteRule ^parent/?$ parent.html
-RewriteRule ^teachers/?$ teacher.html
+RewriteRule ^team/?$ team.html
 RewriteRule ^photos/?$ photos.html
 RewriteRule ^student/maze_game/?$ maze_game.html
 RewriteRule ^contribute/?$ contribute.html

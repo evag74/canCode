@@ -4,7 +4,7 @@ var resourceWordLimit = 350;
 var body = document.getElementsByTagName("body")[0];
 var buttons = document.getElementsByClassName("button");
 function buttonHighlight(site, button) {
-  if (location.pathname.endsWith("/" + site) || location.pathname.endsWith("/" + site + ".html")) {
+  if ((location.pathname.endsWith("/" + site) || location.pathname.endsWith("/" + site + ".html")) && !(location.pathname.endsWith("secret/"))) {
     buttons[button].className = buttons[button].className + " highlight";
   }
 }
@@ -13,7 +13,7 @@ document.getElementsByClassName("navbar")[0].innerHTML =
     '<a href="/" class="button left"><img src="https://canCode.us/Images/canCodePlain1.png"></a>' +
     '<a href="https://canCode.us/sponsors" class="button left">Sponsors</a>' +
     '<a href="https://canCode.us/photos" class="button">Photos</a>' +
-    '<a href="https://canCode.us/teachers" class="button">Teachers</a>' +
+    '<a href="https://canCode.us/team" class="button">Team</a>' +
     '<a href="https://canCode.us/parent" class="button">Parent</a>' +
     '<a href="https://canCode.us/student" class="button">Student</a>' +
     '<a href="https://canCode.us/resources" class="button">Resources</a>' +
@@ -22,7 +22,7 @@ document.getElementsByClassName("navbar")[0].innerHTML =
 buttonHighlight("", 0); buttonHighlight("index", 0);
 buttonHighlight("sponsors", 1);
 buttonHighlight("photos", 2);
-buttonHighlight("teachers", 3); buttonHighlight("teacher", 3);
+buttonHighlight("team", 3);
 buttonHighlight("parent", 4);
 buttonHighlight("student", 5);
 buttonHighlight("resources", 6);

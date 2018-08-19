@@ -121,6 +121,9 @@ h2 {
 h3 {
 	font-size: 30px;
 }
+h1.blue,h2.blue,h3.blue,h4.blue,h5.blue,h6.blue {
+	color: #1177CC;
+}
 h1,h2,p.center {
 	text-align: center;
 }
