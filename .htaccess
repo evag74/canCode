@@ -7,6 +7,7 @@ RewriteBase /
 RewriteRule ^student/?$ student.html
 RewriteRule ^parent/?$ parent.html
 RewriteRule ^team/?$ team.html
+RewriteRule ^sites/?$ sites.html
 RewriteRule ^photos/?$ photos.html
 RewriteRule ^student/maze_game/?$ maze_game.html
 RewriteRule ^contribute/?$ contribute.html
