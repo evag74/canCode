@@ -52,9 +52,9 @@ function mobileFormat(event){
     buttons[7].style.display = "none";
   }
   if (document.documentElement.clientWidth <= resourceWordLimit) {
-    buttons[6].innerText = "More";
+    buttons[7].innerText = "More";
   } else {
-    buttons[6].innerText = "Resources";
+    buttons[7].innerText = "Resources";
   }
 }
 mobileFormat(null);
