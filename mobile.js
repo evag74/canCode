@@ -1,6 +1,6 @@
 var mobileLimit = 950;
 var resourceButtonLimit = 575;
-var resourceWordLimit = 375;
+var resourceWordLimit = 325;
 var body = document.getElementsByTagName("body")[0];
 var buttons = document.getElementsByClassName("button");
 function buttonHighlight(site, button) {
