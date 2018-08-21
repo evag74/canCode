@@ -1,13 +1,20 @@
-var mobileLimit = 950;
-var resourceButtonLimit = 575;
-var resourceWordLimit = 325;
+// These are limits for at how many pixels changes to the site happen
+var mobileLimit = 950; // When the screen is this size or smaller, it switches to mobile
+var resourceButtonLimit = 575; // When the screen is this size or smaller, the tabs are replaced with a big "Resources tab"
+var resourceWordLimit = 325; // When the screen is this size or smaller, the "Resources" tab is renamed "More".
+
 var body = document.getElementsByTagName("body")[0];
 var buttons = document.getElementsByClassName("button");
-function buttonHighlight(site, button) {
+
+function buttonHighlight(site, button) { // Matches a site to the button in the navbar to highlight when on that site
   if ((location.pathname.endsWith("/" + site) || location.pathname.endsWith("/" + site + ".html")) && !(location.pathname.endsWith("secret/"))) {
     buttons[button].className = buttons[button].className + " highlight";
   }
 }
+
+/* Here is the HTML code that will be inserted into the first item with class "navbar".
+It automatically updates on all pages that are linked to mobile.js.
+This is the main section you need to worry about. */
 document.getElementsByClassName("navbar")[0].innerHTML =
   '<ul>' +
     '<a href="/" class="button left"><img src="https://canCode.us/Images/canCodePlain1.png"></a>' +
@@ -20,6 +27,8 @@ document.getElementsByClassName("navbar")[0].innerHTML =
     '<a href="https://canCode.us/resources" class="button">Resources</a>' +
     '<a href="https://canCode.us/contribute" class="button">Contribute</a>' +
   '</ul>';
+
+// Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);
 buttonHighlight("sponsors", 1);
 buttonHighlight("photos", 2);
@@ -29,7 +38,8 @@ buttonHighlight("parent", 5);
 buttonHighlight("student", 6);
 buttonHighlight("resources", 7);
 buttonHighlight("contribute", 8);
-function mobileFormat(event){
+
+function mobileFormat(event){ // Function that is run every time the site is resized to work with the limits explained above
   console.log(window.location.pathname);
   if (document.documentElement.clientWidth <= mobileLimit) {
     body.className = "mobile";
@@ -57,5 +67,6 @@ function mobileFormat(event){
     buttons[7].innerText = "Resources";
   }
 }
-mobileFormat(null);
-window.addEventListener('resize', mobileFormat);
+
+mobileFormat(null); // Format the screen based on screen size immediately
+window.addEventListener('resize', mobileFormat); // Then continue to format the screen on resize
