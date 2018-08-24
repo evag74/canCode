@@ -191,6 +191,28 @@ a div.largeButton {
 	color: #FFFFFF;
 }
 
+div.smallButton {
+	background-color: #2C50AF;
+	font-size: 16px;
+	height: 40px;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 30px;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+div.smallButton:hover {
+	background-color: #1C409F;
+}
+a div.smallButton {
+	color: #FFFFFF;
+}
+
 a.left {
 	float:left;
 }
@@ -266,4 +288,25 @@ div.centerContents {
 }
 .divTableBody {
 	display: table-row-group;
+}
+
+div#footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #EEEEEE;
+	text-align: center;
+}
+div.socialBox {
+	display: flex;
+	justify-content: center;
+}
+div.socialBox img.socialLink {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+a img.socialLink {
+	height: 40px;
+	width: 40px;
 }
