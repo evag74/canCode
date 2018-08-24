@@ -1,5 +1,5 @@
 // The HTML to go inside the footer
-var footerHTML = '<br><h3>canCode 2018</h3>' +
+var footerHTML = '<h3>canCode 2018</h3>' +
   '<div class="socialBox">' +
     '<div><a><img class="socialLink" src="https://cancode.us/Images/facebook_logo.png"></a></div>' +
     '<div><a href="https://www.instagram.com/cancodeus" target="_blank"><img class="socialLink" src="https://cancode.us/Images/instagram_logo.png"></a></div>' +
