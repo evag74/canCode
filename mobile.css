@@ -78,3 +78,8 @@ body.mobile .divTableBody {
 	margin: 0 auto;
 	display: block;
 }
+
+body.mobile div#slideshow {
+	height: 500px;
+	overflow: hidden;
+}

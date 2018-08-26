@@ -12,6 +12,8 @@ function buttonHighlight(site, button) { // Matches a site to the button in the 
   }
 }
 
+var slideshowtarget = document.getElementById("slideshowpicture");
+
 /* Here is the HTML code that will be inserted into the first item with class "navbar".
 It automatically updates on all pages that are linked to mobile.js.
 This is the main section you need to worry about. */
@@ -67,6 +69,7 @@ function mobileFormat(event){ // Function that is run every time the site is res
     buttons[7].innerText = "Resources";
   }
 }
+var i = 1;
 
 mobileFormat(null); // Format the screen based on screen size immediately
 window.addEventListener('resize', mobileFormat); // Then continue to format the screen on resize

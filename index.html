@@ -6,12 +6,24 @@
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="mobile.css">
 <link rel="shortcut icon" href="Images/small_icon.png" />
-<body>
+<body onload=slideshow()>
 
 <!-- Navbar (sit on top) -->
 <div class="navbar">
 	<!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
 </div>
+
+<HEAD>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124637206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124637206-1');
+</script>
+</HEAD>
 
 <!-- Page content -->
 
@@ -24,9 +36,10 @@
 <div class="divTable"> <!-- About Section uses the divTable class so it behaves like a table -->
 <div class="divTableBody">
 	<div class="divTableRow"> <!-- The table is split into rows, each with multiple cells -->
-		<div class="divTableCell">
-			<img class="coolPicture" src="Images/canCodefeature_report.png" alt="Noah Rubin teaches">
-			<p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p>
+		<div class="divTableCell" id="slideshow">
+			<img class="coolPicture" id="slideshowpicture">
+
+			<!--<p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p> -->
 		</div>
 		<div class="divTableCell">
 			<h1 class="center">About canCode</h1>
@@ -80,6 +93,23 @@
 
 <!-- Mobile compatibility -->
 <script src="mobile.js"></script>
+
+<!-- Slideshow -->
+<script>
+function slideshow() { // Sets up the slideshow
+	slideshowtarget.src = "slideshowpictures/"+i+".jpg";
+	setInterval(rotate, 3500);
+}
+
+function rotate() { // Changes the slideshow picture
+	slideshowtarget.src = "slideshowpictures/"+i+".jpg";
+	if(i==5) {
+    i=1;
+	} else {
+		i++;
+	}
+}
+</script>
 
 </body>
 </html>
