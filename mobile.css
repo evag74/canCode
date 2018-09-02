@@ -80,6 +80,6 @@ body.mobile .divTableBody {
 }
 
 body.mobile div#slideshow {
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 }

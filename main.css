@@ -298,7 +298,7 @@ div#footer {
 	width: 100%;
 	background-color: #EEEEEE;
 	text-align: center;
-	padding: 10px 0;
+	padding: 20px 10px;
 }
 div.socialBox {
 	display: flex;
