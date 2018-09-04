@@ -39,21 +39,24 @@ If you still can't figure it out, take a peek at the solution and then try it ou
 </div>
 
 <h2>Challenge 2</h2>
-<h3>Make the enemy chase the player!</h3>
-<p>You have already made the enemy move around the stage. How cool would it be if the enemy knew where the player was and followed it? Try to make the enemy follow the player. Make sure the enemy isn't too fast, or the game will become too hard to play!</p>
-<p>Hint: switch to the Enemy Sprite under the stage, and use a "<b>When the Flag is Clicked</b>" block and a "<b>point towards</b>" block from the motion section.</p>
+<h3>Make the enemy chase the player when close!</h3>
+<p>You have already made the enemy move around the stage. How cool would it be if the enemy knew where the player was and followed it? Try to make the enemy follow the player.</p>
+<p>Hint: switch to the Enemy Sprite under the stage, and use a "<b>When the Flag is Clicked</b>" block, a "<b>point towards</b>" block from the motion section, a "<b>less than</b>" block from the operators
+	section, and a "<b>distance to</b>" block from the sensing section.</p>
 <p>Test your game. If it works, congratulations, you have completed this challenge! If not, don't give up: keep trying and check the code for any mistakes. Maybe you put a block in the wrong place, forgot a block, or programmed the wrong sprite.
 If you still can't figure it out, take a peek at the solution and then try it out for yourself.</p>
 <div class="panel showSolution" onclick = "toggleSolution('2')" id="showSolution2">
 	<p>Show Solution</p>
 </div>
 <div class="panel solution" id="solution2">
-	<p class="left">Here is how to make the enemy move towards the player.<br>
+	<p class="left">Here is how to make the enemy move towards the player when close.<br>
 	1. Go to the Enemy Sprite under the stage. Add a <b>When the Flag is Clicked</b> block.<br>
-	2. Remove the code that makes the enemy move from one place to another.<br>
-	3. Add a <b>forever</b> block under the <b>When the Flag is Clicked</b> block. Inside the <b>forever</b>, add a <b>point towards mouse-pointer</b> block.<br>
-	4. Click on the triangle next to where it says "mouse-pointer" and choose your game's player.<br>
-	5. Under the <b>point towards</b> block, add a <b>move 2 steps</b> block. You can find this in the motion section. Change this number to make the enemy faster or slower. Make sure this block is <i>inside</i> the <b>forever</b>, not outside!<br>
+	2. Add an <b>forever</b> block under the <b>When the Flag is Clicked</b> block. Inside the <b>forever</b>, add an <b>if</b> block.<br>
+	3. Inside the diamond of the <b>if</b> block, add a <b>less than</b> block.<br>
+	4. In the left box of the <b>less than</b> block, add a <b>distance to</b> block. Click the small triangle and select your game's player.<br>
+	5. In the right box of the <b>less than</b> block, add a number for how close the player has to be before the enemy chases it.<br>
+	4. Inside the <b>if</b> block, add a <b>point towards</b> block. Click on the triangle next to where it says "mouse-pointer" and choose your game's player.<br>
+	5. Under the <b>point towards</b> block, add a <b>move 10 steps</b> block. You can find this in the motion section. Change this number to make the enemy faster or slower. Make sure this block is <em>inside</em> the <b>if</b>, not outside!<br>
 	6. Your code should look similar to this:<br>
 	<img src="https://cancode.us/Images/tutorial2.png"><br>
 	7. If the enemy flips upside down, click on the Enemy Sprite under the stage and click on the letter <b>i</b> in the corner. Where it says "rotation style", click on the left-right option:<br>
@@ -61,14 +64,43 @@ If you still can't figure it out, take a peek at the solution and then try it ou
 	<img src="https://cancode.us/Images/tutorial4.png">
 	</p>
 </div>
+
+<h2>Challenge 3</h2>
+<h3>Make the player change colors!</h3>
+<p>Right now, the player always looks the same. What if your player changed color when you moved?</p>
+<p>Hint: switch to the Player Sprite under the stage, and use a "<b>change color effect</b>" block from the looks section under
+	your "<b>when up arrow key pressed</b>" block and the other keyboard blocks.</p>
+<p>Test your game. If it works, congratulations, you have completed this challenge! If not, don't give up: keep trying and check the code for any mistakes. Maybe you put a block in the wrong place, forgot a block, or programmed the wrong sprite.
+If you still can't figure it out, take a peek at the solution and then try it out for yourself.</p>
+<div class="panel showSolution" onclick = "toggleSolution('3')" id="showSolution3">
+	<p>Show Solution</p>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="panel solution" id="solution3">
+	<p class="left">Here is how to make the player change colors when it moves.<br>
+	1. Go to the Player Sprite under the stage. Find the <b>when up arrow key presed</b> block.<br>
+	2. Add a <b>change color effect by 25</b> block somewhere under the <b>when up arrow key pressed</b> block.<br>
+	3. Your code should look similar to this for the up arrow:<br>
+	<img src="https://cancode.us/Images/tutorial5.png"><br>
+	4. Repeat these steps for the other three arrows (left arrow, right arrow, down arrow).<br>
+	5. To understand how this works, try the <b>Understanding your Code</b> section below.
+	</p>
+</div>
+<h3>Extra Challenge</h3>
+<p>Now that you have completed this challenge, can you figure out how to make the enemy change color too?</p>
+<h3>Understanding your Code</h3>
+<p>In this challenge, you may notice that the order you put the blocks in doesn't matter as much as in some
+	of the other challenges. Why do you think this is?</p>
+
+
+</div>
+<br><br><br><br><br><br><br>
 
 
 <!-- JavaScript that allows showing the solution -->
 <script>
 document.getElementById("showSolution1").innerText = "Show Solution";
 document.getElementById("showSolution2").innerText = "Show Solution";
+document.getElementById("showSolution3").innerText = "Show Solution";
 function toggleSolution(code) {
 	if (document.getElementById("solution" + code).style.display == "block") {
 		document.getElementById("solution" + code).style.display = "none";
