@@ -21,7 +21,7 @@ var footerHTML = '<div class="divTable">' +
     '<div><a href="https://www.instagram.com/cancodeus" target="_blank"><img class="socialLink" src="https://cancode.us/Images/instagram_logo.png"></a></div>' +
   '</div>' + '<center>' +
   '<a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank"><div class="smallButton">Become a Teacher</div></a>' +
-  '<a><div class="smallButton">Become a Site (Coming Soon)</div></a>' +
+  '<a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="smallButton">Become a Site</div></a>' +
   '<a><div class="smallButton">Donate (Coming Soon)</div></a>' + '</center></div>' + '</div>';
 
 document.getElementById("footer").innerHTML = footerHTML; // Puts the contents of footerHTML inside of the div with id="footer"

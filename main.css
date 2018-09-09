@@ -134,6 +134,10 @@ p.left {
 p.small {
 	font-size: 12px;
 }
+p.extraInfo {
+	font-size: 15px;
+	text-align: right;
+}
 
 a {
 	color: #1177CC;
