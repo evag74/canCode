@@ -297,9 +297,6 @@ div.centerContents {
 
 div#footer {
 	margin-top: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	width: calc(100% - 20px);
 	background-color: #EEEEEE;
 	text-align: center;
