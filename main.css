@@ -101,6 +101,12 @@ div.showSolution {
   user-select: none; /* Chrome and Opera */
 }
 
+select {
+	font-size: 20px;
+	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
+	margin-left: 30px;
+}
+
 p {
 	font-size: 20px;
 	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
@@ -177,6 +183,7 @@ a.button.highlight {
 }
 
 div.largeButton {
+	color: #FFFFFF;
 	background-color: #2C50AF;
 	font-size: 24px;
 	height: 60px;
@@ -192,11 +199,9 @@ div.largeButton {
 div.largeButton:hover {
 	background-color: #1C409F;
 }
-a div.largeButton {
-	color: #FFFFFF;
-}
 
 div.smallButton {
+	color: #FFFFFF;
 	background-color: #2C50AF;
 	font-size: 16px;
 	height: 40px;
@@ -214,8 +219,12 @@ div.smallButton {
 div.smallButton:hover {
 	background-color: #1C409F;
 }
-a div.smallButton {
-	color: #FFFFFF;
+
+div.entry {
+	margin-left: 30px;
+	width: 20%;
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
 }
 
 a.left {
