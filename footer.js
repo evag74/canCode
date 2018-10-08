@@ -10,6 +10,7 @@ var footerHTML = '<div class="divTable">' +
 '<a href="https://cancode.us/team"><p style="line-height:20%" align="left">Meet our Team<p></a>' +
 '<a href="https://cancode.us/sites"><p style="line-height:20%" align="left">Participating Sites<p></a>' +
 '<a href="https://cancode.us/photos"><p style="line-height:20%" align="left">Photos<p></a>' +
+'<a href="https://cancode.us/studentsafe"><p style="line-height:20%" align="left">Student Safe App<p></a>' +
 '<a href="https://cancode.us/secret"><p style="line-height:20%" align="left">Teacher Portal<p></a></div>' +
 
 '<div class="divTableCell">' +
