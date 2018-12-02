@@ -4,6 +4,14 @@ body {
 }
 
 /* Navigation bar is really an unordered list (ul) */
+div.navbar {
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Chrome and Opera */
+}
 div.navbar ul {
 	list-style-type: none;
   margin: 0;
@@ -17,8 +25,31 @@ div.navbar ul {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #F5F5F5
+	background-color: #F5F5F5;
 }
+div#hiddenNavbar {
+	margin: 0;
+  padding: 0;
+  overflow: hidden;
+	font-family: "Courier", "Lucida Console", monospace;
+	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
+	z-index: 100; /* Put navigation bar on top of content */
+	position: fixed;
+	border-top: 5px solid #AAAAAA;
+	top: 40px;
+	right: 0;
+	display: none;
+	flex-direction: column;
+	background-color: #EAEAEA;
+}
+div#hiddenNavbar a.button {
+	height: 20px;
+	width: 220px;
+	text-align: center;
+	padding-left: 20px 0;
+	margin: 0;
+}
+
 a.button.left img {
 	height: 20px;
 }

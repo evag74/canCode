@@ -3,6 +3,13 @@ because they are still too small to block content */
 body.mobile div.navbar ul {
 	height: 35px;
 }
+body.mobile div#hiddenNavbar {
+	top: 35px;
+}
+body.mobile div#hiddenNavbar a.button {
+	height: 15px;
+	width: 130px;
+}
 body.mobile a.button.left img {
 	height: 15px;
 }
