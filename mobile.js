@@ -31,10 +31,10 @@ document.getElementsByClassName("navbar")[0].innerHTML =
   '</ul>' +
   '<div id="hiddenNavbar"></div>';
 document.getElementById("hiddenNavbar").innerHTML =
-  '<a href="https://www.cancode.us/team" class="button">Team</a>' +
-  '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
-  '<a href="https://www.cancode.us/student" class="button">Student</a>' +
   '<a href="https://www.cancode.us/contribute" class="button">Contribute</a>' +
+  '<a href="https://www.cancode.us/student" class="button">Student</a>' +
+  '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
+  '<a href="https://www.cancode.us/team" class="button">Team</a>' +
   '<a href="https://www.cancode.us/photos" class="button">Photos</a>' +
   '<a href="https://www.cancode.us/studentsafe" class="button">Student Safe</a>';
 
