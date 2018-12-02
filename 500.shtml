@@ -20,7 +20,6 @@
       <h1>Error 500<br>(Internal Error)</h1>
       <div id="scary">
         <img class="scary" src="https://cancode.us/Images/scarypicture.jpg">
-        <p class="faded">(Please don't tell him I put that here)</p>
       </div>
     </div>
   </div>
