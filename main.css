@@ -214,6 +214,7 @@ a.button.highlight {
 }
 a.button#burgerButton {
 	padding-top: 8px;
+	margin-right: 10px;
 }
 a.button img#burger_closed {
 	max-width: 28px;
