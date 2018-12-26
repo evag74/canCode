@@ -36,7 +36,7 @@ document.getElementById("hiddenNavbar").innerHTML =
   '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
   '<a href="https://www.cancode.us/team" class="button">Team</a>' +
   '<a href="https://www.cancode.us/sites" class="button">Sites</a>' +
-  '<a href="https://www.cancode.us/photos" class="button">Photos</a>';
+  '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>';
 
 // Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);
@@ -48,6 +48,7 @@ buttonHighlight("student", 6);
 buttonHighlight("parent", 7);
 buttonHighlight("team", 8);
 buttonHighlight("sites", 9);
+buttonHighlight("sponsors", 10);
 
 function expand() {
   if (expanded) {
