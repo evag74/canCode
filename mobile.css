@@ -59,6 +59,15 @@ body.mobile a.button {
 	height: 35px;
 	padding: 10px 8px;
 }
+body.mobile a.button#burgerButton {
+	padding-top: 6px;
+}
+body.mobile a.button img#burger_closed {
+	max-width: 21px;
+}
+body.mobile a.button img#burger_hover {
+	max-width: 21px;
+}
 
 /* the divTable, divTableRow, etc. don't work as tables in mobile */
 body.mobile .divTable{

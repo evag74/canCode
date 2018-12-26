@@ -1,6 +1,6 @@
 // These are limits for at how many pixels changes to the site happen
 const MOBILE_LIMIT = 950; // When the screen is this size or smaller, it switches to mobile
-const MORE_LIMIT = 525; // When the screen is this size or smaller, the tabs are moved into the "more" tab
+const MORE_LIMIT = 420; // When the screen is this size or smaller, tabs are moved into the "more" tab
 
 var body = document.getElementsByTagName("body")[0];
 var buttons = document.getElementsByClassName("button");
@@ -21,13 +21,14 @@ This is the main section you need to worry about. */
 document.getElementsByClassName("navbar")[0].innerHTML =
   '<ul>' +
     '<a href="/" class="button left"><img src="https://cancode.us/Images/canCodePlain1.png"></a>' +
-    '<a href="https://www.cancode.us/sponsors" class="button left">Sponsors</a>' +
-    '<a class="button" onclick="expand()">More</a>' +
+    '<a href="https://www.cancode.us/contribute" class="button left">Contribute</a>' +
+    '<a class="button" id="burgerButton" onclick="expand()">' +
+      '<img src="https://cancode.us/Images/menu_closed.png" id="burger_closed">' +
+      '<img src="https://cancode.us/Images/menu_hover.png" id="burger_hover">' +
+    '</a>' +
+    '<a href="https://www.cancode.us/photos" class="button">Photos</a>' +
     '<a href="https://www.cancode.us/sites" class="button">Sites</a>' +
-    '<a href="https://www.cancode.us/team" class="button">Team</a>' +
-    '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
-    '<a href="https://www.cancode.us/student" class="button">Student</a>' +
-    '<a href="https://www.cancode.us/contribute" class="button">Contribute</a>' +
+    '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>' +
   '</ul>' +
   '<div id="hiddenNavbar"></div>';
 document.getElementById("hiddenNavbar").innerHTML =
@@ -35,32 +36,29 @@ document.getElementById("hiddenNavbar").innerHTML =
   '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
   '<a href="https://www.cancode.us/team" class="button">Team</a>' +
   '<a href="https://www.cancode.us/sites" class="button">Sites</a>' +
-  '<a href="https://www.cancode.us/photos" class="button">Photos</a>' +
-  '<a href="https://www.cancode.us/studentsafe" class="button">Student Safe</a>';
+  '<a href="https://www.cancode.us/photos" class="button">Photos</a>';
 
 // Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);
-buttonHighlight("sponsors", 1);
-buttonHighlight("sites", 3);
-buttonHighlight("team", 4);
-buttonHighlight("parent", 5);
+buttonHighlight("contribute", 1);
+buttonHighlight("photos", 3);
+buttonHighlight("sites", 4);
+buttonHighlight("sponsors", 5);
 buttonHighlight("student", 6);
-buttonHighlight("contribute", 7);
-buttonHighlight("student", 8);
-buttonHighlight("parent", 9);
-buttonHighlight("team", 10);
-buttonHighlight("sites", 11);
-buttonHighlight("photos", 12);
-buttonHighlight("studentsafe", 13);
+buttonHighlight("parent", 7);
+buttonHighlight("team", 8);
+buttonHighlight("sites", 9);
 
 function expand() {
   if (expanded) {
     expanded = false;
-    buttons[2].innerHTML = "More";
+    buttons[2].innerHTML = '<img src="https://cancode.us/Images/menu_closed.png" id="burger_closed">' +
+                           '<img src="https://cancode.us/Images/menu_hover.png" id="burger_hover">';
     document.getElementById("hiddenNavbar").style.display = "none";
   } else {
     expanded = true;
-    buttons[2].innerHTML = "Hide";
+    buttons[2].innerHTML = '<img src="https://cancode.us/Images/menu_open.png" id="burger_closed">' +
+                           '<img src="https://cancode.us/Images/menu_open_hover.png" id="burger_hover">';
     document.getElementById("hiddenNavbar").style.display = "flex";
   }
 }
@@ -74,23 +72,15 @@ function mobileFormat(event) // Function that is run every time the site is resi
     body.className = '';
   }
   if (document.documentElement.clientWidth <= MORE_LIMIT) {
-    buttons[3].style.display = "none";
     buttons[4].style.display = "none";
     buttons[5].style.display = "none";
-    buttons[6].style.display = "none";
-    buttons[8].style.display = "block";
     buttons[9].style.display = "block";
     buttons[10].style.display = "block";
-    buttons[11].style.display = "block";
   } else {
-    buttons[3].style.display = "block";
     buttons[4].style.display = "block";
     buttons[5].style.display = "block";
-    buttons[6].style.display = "block";
-    buttons[8].style.display = "none";
     buttons[9].style.display = "none";
     buttons[10].style.display = "none";
-    buttons[11].style.display = "none";
   }
 }
 var i = 1;

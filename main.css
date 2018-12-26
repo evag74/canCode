@@ -212,6 +212,22 @@ a.button.highlight {
 	color: #11BBFF;
 	background-color: #CCCCCC;
 }
+a.button#burgerButton {
+	padding-top: 8px;
+}
+a.button img#burger_closed {
+	max-width: 28px;
+}
+a.button img#burger_hover {
+	display: none;
+	max-width: 28px;
+}
+a.button:hover img#burger_hover {
+	display: block;
+}
+a.button:hover img#burger_closed {
+	display: none;
+}
 
 div.largeButton {
 	color: #FFFFFF;
