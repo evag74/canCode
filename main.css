@@ -133,13 +133,13 @@ div.showSolution {
 }
 
 select {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 	margin-left: 30px;
 }
 
 p {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 	margin-left: 64px;
 	margin-right: 64px;
@@ -162,7 +162,7 @@ h3 {
 h1.blue,h2.blue,h3.blue,h4.blue,h5.blue,h6.blue {
 	color: #1177CC;
 }
-h1,h2,p.center {
+h1,h2,h3.center,p.center {
 	text-align: center;
 }
 p.left {
@@ -350,6 +350,23 @@ div.centerContents {
 }
 .divTableBody {
 	display: table-row-group;
+}
+
+div.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 100%;
+}
+div.row img.rowImage {
+	height: auto;
+	max-width: 100%;
+	width: calc(30% - 10px);
+	border-radius: 20%;
+	border: 5px solid #777777;
+	margin: 0 5px;
 }
 
 div#footer {
