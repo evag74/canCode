@@ -33,7 +33,8 @@ body.mobile img.coolPicture {
 	margin: 0 20px;
 }
 body.mobile div.divTableCell img.workshop {
-	margin-left: 20px;
+	float: none;
+	text-align: center;
 }
 body.mobile div.divTableCell img {
 	margin: 0 auto;
