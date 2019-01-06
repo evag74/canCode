@@ -4,7 +4,6 @@ const MORE_LIMIT = 420; // When the screen is this size or smaller, tabs are mov
 
 var body = document.getElementsByTagName("body")[0];
 var buttons = document.getElementsByClassName("button");
-var hiddenNavbar = document.getElementById("hiddenNavbar");
 var expanded = false; // true when the "more" button is clicked
 
 function buttonHighlight(site, button) // Matches a site to the button in the navbar to highlight when on that site
@@ -42,7 +41,7 @@ document.getElementsByClassName("navbar")[0].innerHTML =
     '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>' +
   '</ul>' +
   '<div id="hiddenNavbar"></div>';
-hiddenNavbar.innerHTML =
+document.getElementById("hiddenNavbar").innerHTML =
   '<a href="https://www.cancode.us/student" class="button">Student</a>' +
   '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
   '<a href="https://www.cancode.us/team" class="button">Team</a>' +
@@ -62,11 +61,8 @@ buttonHighlight("sites", 9);
 buttonHighlight("sponsors", 10);
 buttonHighlight("games", 11);
 
-function isMobile() {
-  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-}
 if (!isMobile()) {
-  hiddenNavbar.innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
+  document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
 }
 
 function expand() {
@@ -74,12 +70,12 @@ function expand() {
     expanded = false;
     buttons[2].innerHTML = '<img src="https://cancode.us/Images/menu_closed.png" id="burger_closed">' +
                            '<img src="https://cancode.us/Images/menu_hover.png" id="burger_hover">';
-    hiddenNavbar.style.display = "none";
+    document.getElementById("hiddenNavbar").style.display = "none";
   } else {
     expanded = true;
     buttons[2].innerHTML = '<img src="https://cancode.us/Images/menu_open.png" id="burger_closed">' +
                            '<img src="https://cancode.us/Images/menu_open_hover.png" id="burger_hover">';
-    hiddenNavbar.style.display = "flex";
+    document.getElementById("hiddenNavbar").style.display = "flex";
   }
 }
 

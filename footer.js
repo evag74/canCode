@@ -1,3 +1,7 @@
+function isMobile() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
 // The HTML to go inside the footer
 var footerHTML1 = '<div class="divTable">' +
 
