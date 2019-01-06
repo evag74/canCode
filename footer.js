@@ -2,6 +2,8 @@ function isMobile() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
 
+let footerHTML = "";
+
 // The HTML to go inside the footer
 var footerHTML1 = '<div class="divTable">' +
 
@@ -33,8 +35,9 @@ var footerHTML2 =
   '<a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="smallButton">Become a Site</div></a>' +
   '<a><div class="smallButton">Donate (Coming Soon)</div></a>' + '</center></div>' + '</div>';
 
-document.getElementById("footer").innerHTML = footerHTML1; // Puts the contents of footerHTML inside of the div with id="footer"
+footerHTML = footerHTML1; // Puts the contents of footerHTML inside of the div with id="footer"
 if (!isMobile()) {
-  document.getElementById("footer").innerHTML += footerHTMLGame;
+  footerHTML += footerHTMLGame;
 }
-document.getElementById("footer").innerHTML += footerHTML2;
+footerHTML += footerHTML2;
+document.getElementById("footer").innerHTML = footerHTML;

@@ -41,27 +41,24 @@
 			<!--<p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p> -->
 		</div>
 		<div class="divTableCell">
-			<h1 class="center">About canCode</h1>
+			<h1>About canCode</h1>
 			<p>canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops.
 				These workshops are run by passionate, relatable teenagers. We teach using <a href="https://scratch.mit.edu">Scratch</a>, a free, interactive, and online coding environment developed by MIT.
 				We make coding fun and everyone involved loves what we do! Just look at the pictures!<br /><br /> Why is learning to code important?<br /> Computers already influence almost every area of our
-        lives, from cars to smartphones to video games. Knowing how to code lets you give the instructions that computers need for all these technologies and so much more.</p>
-      <h1 class="center">Mission</h1>
+        lives, from cars to smartphones to video games. Knowing how to code lets you give the instructions that computers need for all these technologies and so much more. An early introduction to
+        computer science through canCode gives students problem-solving skills and prepares them for the careers of the future.</p>
+      <h1>Mission</h1>
   		<p>canCode’s Mission is to spark an interest for computer programming in young minds across Palm Beach County.</p>
 		</div>
 	</div>
 	<!-- Maze game -->
-	<div class="divTableRow">
+	<div class="divTableRow" id="mazeGame">
 		<div class="divTableCell">
 			<h2>Student Spotlight&mdash; Adam!</h2>
-			<p>Try out a game made by Adam M, a 4th Grader. Made in canCode's Maze Game Workshop at the Youth Activity Center in 2018.</p>
+			<p id="mazeGameDesc">Try out a game made by Adam M, a 4th Grader. Made in canCode's Maze Game Workshop at the Youth Activity Center in 2018.</p>
 		</div>
-		<div class="divTableCell centerContents">
+		<div class="divTableCell centerContents" id="mazeGame">
 			<iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/246192730" frameborder="0"></iframe>
-
-			<!--<iframe src="https://scratch.mit.edu/projects/embed/246192730/?autostart=false" frameborder="0">
-			</iframe> -->
-			<p>If this doesn't work and you know your flash player is working, try visiting <a href="https://scratch.mit.edu/projects/embed/246192730/?autostart=false" target="_blank">this link</a>.</p>
 		</div>
 	</div>
 
@@ -102,7 +99,7 @@
 <div class="divTableBody">
 	<div class="divTableRow">
 		<div class="divTableCell">
-			<br><img src="Images/yacgraphic1.png" align="right" width="50%" alt="Youth Activity Center Boca Raton Photos">
+			<br><img src="Images/yacgraphic1.png" class="workshop" alt="Youth Activity Center Boca Raton Photos">
 		</div>
 		<div class="divTableCell">
 
@@ -134,10 +131,10 @@
 	<div class="divTableRow">
 		<div class="divTableCell">
 			<h3 class="center">Florence Fuller West Workshops</h3>
-			<p>Since canCode recieved funding from the Palm Beach Philanthropy Tank in early 2018, we have expanded to new sites. 
-			The first of these sites was Florence Fuller West. 
-			The program director, Ms. Guerrise, and the volunteer coordinater, Ms. Robinson, invited the canCode program with open arms. 
-			When they heard <b>how much the kids loved canCode, how much they learned, how passionate the teachers were, and that it was absolutly FREE, </b>they were in. 
+			<p>Since canCode recieved funding from the Palm Beach Philanthropy Tank in early 2018, we have expanded to new sites.
+			The first of these sites was Florence Fuller West.
+			The program director, Ms. Guerrise, and the volunteer coordinater, Ms. Robinson, invited the canCode program with open arms.
+			When they heard <b>how much the kids loved canCode, how much they learned, how passionate the teachers were, and that it was absolutely FREE</b>, they were in.
 			Since we started at their center, the kids have loved the canCode program and the staff has been very accommodating.</p>
 			<img alt="Florence Fuller West Pic Here">
 		</div>
@@ -147,22 +144,34 @@
 			<img alt="Florence Fuller East Pic Here">
 		</div> -->
 	</div>
-	
+
 </div>
 </div>
 
-<div class="divTable"> <!-- About Section uses the divTable class so it behaves like a table -->
+<div class="divTable"> <!-- YAC -->
 <div class="divTableBody">
 	<div class="divTableRow">
 		<div class="divTableCell">
-			<h2>Naoma Donnelley Haggin Boys and Girls Club</h2>
+      <h2>Naoma Donnelley Haggin Boys and Girls Club</h2>
       <h3 class="center">Delray Beach Winter Camp</h3>
-	  <p>As a start to the 2019 year, canCode had its first ever winter camp! 
-	  Noah, Alex, and Harys trained 5 new teachers, and 12 students completed the maze game curriculum. 
-	  The staff was so helpful in making sure everything would run smoothly. 
-	  This winter camp let us impact and inspire so many elementary school students in such a short amount of time; 
-	  in addition, it expedited the training process for 5 new teachers who joined the team! 
-	  Read their bios on the <a href="/team">team page</a>.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="divTable"> <!-- About Section uses the divTable class so it behaves like a table -->
+<div class="divTableBody">
+	<div class="divTableRow">
+    <div class="divTableCell">
+      <img class="workshop" src="Images/bgcdelray2019.jpeg">
+      <img class="workshop" src="Images/bgcdelray2019 2.jpeg">
+    </div>
+		<div class="divTableCell">
+	  <p>As a start to the 2019 year, canCode had its first ever winter camp!
+	  Noah, Alex, and Harys trained 5 new teachers, and 12 students completed the maze game curriculum.
+	  The staff was so helpful in making sure everything would run smoothly.
+	  This winter camp let us impact and inspire so many elementary school students in such a short amount of time;
+	  in addition, it expedited the training process for 5 new teachers who joined the team!
+	  Read their bios on the <a href="https://www.cancode.us/team">team page</a>.</p>
 		</div>
 	</div>
 </div>
@@ -211,6 +220,12 @@ function rotate() { // Changes the slideshow picture
 	} else {
 		i++;
 	}
+}
+
+if (isMobile()) {
+  document.getElementById("mazeGameDesc").innerHTML = "Take a look at a game made by Adam M, a 4th Grader. Made in " +
+    "canCode's Maze Game Workshop at the Youth Activity Center in 2018. Visit this page on a computer to play.";
+  document.getElementById("mazeGame").innerHTML = "<img src='Images/maze_game_3.png'>"
 }
 </script>
 

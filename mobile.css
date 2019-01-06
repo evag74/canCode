@@ -32,6 +32,9 @@ body.mobile img.coolPicture {
 	width: 90%;
 	margin: 0 20px;
 }
+body.mobile div.divTableCell img.workshop {
+	margin-left: 20px;
+}
 body.mobile div.divTableCell img {
 	margin: 0 auto;
 }

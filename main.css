@@ -291,6 +291,10 @@ img.profilePicture {
 	border: 5px solid #777777;
 	box-shadow: 0 8px 6px 2px rgba(0, 0, 0, 0.15);
 }
+img.workshop {
+	float: right;
+	width: 50%;
+}
 /* Centered image */
 img.center {
     margin-left: auto;
