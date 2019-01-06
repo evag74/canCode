@@ -19,7 +19,7 @@
 <div class="bigPicture tallerHeading"><img src="Images/maze_game_3.png"></div>
 
 <h1>Games</h1>
-<div class="shift">
+<div class="shift" id="info">
 <p>Try playing some games made by our students! Click on a game to play it in the viewer below.</p>
 <h3>Maze Game</h3>
 <ul>
@@ -54,6 +54,7 @@
 <!-- Game choosing -->
 <script>
 var gameViewer = document.getElementById("game");
+var gameInfo = document.getElementById("info");
 var DEFAULT_VIEW = "";
 gameViewer.src = DEFAULT_VIEW;
 
@@ -78,6 +79,12 @@ window.addEventListener('resize', resizeViewer);
 
 function chooseGame(id) {
   gameViewer.src = "https://scratch.mit.edu/projects/embed/" + id;
+}
+
+if (isMobile()) {
+  gameInfo.innerHTML = "<p>Unfortunately, canCode games only work on desktop devices. Try" +
+    " visiting this page on a computer to play these games.</p>";
+  gameViewer.style.display = "none";
 }
 </script>
 

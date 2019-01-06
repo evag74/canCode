@@ -61,23 +61,8 @@ buttonHighlight("sites", 9);
 buttonHighlight("sponsors", 10);
 buttonHighlight("games", 11);
 
-function isMobile() {
-  if (navigator.userAgent.match(/Android/i)
-  || navigator.userAgent.match(/webOS/i)
-  || navigator.userAgent.match(/iPhone/i)
-  || navigator.userAgent.match(/iPad/i)
-  || navigator.userAgent.match(/iPod/i)
-  || navigator.userAgent.match(/BlackBerry/i)
-  || navigator.userAgent.match(/Windows Phone/i)
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-}
 if (!isMobile()) {
-  document.getElementById("hiddenNavbar").innerHTML
-    += '<a href="https://www.cancode.us/games" class="button">Games</a>';
+  document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
 }
 
 function expand() {
