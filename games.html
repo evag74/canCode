@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>canCode</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="mobile.css">
+<link rel="shortcut icon" href="Images/small_icon.png" />
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="navbar">
+	<!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
+</div>
+
+<!-- Page content -->
+<div class="limitContent">
+<br>
+<div class="bigPicture tallerHeading"><img src="Images/maze_game_3.png"></div>
+
+<h1>Games</h1>
+<div class="shift">
+<p>Try playing some games made by our students! Click on a game to play it in the viewer below.</p>
+<h3>Maze Game</h3>
+<ul>
+  <li><a onclick="chooseGame('246192730')">Adam M (4th grade)</a></li>
+  <li><a onclick="chooseGame('262201206')">Daniel S (5th grade)</a></li>
+  <li><a onclick="chooseGame('277401966')">Delilah</a></li>
+  <li><a onclick="chooseGame('277402979')">Demitri</a></li>
+  <li><a onclick="chooseGame('277403245')">Gerard</a></li>
+  <li><a onclick="chooseGame('213482157')">Graciel P (2nd grade)</a></li>
+  <li><a onclick="chooseGame('127924304')">Jasmin (2nd grade)</a></li>
+  <li><a onclick="chooseGame('122540125')">Kevin R (2nd grade)</a></li>
+</ul>
+<h3>Drop Game</h3>
+<ul>
+  <li><a onclick="chooseGame('221265057')">Cristian (4th grade)</a></li>
+  <li><a onclick="chooseGame('221265062')">Jasmin (2nd grade)</a></li>
+</ul>
+</div>
+<br><br><br>
+
+<div class="centerContents">
+<iframe allowtransparency="true" width="485" height="402" src="" id="game" frameborder="0"></iframe>
+</div>
+
+<!-- Footer (edit footer.js to edit content of footer)-->
+<div id="footer"></div>
+<script src="footer.js"></script>
+
+<!-- Mobile compatibility -->
+<script src="mobile.js"></script>
+
+<!-- Game choosing -->
+<script>
+var gameViewer = document.getElementById("game");
+var DEFAULT_VIEW = "";
+gameViewer.src = DEFAULT_VIEW;
+
+function resizeViewer(event) {
+  let screenWidth = document.documentElement.clientWidth;
+  gameViewer.width = (screenWidth / 800.0) * 485;
+  gameViewer.height = (screenWidth / 800.0) * 402;
+  if (gameViewer.height > document.documentElement.clientHeight - 100) {
+    let newHeight = document.documentElement.clientHeight - 100;
+    let ratio = (newHeight/gameViewer.height);
+    gameViewer.height *= ratio;
+    gameViewer.width *= ratio;
+  }
+  if (gameViewer.src.indexOf("https://scratch.mit.edu") == 0) {
+    gameViewer.src = gameViewer.src; // refresh game viewer
+  } else {
+    gameViewer.src = DEFAULT_VIEW; // avoid switching viewer to showing the canCode games page
+  }
+}
+resizeViewer(null);
+window.addEventListener('resize', resizeViewer);
+
+function chooseGame(id) {
+  gameViewer.src = "https://scratch.mit.edu/projects/embed/" + id;
+}
+</script>
+
+</body>
+</html>

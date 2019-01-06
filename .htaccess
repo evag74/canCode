@@ -14,3 +14,4 @@ RewriteRule ^contribute/?$ contribute.html
 RewriteRule ^sponsors/?$ sponsors.html
 RewriteRule ^resources/?$ resources.html
 RewriteRule ^studentsafe/?$ studentsafe.html
+RewriteRule ^games/?$ games.html
