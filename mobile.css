@@ -103,3 +103,6 @@ body.mobile div#slideshow {
 	height: 400px;
 	overflow: hidden;
 }
+body.mobile div.shift {
+	margin-left: 10px;
+}

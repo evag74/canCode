@@ -175,6 +175,9 @@ p.extraInfo {
 	font-size: 15px;
 	text-align: right;
 }
+p.silver {
+	color: #CCCCCC;
+}
 
 a {
 	color: #1177CC;
