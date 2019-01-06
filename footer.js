@@ -1,5 +1,5 @@
 // The HTML to go inside the footer
-var footerHTML = '<div class="divTable">' +
+var footerHTML1 = '<div class="divTable">' +
 
 '<div class="divTableCell">' + '<img src="https://cancode.us/Images/canCodePlain2.png" width="30%" align="left">' + '<br>' + '<br>' + '<br>' +
 '<a href="https://www.cancode.us"><p style="line-height:20%" align="left">Home<p></a>' +
@@ -9,8 +9,11 @@ var footerHTML = '<div class="divTable">' +
 '<a href="https://www.cancode.us/parent"><p style="line-height:20%" align="left">Parent Resources<p></a>' +
 '<a href="https://www.cancode.us/team"><p style="line-height:20%" align="left">Meet our Team<p></a>' +
 '<a href="https://www.cancode.us/sites"><p style="line-height:20%" align="left">Participating Sites<p></a>' +
-'<a href="https://www.cancode.us/photos"><p style="line-height:20%" align="left">Photos<p></a>' +
-'<a href="https://www.cancode.us/games"><p style="line-height:20%" align="left">Games<p></a>' +
+'<a href="https://www.cancode.us/photos"><p style="line-height:20%" align="left">Photos<p></a>';
+
+var footerHTMLGame = '<a href="https://www.cancode.us/games"><p style="line-height:20%" align="left">Games<p></a>';
+
+var footerHTML2 =
 '<a href="https://www.cancode.us/studentsafe"><p style="line-height:20%" align="left">Student Safe App<p></a>' +
 '<a href="https://www.cancode.us/secret"><p style="line-height:20%" align="left">Teacher Portal<p></a></div>' +
 
@@ -26,4 +29,8 @@ var footerHTML = '<div class="divTable">' +
   '<a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="smallButton">Become a Site</div></a>' +
   '<a><div class="smallButton">Donate (Coming Soon)</div></a>' + '</center></div>' + '</div>';
 
-document.getElementById("footer").innerHTML = footerHTML; // Puts the contents of footerHTML inside of the div with id="footer"
+document.getElementById("footer").innerHTML = footerHTML1; // Puts the contents of footerHTML inside of the div with id="footer"
+if (!isMobile()) {
+  document.getElementById("footer").innerHTML += footerHTMLGame;
+}
+document.getElementById("footer").innerHTML += footerHTML2;
