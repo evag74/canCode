@@ -47,6 +47,7 @@
 		<div class="divTableCell" style="width: 50%;">
 	<div class="centerContents">
 		<br><br>
+		<h3 id="studentName">Jasmin's Game!</h3>
 		<div style="position:relative;padding-top:82.88%;">
 			<iframe allowtransparency="true" src="https://scratch.mit.edu/projects/embed/127924304" style="position:absolute;top:0; left:10%;width: 70%; height: 70%;" id="game" frameborder="0"></iframe> <!-- 485 * 402 -->
 		</div>
@@ -72,7 +73,20 @@
 <script>
 var gameViewer = document.getElementById("game");
 var gameInfo = document.getElementById("info");
+var studentNameHeader = document.getElementById("studentName");
 var DEFAULT_VIEW = "";
+var dictionaryOfStudents = {
+	'246192730': "Adam M",
+	'262201206': "Daniel S",
+	'277401966': "Delilah",
+	'277402979': "Demitri",
+	'277403245': "Gerard",
+	'213482157': "Graciel P",
+	'127924304': "Jasmin",
+	'122540125': "Kevin R",
+	'221265057': "Cristian",
+	'221265062': "Jasmin"
+}
 gameViewer.src = DEFAULT_VIEW;
 
 function resizeViewer(event) {
@@ -96,6 +110,9 @@ window.addEventListener('resize', resizeViewer);
 
 function chooseGame(id) {
   gameViewer.src = "https://scratch.mit.edu/projects/embed/" + id;
+  studentNameHeader.innerHTML = dictionaryOfStudents[id] + "'s Game!";
+  console.log(dictionaryOfStudents);
+  console.log(id);
 }
 
 if (isMobile()) {
