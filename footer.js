@@ -27,7 +27,7 @@ var footerHTML2 =
 '<div class="divTableCell">' +
 '<br><a href="https://www.scratch.mit.edu" target="_blank"><img src="https://cancode.us/Images/Scratch_cat.png" width="40%"></a></div>' +
 
-'<div class="divTableCell">' + '<h3>canCode 2018</h3>' +
+'<div class="divTableCell">' + '<h3>canCode 2019</h3>' +
   '<div class="socialBox">' +
     '<div><a class="button" href="https://www.facebook.com/CanCode-160731814646570/" target="_blank"><img class="socialLink" src="https://cancode.us/Images/facebook_logo.png"></a></div>' +
     '<div><a class="button" href="https://www.instagram.com/cancodeus" target="_blank"><img class="socialLink" src="https://cancode.us/Images/instagram_logo.png"></a></div>' +
