@@ -370,7 +370,7 @@ div.row {
 div.row img.rowImage {
 	height: auto;
 	max-width: 100%;
-	width: calc(30% - 10px);
+	width: calc(22.5% - 10px);
 	border-radius: 20%;
 	border: 5px solid #777777;
 	margin: 0 5px;
