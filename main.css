@@ -115,8 +115,8 @@ div.panel:hover {
 div.panel img {
 	max-width: 100%;
 }
-div.solution {
-	display: none; /* This means the solution is invisible, it is only made visible by JavaScript */
+div.solution,div.hidden {
+	display: none; /* This means the div is invisible, it is only made visible by JavaScript */
 }
 div.solution:hover {
 	background-color: #2C50AF;
@@ -297,6 +297,10 @@ img.profilePicture {
 img.workshop {
 	float: right;
 	width: 50%;
+}
+img.code {
+	margin-left: 50px;
+	width: 40%;
 }
 /* Centered image */
 img.center {
