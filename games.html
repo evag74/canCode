@@ -18,7 +18,7 @@
 <br>
 <div class="bigPicture"><img src="Images/maze_game_3.png"></div>
 
-<h1>Games</h1>
+<h1>Games and Code</h1>
 <div class="shift" id="info">
 <p>Try playing some games made by our students! <b>Click on a student's name</b> to play their game in the viewer below.<br><br>Click the Green Flag and then use the Arrow Keys to play!</p>
 </div>
@@ -45,13 +45,13 @@
 			<h3>Drop Game</h3>
 			<ul>
 			  <li><a onclick="chooseGame('221265057')">Cristian</a> was in the first Drop game workshop with Jasmin and a few others at the Youth Activity Center. He made his game as a 4th grader in 2018.</li>
-			  <li><a onclick="chooseGame('221265062')">Jasmin</a> made a maze game, drop game, and even met Mr. Scarpa, our funder.</li>
+			  <li><a onclick="chooseGame('221265062')">Jasmin</a> made a maze game, a drop game, and even met Mr. Scarpa, our funder.</li>
 			</ul>
 		</div>
 		<div class="divTableCell" style="width: 50%;">
 	<div class="centerContents">
 		<br><br>
-		<h3 id="studentName">Adam's Game!</h3>
+		<h3 id="studentName">Jasmin's Game!</h3>
 		<div style="position:relative;padding-top:82.88%;">
 			<iframe allowtransparency="true" src="https://scratch.mit.edu/projects/embed/246192730" style="position:absolute;top:0; left:10%;width: 70%; height: 70%;" id="game" frameborder="0"></iframe> <!-- 485 * 402 -->
 		</div>
@@ -61,6 +61,12 @@
 		</div>
 	</div>
 	</div>
+</div>
+<p id="codeInfo">Take a look at the code for this game, written by Jasmin!</p>
+<div class="smallButton" id="viewCode" onclick="showHideCode()">View code</div>
+<div class="hidden" id="code">
+	<p>Main character</p>
+	<img id="codeImg1">
 </div>
 
 <!-- End page content -->
@@ -77,8 +83,12 @@
 <script>
 var gameViewer = document.getElementById("game");
 var gameInfo = document.getElementById("info");
+var codeInfo = document.getElementById("codeInfo");
 var studentNameHeader = document.getElementById("studentName");
-var DEFAULT_VIEW = "";
+var viewCode = document.getElementById("viewCode");
+var code = document.getElementById("code");
+var viewingCode = false;
+var DEFAULT_VIEW = "https://scratch.mit.edu/projects/embed/127924304";
 var dictionaryOfStudents = {
 	'246192730': "Adam M",
 	'262201206': "Daniel S",
@@ -114,10 +124,41 @@ window.addEventListener('resize', resizeViewer);
 
 function chooseGame(id) {
   gameViewer.src = "https://scratch.mit.edu/projects/embed/" + id;
+	openCode(id);
   studentNameHeader.innerHTML = dictionaryOfStudents[id] + "'s Game!";
-  console.log(dictionaryOfStudents);
-  console.log(id);
+	codeInfo.innerHTML = "Take a look at the code for this game, written by " + dictionaryOfStudents[id] + "!";
 }
+function openCode(id) {
+	var sprites = {
+		"246192730": ["Starfish (player)", "Ghoul (passive character)", "Person (enemy)"],
+		"262201206": ["Puppy (player)", "Fortnite character (enemy)"],
+		"277401966": ["Unicorn (player)", "Ghoul (enemy)", "Bat 1 (enemy)", "Bat 2 (enemy)"],
+		"277402979": ["Cat (player)", "Sun (enemy)", "Lightning (enemy)"],
+		"277403245": ["Dog (player)", "Cat (enemy)", "Bat (enemy)"],
+		"213482157": ["Ghoul (player)", "Witch (enemy)", "Wizard (enemy)"],
+		"127924304": ["Princess (player)", "Unicorn (enemy)"],
+		"122540125": ["Dinosaur (player)", "Dinosaur 2 (enemy)", "Dinosaur 3 (enemy)", "Dinosaur 4 (passive character)"],
+		"221265057": ["Girl (player)", "Boy (to catch)"],
+		"221265062": ["Cup (player)", "Monkey (to catch)"]
+	};
+	code.innerHTML = "";
+	for (var i = 0; i < sprites[id].length; i++) {
+		code.innerHTML += "<h4>" + sprites[id][i] + "</h4>";
+		code.innerHTML += '<img class="code" src="studentCode/' + id + "_" + i + '.png">';
+	}
+}
+function showHideCode() {
+	if (viewingCode) {
+		viewingCode = false;
+		viewCode.innerHTML = "View code";
+		code.style.display = "none";
+	} else {
+		viewingCode = true;
+		viewCode.innerHTML = "Hide code";
+		code.style.display = "block";
+	}
+}
+openCode("127924304");
 
 if (isMobile()) {
   gameInfo.innerHTML = "<p>Unfortunately, canCode games only work on desktop devices. Try" +

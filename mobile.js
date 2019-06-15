@@ -48,6 +48,10 @@ document.getElementById("hiddenNavbar").innerHTML =
   '<a href="https://www.cancode.us/sites" class="button">Sites</a>' +
   '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>';
 
+if (!isMobile()) {
+  document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
+}
+
 // Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);
 buttonHighlight("contribute", 1);
@@ -59,10 +63,8 @@ buttonHighlight("parent", 7);
 buttonHighlight("team", 8);
 buttonHighlight("sites", 9);
 buttonHighlight("sponsors", 10);
-buttonHighlight("games", 11);
-
-if (!isMobile()) {
-  document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
+if (!isMobile) {
+  buttonHighlight("games", 11);
 }
 
 function expand() {
