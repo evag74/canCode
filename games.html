@@ -62,7 +62,7 @@
 	</div>
 	</div>
 </div>
-<p id="codeInfo">Take a look at the code for this game, written by Jasmin!</p>
+<p id="codeInfo"></p>
 <div class="smallButton" id="viewCode" onclick="showHideCode()">View code</div>
 <div class="hidden" id="code">
 	<p>Main character</p>
@@ -88,7 +88,7 @@ var studentNameHeader = document.getElementById("studentName");
 var viewCode = document.getElementById("viewCode");
 var code = document.getElementById("code");
 var viewingCode = false;
-var DEFAULT_VIEW = "https://scratch.mit.edu/projects/embed/127924304";
+
 var dictionaryOfStudents = {
 	'246192730': "Adam M",
 	'262201206': "Daniel S",
@@ -101,7 +101,9 @@ var dictionaryOfStudents = {
 	'221265057': "Cristian",
 	'221265062': "Jasmin"
 }
-gameViewer.src = DEFAULT_VIEW;
+const DEFAULT_GAME_CODE = 246192730;
+const DEFAULT_VIEW = "https://scratch.mit.edu/projects/embed/" + DEFAULT_GAME_CODE; // Default game when the page is loaded
+chooseGame(DEFAULT_GAME_CODE);
 
 function resizeViewer(event) {
   let screenWidth = document.documentElement.clientWidth;
@@ -158,7 +160,6 @@ function showHideCode() {
 		code.style.display = "block";
 	}
 }
-openCode("127924304");
 
 if (isMobile()) {
   gameInfo.innerHTML = "<p>Unfortunately, canCode games only work on desktop devices. Try" +
