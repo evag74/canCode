@@ -42,15 +42,17 @@ document.getElementsByClassName("navbar")[0].innerHTML =
   '</ul>' +
   '<div id="hiddenNavbar"></div>';
 document.getElementById("hiddenNavbar").innerHTML =
+  '<a href="https://www.cancode.us/contribute" class="button">Contribute</a>' +
   '<a href="https://www.cancode.us/student" class="button">Student</a>' +
   '<a href="https://www.cancode.us/parent" class="button">Parent</a>' +
   '<a href="https://www.cancode.us/team" class="button">Team</a>' +
-  '<a href="https://www.cancode.us/sites" class="button">Sites</a>' +
-  '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>';
+  '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>' +
+  '<a href="https://www.cancode.us/sites" class="button">Sites</a>';
 
 if (!isMobile()) {
   document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
 }
+document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/thanks" class="button">Thanks</a>';
 
 // Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);
@@ -58,13 +60,17 @@ buttonHighlight("contribute", 1);
 buttonHighlight("photos", 3);
 buttonHighlight("sites", 4);
 buttonHighlight("sponsors", 5);
-buttonHighlight("student", 6);
-buttonHighlight("parent", 7);
-buttonHighlight("team", 8);
-buttonHighlight("sites", 9);
+buttonHighlight("contribute", 6);
+buttonHighlight("student", 7);
+buttonHighlight("parent", 8);
+buttonHighlight("team", 9);
 buttonHighlight("sponsors", 10);
-if (!isMobile) {
-  buttonHighlight("games", 11);
+buttonHighlight("sites", 11);
+if (isMobile()) {
+  buttonHighlight("thanks", 12);
+} else {
+  buttonHighlight("games", 12);
+  buttonHighlight("thanks", 13);
 }
 
 function expand() {
@@ -92,13 +98,13 @@ function mobileFormat(event) // Function that is run every time the site is resi
   if (document.documentElement.clientWidth <= MORE_LIMIT) {
     buttons[4].style.display = "none";
     buttons[5].style.display = "none";
-    buttons[9].style.display = "block";
     buttons[10].style.display = "block";
+    buttons[11].style.display = "block";
   } else {
     buttons[4].style.display = "block";
     buttons[5].style.display = "block";
-    buttons[9].style.display = "none";
     buttons[10].style.display = "none";
+    buttons[11].style.display = "none";
   }
 }
 var i = 1;

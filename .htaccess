@@ -19,3 +19,4 @@ RewriteRule ^studentsafe/?$ studentsafe.html
 RewriteRule ^games/?$ games.html
 RewriteRule ^diller/?$ diller.html
 RewriteRule ^Diller/?$ diller.html
+RewriteRule ^thanks/?$ thanks.html
