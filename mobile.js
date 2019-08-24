@@ -69,9 +69,11 @@ buttonHighlight("sponsors", 10);
 buttonHighlight("sites", 11);
 if (isMobile()) {
   buttonHighlight("thanks", 12);
+  buttonHighlight("news", 13);
 } else {
   buttonHighlight("games", 12);
   buttonHighlight("thanks", 13);
+  buttonHighlight("news", 14);
 }
 
 function expand() {
