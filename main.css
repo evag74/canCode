@@ -409,3 +409,6 @@ a img.socialLink {
 div.shift {
 	margin-left: 60px;
 }
+video {
+	width: 50%;
+}
