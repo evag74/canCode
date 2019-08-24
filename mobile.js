@@ -52,7 +52,8 @@ document.getElementById("hiddenNavbar").innerHTML =
 if (!isMobile()) {
   document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
 }
-document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/thanks" class="button">Thanks</a>';
+document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/thanks" class="button">Thanks</a>' +
+  '<a href="https://www.cancode.us/news" class="button">News</a>';
 
 // Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);

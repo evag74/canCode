@@ -20,4 +20,4 @@ RewriteRule ^games/?$ games.html
 RewriteRule ^diller/?$ diller.html
 RewriteRule ^Diller/?$ diller.html
 RewriteRule ^thanks/?$ thanks.html
-RewriteRule ^thanks/?$ news.html
+RewriteRule ^news/?$ news.html
