@@ -412,3 +412,8 @@ div.shift {
 video {
 	width: 50%;
 }
+#donate {
+	text-align: left;
+	color: #000000;
+	cursor: text;
+}

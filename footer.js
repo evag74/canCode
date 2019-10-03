@@ -35,7 +35,7 @@ var footerHTML2 =
   '</div>' + '<center>' +
   '<a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank"><div class="smallButton">Become a Teacher</div></a>' +
   '<a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="smallButton">Become a Site</div></a>' +
-  '<a><div class="smallButton">Donate (Coming Soon)</div></a>' + '</center></div>' + '</div>';
+  '<a><div id="donate"></div><div class="smallButton" onclick="donateHTML(\'donate\')">Donate</div></a>' + '</center></div>' + '</div>';
 
 footerHTML = footerHTML1; // Puts the contents of footerHTML inside of the div with id="footer"
 if (!isMobile()) {
