@@ -53,7 +53,7 @@ if (!isMobile()) {
   document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
 }
 document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/thanks" class="button">Thanks</a>' +
-  '<a href="https://www.cancode.us/news" class="button">News</a>';
+  '<a href="https://www.cancode.us/news" class="button">In the News</a>';
 
 // Matches sites to navbar buttons that are highlighted
 buttonHighlight("", 0); buttonHighlight("index", 0);
@@ -111,6 +111,12 @@ function mobileFormat(event) // Function that is run every time the site is resi
   }
 }
 var i = 1;
+
+function donateHTML(id) {
+  document.getElementById(id).innerHTML = "<br>Thank you for your interest in helping " +
+    " canCode. To donate, please contact one of the following:<br><ol><li>" +
+    "(561) 251-7700</li><li>info@cancode.us</li></ol>Thank you!";
+}
 
 mobileFormat(null); // Format the screen based on screen size immediately
 window.addEventListener('resize', mobileFormat); // Then continue to format the screen on resize
