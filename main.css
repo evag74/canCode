@@ -417,3 +417,35 @@ video {
 	color: #000000;
 	cursor: text;
 }
+table.schedule {
+	margin: auto;
+	text-align: left;
+	padding: 0;
+	width: calc(70% + 200px);
+	max-width: 100%;
+	border: 2px solid #CCCCCC;
+}
+table.schedule tbody tr th, table.schedule tbody tr td {
+	border: 1px solid #CCCCCC;
+	margin: 0;
+	padding: 5px;
+}
+table.schedule tbody tr {
+	margin: 0;
+	padding: 0;
+}
+table.schedule tbody tr th.year {
+	background-color: #9DC2E1;
+	text-align: center;
+}
+table.schedule tbody tr th.day {
+	background-color: #FFFD38;
+	width: 20%;
+}
+table.schedule tbody tr td.site {
+	font-weight: bold;
+}
+table.schedule tbody tr td.blank {
+	border: 1px solid #F4F4F4;
+	background-color: #F4F4F4;
+}
