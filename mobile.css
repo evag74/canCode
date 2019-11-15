@@ -106,3 +106,7 @@ body.mobile div#slideshow {
 body.mobile div.shift {
 	margin-left: 10px;
 }
+body.mobile div.extendedBioPicture {
+	float: none;
+	text-align: center;
+}

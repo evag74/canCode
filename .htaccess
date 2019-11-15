@@ -21,3 +21,4 @@ RewriteRule ^diller/?$ diller.html
 RewriteRule ^Diller/?$ diller.html
 RewriteRule ^thanks/?$ thanks.html
 RewriteRule ^news/?$ news.html
+RewriteRule ^team/harys/?$ bios/harys.html

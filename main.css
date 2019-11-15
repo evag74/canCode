@@ -449,3 +449,11 @@ table.schedule tbody tr td.blank {
 	border: 1px solid #F4F4F4;
 	background-color: #F4F4F4;
 }
+div.extendedBioPicture {
+	float: right;
+	margin: 20px;
+}
+div.extendedBioPicture img {
+	max-width: 350px;
+	max-height: 350px;
+}
