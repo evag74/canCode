@@ -6,18 +6,6 @@
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="mobile.css">
 <link rel="shortcut icon" href="Images/small_icon.png" />
-<script>
-  // Load images at the beginning so the page doesn't look like images are missing while loading
-  var img1 = new Image();
-  img1.src = "slideshowpictures/1.jpg";
-  var img2 = new Image();
-  img2.src = "Images/menu_closed.png";
-  var img3 = new Image();
-  img3.src = "Images/canCodePlain1.png";
-</script>
-<link rel="preload" href="slideshowpictures/1.jpg" as="image">
-<link rel="preload" href="Images/menu_closed.png" as="image">
-<link rel="preload" href="Images/canCodePlain1.png" as="image">
 <body onload=slideshow()>
 
 <!-- Navbar (sit on top) -->
@@ -48,7 +36,7 @@
 <div class="divTableBody">
 	<div class="divTableRow"> <!-- The table is split into rows, each with multiple cells -->
 		<div class="divTableCell" id="slideshow">
-			<img class="coolPicture" id="slideshowpicture">
+			<img class="coolPicture" id="slideshowpicture" src="slideshowpictures/1.jpg">
 
 			<!--<p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p> -->
 		</div>
