@@ -239,6 +239,7 @@ div.largeButton {
 	font-size: 24px;
 	height: 60px;
 	width: 90%;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -456,4 +457,25 @@ div.extendedBioPicture {
 div.extendedBioPicture img {
 	max-width: 350px;
 	max-height: 350px;
+}
+div.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100vw;
+	list-style-type: none;
+	margin: 0;
+}
+div.numbers div {
+	padding: 30px;
+	width: calc(30vw - 60px);
+	text-align: center;
+	margin: 5px;
+}
+div.numbers div p.number {
+	font-size: 48px;
+	font-weight: bold;
+}
+div.numbers div p {
+	margin: 0;
 }
