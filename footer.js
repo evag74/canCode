@@ -34,12 +34,11 @@ var footerHTML2 =
     '<div><a class="button" href="https://www.instagram.com/cancodeus" target="_blank"><img class="socialLink" src="https://cancode.us/Images/instagram_logo.png"></a></div>' +
   '</div>' + '<center>' +
   '<a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank"><div class="smallButton">Become a Teacher</div></a>' +
-  '<a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="smallButton">Become a Site</div></a>' +
-  '<a><div id="donate"></div><div class="smallButton" onclick="donateHTML(\'donate\')">Donate</div></a>' + '</center></div>' + '</div>';
+  '<a href="https://www.cancode.us/contribute?openform=site"><div class="smallButton">Become a Site</div></a>' +
+  '<div id="donate"></div><a><div class="smallButton" onclick="donateHTML(\'donate\')">Donate</div></a>' + '</center></div>' + '</div>';
 
 footerHTML = footerHTML1; // Puts the contents of footerHTML inside of the div with id="footer"
-if (!isMobile()) {
+if (!isMobile())
   footerHTML += footerHTMLGame;
-}
 footerHTML += footerHTML2;
 document.getElementById("footer").innerHTML = footerHTML;

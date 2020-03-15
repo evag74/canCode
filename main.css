@@ -138,7 +138,7 @@ select {
 	margin-left: 30px;
 }
 
-p {
+p,form {
 	font-size: 18px;
 	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 	margin-left: 64px;
@@ -149,6 +149,10 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
     margin-left: 64px;
     margin-right: 64px;
+}
+input {
+	font-size: 18px;
+	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 }
 h1 {
 	font-size: 46px;
@@ -478,4 +482,22 @@ div.numbers div p.number {
 }
 div.numbers div p {
 	margin: 0;
+}
+
+div.divTable div.divTableBody div.divTableRow div.divTableCell div.centerContents video,
+div.divTable div.divTableBody div.divTableRow div.divTableCell div.centerContents img,
+div.divTable div.divTableBody div.divTableRow div.divTableCell div.centerContents iframe {
+	width: 90%;
+}
+div#contribute_siteform,iframe#hidden_iframe {
+	display: none;
+}
+button {
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+}
+form {
+	border: 1px solid #CCCCCC;
+	background-color: #FAFAFA;
+	padding: 20px;
 }

@@ -118,5 +118,19 @@ function donateHTML(id) {
     "(561) 251-7700</li><li>info@cancode.us</li></ol>Thank you!";
 }
 
+function showElement(id) {
+  document.getElementById(id).style.display = "block";
+}
+function hideElement(id) {
+  document.getElementById(id).style.display = "none";
+}
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
 mobileFormat(null); // Format the screen based on screen size immediately
 window.addEventListener('resize', mobileFormat); // Then continue to format the screen on resize
