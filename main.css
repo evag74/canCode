@@ -138,7 +138,7 @@ select {
 	margin-left: 30px;
 }
 
-p {
+p,form {
 	font-size: 18px;
 	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 	margin-left: 64px;
@@ -149,6 +149,10 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
     margin-left: 64px;
     margin-right: 64px;
+}
+input {
+	font-size: 18px;
+	font-family: "Baskerville", "Georgia", "Times New Roman", serif;
 }
 h1 {
 	font-size: 46px;
@@ -239,6 +243,7 @@ div.largeButton {
 	font-size: 24px;
 	height: 60px;
 	width: 90%;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -456,4 +461,43 @@ div.extendedBioPicture {
 div.extendedBioPicture img {
 	max-width: 350px;
 	max-height: 350px;
+}
+div.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100vw;
+	list-style-type: none;
+	margin: 0;
+}
+div.numbers div {
+	padding: 30px;
+	width: calc(30vw - 60px);
+	text-align: center;
+	margin: 5px;
+}
+div.numbers div p.number {
+	font-size: 48px;
+	font-weight: bold;
+}
+div.numbers div p {
+	margin: 0;
+}
+
+div.divTable div.divTableBody div.divTableRow div.divTableCell div.centerContents video,
+div.divTable div.divTableBody div.divTableRow div.divTableCell div.centerContents img,
+div.divTable div.divTableBody div.divTableRow div.divTableCell div.centerContents iframe {
+	width: 90%;
+}
+div#contribute_siteform,iframe#hidden_iframe {
+	display: none;
+}
+button {
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+}
+form {
+	border: 1px solid #CCCCCC;
+	background-color: #FAFAFA;
+	padding: 20px;
 }

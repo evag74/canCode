@@ -6,18 +6,6 @@
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="mobile.css">
 <link rel="shortcut icon" href="Images/small_icon.png" />
-<script>
-  // Load images at the beginning so the page doesn't look like images are missing while loading
-  var img1 = new Image();
-  img1.src = "slideshowpictures/1.jpg";
-  var img2 = new Image();
-  img2.src = "Images/menu_closed.png";
-  var img3 = new Image();
-  img3.src = "Images/canCodePlain1.png";
-</script>
-<link rel="preload" href="slideshowpictures/1.jpg" as="image">
-<link rel="preload" href="Images/menu_closed.png" as="image">
-<link rel="preload" href="Images/canCodePlain1.png" as="image">
 <body onload=slideshow()>
 
 <!-- Navbar (sit on top) -->
@@ -42,13 +30,14 @@
 <div class="bigPicture noBox">
 	<img src="https://www.cancode.us/Images/canCodePlain2.png" alt="canCode Logo">
 </div>
+<br>
 <br><br>
 
 <div class="divTable"> <!-- About Section uses the divTable class so it behaves like a table -->
 <div class="divTableBody">
 	<div class="divTableRow"> <!-- The table is split into rows, each with multiple cells -->
 		<div class="divTableCell" id="slideshow">
-			<img class="coolPicture" id="slideshowpicture">
+			<img class="coolPicture" id="slideshowpicture" src="slideshowpictures/1.jpg">
 
 			<!--<p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p> -->
 		</div>
@@ -63,6 +52,35 @@
   		<p>canCode’s Mission is to spark an interest for computer programming in young minds across Palm Beach County.</p>
 		</div>
 	</div>
+</div></div>
+<h1>Our Impact</h1>
+<div class="numbers">
+  <div>
+    <p class="number">265+</p>
+    <p>students completed the 3-hour maze game workshop</p>
+  </div>
+  <div>
+    <p class="number">12</p>
+    <p>teenage teachers</p>
+  </div>
+  <div>
+    <p class="number">145+</p>
+    <p>workshop sessions</p>
+  </div>
+  <div>
+    <p class="number">1,350+</p>
+    <p>community service hours earned</p>
+  </div>
+  <div>
+    <p class="number">120+</p>
+    <p>students completed the card workshop</p>
+  </div>
+  <div>
+    <p class="number">5</p>
+    <p>youth centers with canCode workshops</p>
+  </div>
+</div>
+<div class="divTable"><div class="divTableBody">
   <div class="divTableRow">
     <div class="divTableCell">
       <h2>Apply</h2>
@@ -213,12 +231,11 @@
   </div>
 </div></div>
 
-<div class="divTable"> <!-- Boys and Girls Club -->
+<div class="divTable"> <!-- Pearl CATS -->
 <div class="divTableBody">
 	<div class="divTableRow">
 		<div class="divTableCell">
-      <h2>Naoma Donnelley Haggin Boys and Girls Club</h2>
-      <h3 class="center">Delray Beach Winter Camp</h3>
+      <h2>Pearl CATS</h2>
 		</div>
 	</div>
 </div>
@@ -228,16 +245,16 @@
 	<div class="divTableRow">
     <div class="divTableCell">
 	    <br>
-      <img class="workshop" src="Images/bgcdelray2019.jpeg">
-      <img class="workshop" src="Images/bgcdelray2019 2.jpeg">
+      <img class="workshop" src="Images/pearl1.png">
+      <img class="workshop" src="Images/pearl2.png">
     </div>
 		<div class="divTableCell">
-	  <p>As a start to the 2019 year, canCode had its first ever winter camp!
-	  Noah, Alex, and Harys trained 5 new teachers, and 12 students completed the maze game curriculum.
-	  The staff was so helpful in making sure everything would run smoothly.
-	  This winter camp let us impact and inspire so many elementary school students in such a short amount of time;
-	  in addition, it expedited the training process for 5 new teachers who joined the team!
-	  Read their bios on the <a href="https://www.cancode.us/team">team page</a>.</p>
+	  <p>canCode expanded to start teaching at Dixie Manor’s community center
+      after schools in the fall of 2019. Their after school program had just
+      lost their robotics coach and their robotics team had mostly graduated,
+      so the elementary schoolers, especially, were not getting any STEM
+      introduction&mdash;until canCode came in! New teachers Chris and Luca
+      were trained there and now teach there.</p>
 		</div>
 	</div>
 </div>

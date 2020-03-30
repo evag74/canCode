@@ -27,7 +27,7 @@
 			<a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank"><div class="largeButton">Become a Teacher</div></a>
     </div>
     <div class="divTableCell">
-		 <a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="largeButton">Become a Site</div></a>
+		 <a href="#siteform"><div class="largeButton" onclick="showElement('contribute_siteform')">Become a Site</div></a>
     </div>
 		<div class="divTableCell">
 			<a><div class="largeButton" onclick="donateHTML('donate1')">Donate</div></a>
@@ -36,15 +36,47 @@
   </div>
 </div>
 </div>
+<a name="siteform"></a>
+<div id="contribute_siteform">
+  <iframe width="0" height="0" border="0" name="hidden_iframe" id="hidden_iframe"></iframe><br>
+  <form name="become_site" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSctoTF16pm9bTVRQmL5DzR5yERHVdYYBIlakdmDJMB7wN6g7A/formResponse" method="post" onsubmit="submitted=true; submitSiteForm();" target="hidden_iframe">
+    Please fill out the following form. Note that all questions are required.<br><br>
+    Are you in Palm Beach County?<br>
+    <input type="radio" name="entry.1008664021" value="Yes" required></input> YES<br>
+    <input type="radio" name="entry.1008664021" value="No" required></input> No<br><br>
+    What is the name of your site/location?<br>
+    <input type="text" name="entry.1356497670" required></input><br><br>
+    What is the address of this site/location?<br>
+    <input type="text" name="entry.1787839225" required></input><br><br>
+    How many kids do you have in total?<br>
+    <input type="number" name="entry.455212170" min="0" step="1" required></input><br><br>
+    How many kids 2<sup>nd</sup> grade-5<sup>th</sup> grade?<br>
+    <input type="number" name="entry.1006933673" min="0" step="1" required></input><br><br>
+    Director's name<br>
+    <input type="text" name="entry.1912202945" required></input><br><br>
+    Director's email<br>
+    <input type="email" name="entry.2138702361" required></input><br><br>
+    Director's phone number<br>
+    <input type="tel" name="entry.431303335" required></input><br><br>
+    Do you have computers in a designated room? If so how many?<br>
+    <input type="radio" name="has_computers" value="No" onchange="siteComputers()" required></input> No<br>
+    <input type="radio" name="has_computers" value="Yes" onchange="siteComputers()"></input> Yes:
+    <input type="number" name="num_computers" min="0" step="1" oninput="document.become_site.has_computers.value = 'Yes'; siteComputers();" onchange="document.become_site.has_computers.value = 'Yes'; siteComputers();"></input>
+    <input type="hidden" name="entry.458356054"></input><br><br>
+    What elementary schools do you take from?<br>
+    <input type="text" name="entry.1665904784" required></input><br><br>
+    <button type="submit"><div class="smallButton">Submit</div></button>
+  </form>
+  <b><p id="submitted_siteform"></p></b>
+</div>
 <h2>How do I become a teacher?</h2> <p>
 <ol style="margin-left: 60px">
 	<li><p>Click the button above and fill out the application</p></li>
 	<li><p>Once accepted, you will meet with Noah and learn the curriculum</p></li>
-	<li><p>You will shadow Noah or another teacher at The Youth Activity Center</p></li>
-	<li><p>Noah will shadow you at The Youth Activity Center and give feedback, as well as help if you get stuck</p></li>
-	<li><p>Noah will help you move into a new site!</p></li>
+  <li><p>You will shadow Noah or another teacher at The Youth Activity Center</p></li>
+  <li><p>Noah will shadow you at The Youth Activity Center and give feedback, as well as help if you get stuck</p></li>
+  <li><p>Noah will help you move into a new site!</p></li>
 	<li><p>You and your partner will teach on your own, keeping in touch with Noah and canCode</p></li>
-
 </ol>
 </p>
 
@@ -72,6 +104,31 @@
 
 <!-- Mobile compatibility -->
 <script src="mobile.js"></script>
+
+<script>
+function siteComputers() {
+  if (document.become_site.has_computers.value == "Yes") {
+    document.become_site.num_computers.required = true;
+    document.become_site["entry.458356054"].value = document.become_site.num_computers.value;
+    document.become_site.num_computers.style.backgroundColor = "";
+    document.become_site.num_computers.style.color = "";
+  } else {
+    document.become_site.num_computers.required = false;
+    document.become_site["entry.458356054"].value = "No";
+    document.become_site.num_computers.style.backgroundColor = "#EEEEEE";
+    document.become_site.num_computers.style.color = "#666666";
+  }
+}
+function submitSiteForm() {
+  document.become_site.style.display = "none";
+  document.getElementById("submitted_siteform").innerHTML = "Your answers have been sent. Thank you for contributing to canCode!";
+  window.scroll({top: document.getElementById("submitted_siteform").getBoundingClientRect().top + window.scrollY - 150, behavior: "smooth"});
+}
+if (getUrlVars()["openform"] == "site") {
+  showElement("contribute_siteform");
+  window.scroll({top: document.become_site.getBoundingClientRect().top + window.scrollY - 150, behavior: "smooth"});
+}
+</script>
 
 </body>
 </html>
