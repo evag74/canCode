@@ -18,10 +18,11 @@
 <p><b>County-Distributed laptops</b>: you must be in the parent login</p>
 <p>04:00 PM Eastern Time<br>
   Every week on Tuesday and Thursday</p>
-<a href="https://us04web.zoom.us/j/611674134" target="_blank"><div class="largeButton">Join class</div></a>
+<p><input type="checkbox" id="releaseCheckbox" onchange="changeCheck()"></input> I have read and agree to the <a href="https://www.cancode.us/online/release" target="_blank">canCode Zoom release</a></p>
+<a href="javascript:void(0)" class="inactive_join" id="joinbutton"><div class="largeButton">Join class</div></a>
 <h2>Instructions</h2>
 <ol>
-<li><p><strong>Click the button above</strong> to join canCode Online
+<li><p>Check the box indicating that you have read the canCode zoom release. Then <strong>click the button above</strong> to join canCode Online
   Classes. You may choose to download zoom or simply join from your browser.</p></li>
 <div class="instructions"><img src="help1.png"></div>
 <li><p>Press &ldquo;allow microphone and camera&rdquo;</p></li>
@@ -36,6 +37,25 @@
 <li><p>Click &ldquo;see inside&rdquo; and you're ready to start learning!</p></li>
 </ol><br><br><br><br><br><br>
 </div>
+
+<script>
+const ZOOM = "https://us04web.zoom.us/j/611674134";
+const VOID = "javascript:void(0)";
+var check = document.getElementById("releaseCheckbox");
+var joinbutton = document.getElementById("joinbutton");
+function changeCheck() {
+  if (check.checked) {
+    joinbutton.href = ZOOM;
+    joinbutton.classList = "";
+    joinbutton.target = "_blank";
+  }
+  else {
+    joinbutton.href = VOID;
+    joinbutton.classList = "inactive_join";
+    joinbutton.target = "";
+  }
+}
+</script>
 
 <!-- Footer (edit footer.js to edit content of footer)-->
 <div id="footer"></div>

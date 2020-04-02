@@ -505,3 +505,10 @@ form {
 	background-color: #FAFAFA;
 	padding: 20px;
 }
+a#joinbutton div.largeButton {
+	transition: background-color 0.3s;
+}
+a.inactive_join#joinbutton div.largeButton {
+	background-color: #CCCCCC;
+	cursor: not-allowed;
+}
