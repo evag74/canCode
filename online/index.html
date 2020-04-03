@@ -17,9 +17,25 @@
   canCode lessons virtually. We are using <strong>zoom</strong>.
 <p><b>County-Distributed laptops</b>: you must be in the parent login</p>
 <p>04:00 PM Eastern Time<br>
-  Every week on Tuesday and Thursday</p>
-<CENTER><p><input type="checkbox" id="releaseCheckbox" onchange="changeCheck()"></input><strong> I have read and agree to the <a href="https://www.cancode.us/online/release" target="_blank">canCode Zoom release</a></strong></p></CENTER>
-<a href="javascript:void(0)" class="inactive_join" id="joinbutton"><div class="largeButton">Join class</div></a>
+  Every week on Tuesday and Thursday<br><br>
+  Meeting ID: 611-674-134</p>
+<p>
+  You must input your child's name, digitally sign your name, and select one of the agreement options to join:
+</p>
+<iframe width="0" height="0" border="0" name="hidden_iframe" id="hidden_iframe"></iframe><br>
+<form name="zoom_form" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScyxKwEPldSo71iLH2ofBTDsZ5PdXaCBd3WBYxB0OmX1kg8DQ/formResponse" method="post" onsubmit="submitted=true; goLink();" target="hidden_iframe">
+  Child's name: <input name="entry.1631020731" type="text" oninput="validateForm()" required></input><br>
+  Parent's digital signature (type your name): <input name="entry.323313554" type="text" oninput="validateForm()" required></input><br>
+  Parent's email (optional): <input name="entry.379235078" type="email"></input><br>
+  <input type="radio" name="agree" value="Agree" onchange="changeCheck()" required></input>I agree to the <a href="https://www.cancode.us/online/release">canCode Zoom Photo and Video Release</a>
+    (allowing canCode to use my child's photo, video and first name)<br>
+  <input type="radio" name="agree" value="Not agree" onchange="changeCheck()"></input>I want to join but I do not agree to the <a href="https://www.cancode.us/online/release">canCode Release</a>
+    (please turn off video when you join)<br>
+  <br>
+  <input type="hidden" name="entry.1918520319" required></input>
+  <button type="submit"><a class="inactive_join" id="joinbutton"><div class="largeButton">Join class</div></a></button>
+</form>
+
 <h2>Instructions</h2>
 <ol>
 <li><p>Check the box indicating that you have read the canCode zoom release. Then <strong>click the button above</strong> to join canCode Online
@@ -41,19 +57,30 @@
 <script>
 const ZOOM = "https://us04web.zoom.us/j/611674134";
 const VOID = "javascript:void(0)";
-var check = document.getElementById("releaseCheckbox");
+link = VOID;
 var joinbutton = document.getElementById("joinbutton");
 function changeCheck() {
-  if (check.checked) {
-    joinbutton.href = ZOOM;
+  let f = document.zoom_form;
+  f["entry.1918520319"].value = document.zoom_form.agree.value;
+  validateForm();
+}
+function validateForm() {
+  let f = document.zoom_form;
+  if (f.agree.value != "" && f["entry.1631020731"].value != "" && f["entry.323313554"].value != "") {
+    link = ZOOM;
     joinbutton.classList = "";
     joinbutton.target = "_blank";
-  }
-  else {
-    joinbutton.href = VOID;
+    return true;
+  } else {
+    link = VOID;
     joinbutton.classList = "inactive_join";
     joinbutton.target = "";
+    return false;
   }
+}
+function goLink() {
+  if (link != VOID)
+    location.href = link;
 }
 </script>
 
