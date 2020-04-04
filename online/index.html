@@ -27,10 +27,12 @@
   Child's name: <input name="entry.1631020731" type="text" oninput="validateForm()" required></input><br>
   Parent's digital signature (type your name): <input name="entry.323313554" type="text" oninput="validateForm()" required></input><br>
   Parent's email (optional): <input name="entry.379235078" type="email"></input><br>
-  <input type="radio" name="agree" value="Agree" onchange="changeCheck()" required></input>I agree to the <a href="https://www.cancode.us/online/release">canCode Zoom Photo and Video Release</a>
-    (allowing canCode to use my child's photo, video and first name)<br>
-  <input type="radio" name="agree" value="Not agree" onchange="changeCheck()"></input>I want to join but I do not agree to the <a href="https://www.cancode.us/online/release">canCode Release</a>
-    (please turn off video when you join)<br>
+  <input type="radio" name="agree" id="agree_check" value="Agree" onchange="changeCheck()" required></input>
+  <label for="agree_check">I agree to the <a href="https://www.cancode.us/online/release">canCode Zoom Photo and Video Release</a>
+    (allowing canCode to use my child's photo, video and first name)</label><br>
+  <input type="radio" name="agree" id="notAgree_check" value="Not agree" onchange="changeCheck()"></input>
+  <label for="notAgree_check">I want to join but I do not agree to the <a href="https://www.cancode.us/online/release">canCode Release</a>
+    (please turn off video when you join)</label><br>
   <br>
   <input type="hidden" name="entry.1918520319" required></input>
   <button type="submit"><a class="inactive_join" id="joinbutton"><div class="largeButton">Join class</div></a></button>
