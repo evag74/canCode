@@ -70,18 +70,16 @@ function validateForm() {
   if (f.agree.value != "" && f["entry.1631020731"].value != "" && f["entry.323313554"].value != "") {
     link = ZOOM;
     joinbutton.classList = "";
-    joinbutton.target = "_blank";
     return true;
   } else {
     link = VOID;
     joinbutton.classList = "inactive_join";
-    joinbutton.target = "";
     return false;
   }
 }
 function goLink() {
   if (link != VOID)
-    location.href = link;
+    window.open(link);
 }
 </script>
 
