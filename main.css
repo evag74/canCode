@@ -470,7 +470,7 @@ div.numbers {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 100vw;
+	width: 100%;
 	list-style-type: none;
 	margin: 0;
 }
