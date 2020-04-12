@@ -2,6 +2,8 @@ Sitemap: https://cancode.us/sitemap.xml
 User-agent: *
 Disallow: /secret
 Disallow: /mobile.js
+Disallow: /footer.js
+Disallow: /main.js
 Disallow: /layout-styles.css
 Disallow: /mobile.css
 Disallow: /main.css

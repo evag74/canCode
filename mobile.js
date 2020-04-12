@@ -27,8 +27,7 @@ img4.src = "https://cancode.us/Images/menu_open_hover.png";
 var slideshowtarget = document.getElementById("slideshowpicture");
 
 /* Here is the HTML code that will be inserted into the first item with class "navbar".
-It automatically updates on all pages that are linked to mobile.js.
-This is the main section you need to worry about. */
+It automatically updates on all pages that are linked to mobile.js. */
 document.getElementsByClassName("navbar")[0].innerHTML =
   '<ul>' +
     '<a href="/" class="button left"><img src="https://cancode.us/Images/canCodePlain1.png"></a>' +
@@ -112,26 +111,6 @@ function mobileFormat(event) // Function that is run every time the site is resi
   }
 }
 var i = 1;
-
-function donateHTML(id) {
-  document.getElementById(id).innerHTML = "<br>Thank you for your interest in helping " +
-    " canCode. To donate, please contact one of the following:<br><ol><li>" +
-    "(561) 251-7700</li><li>info@cancode.us</li></ol>Thank you!";
-}
-
-function showElement(id) {
-  document.getElementById(id).style.display = "block";
-}
-function hideElement(id) {
-  document.getElementById(id).style.display = "none";
-}
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
 
 mobileFormat(null); // Format the screen based on screen size immediately
 window.addEventListener('resize', mobileFormat); // Then continue to format the screen on resize

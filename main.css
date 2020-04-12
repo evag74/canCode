@@ -222,6 +222,7 @@ a.button:active {
 a.button.highlight {
 	color: #11BBFF;
 	background-color: #CCCCCC;
+	cursor: default;
 }
 a.button#burgerButton {
 	padding-top: 8px;
@@ -511,4 +512,35 @@ a#joinbutton div.largeButton {
 a.inactive_join#joinbutton div.largeButton {
 	background-color: #CCCCCC;
 	cursor: not-allowed;
+}
+
+a#covid_banner div#covid_div {
+	width: 100vw;
+	margin: 30px 0;
+	padding: 20px;
+	background-color: #0033DD;
+	color: #FFFFFF;
+	display: flex;
+}
+a#covid_banner div#covid_div p {
+	font-size: 24px;
+	font-family: "Courier", "Lucida Console", monospace;
+}
+a#covid_banner div#covid_div:hover {
+	background-color: #1188EE;
+}
+a#covid_banner div#covid_div div#virus_div {
+	padding: 0;
+	background-color: none;
+}
+a#covid_banner div#covid_div div#virus_div img {
+	display: block;
+	max-width: 40vw;
+	max-height: 22vw;
+	width: auto;
+	height: auto;
+}
+a#covid_banner div#covid_div div#virus_div p {
+	font-size: 12px;
+	text-align: center;
 }

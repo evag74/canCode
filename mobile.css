@@ -117,3 +117,13 @@ body.mobile div.numbers div {
 body.mobile form {
 	padding: 10px;
 }
+
+body.mobile a#covid_banner div#covid_div {
+	padding: 5px;
+}
+body.mobile a#covid_banner div#covid_div p {
+	font-size: 20px;
+}
+body.mobile a#covid_banner div#virus_div {
+	display: none;
+}
