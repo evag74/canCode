@@ -14,17 +14,19 @@ function buttonHighlight(site, button) // Matches a site to the button in the na
   }
 }
 
-// Preload images to prevent delay
-img1 = new Image();
-img2 = new Image();
-img3 = new Image();
-img4 = new Image();
-img1.src = "https://cancode.us/Images/menu_closed.png";
-img2.src = "https://cancode.us/Images/menu_hover.png";
-img3.src = "https://cancode.us/Images/menu_open.png";
-img4.src = "https://cancode.us/Images/menu_open_hover.png";
-
 var slideshowtarget = document.getElementById("slideshowpicture");
+
+if (slideshowtarget != null) {
+  // Preload images to prevent delay
+  img1 = new Image();
+  img2 = new Image();
+  img3 = new Image();
+  img4 = new Image();
+  img1.src = "https://cancode.us/Images/menu_closed.png";
+  img2.src = "https://cancode.us/Images/menu_hover.png";
+  img3.src = "https://cancode.us/Images/menu_open.png";
+  img4.src = "https://cancode.us/Images/menu_open_hover.png";
+}
 
 /* Here is the HTML code that will be inserted into the first item with class "navbar".
 It automatically updates on all pages that are linked to mobile.js. */
