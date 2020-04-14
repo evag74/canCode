@@ -517,13 +517,16 @@ a.inactive_join#joinbutton div.largeButton {
 a#covid_banner div#covid_div {
 	width: auto;
 	margin: 30px 0;
-	padding: 20px;
+	padding: 10px;
 	background-color: #0033DD;
 	color: #FFFFFF;
 	display: flex;
+	vertical-align: middle;
 }
 a#covid_banner div#covid_div p {
-	font-size: 24px;
+	font-size: 14px;
+	margin-top: auto;
+	margin-bottom: auto;
 	font-family: "Courier", "Lucida Console", monospace;
 }
 a#covid_banner div#covid_div:hover {
@@ -535,12 +538,13 @@ a#covid_banner div#covid_div div#virus_div {
 }
 a#covid_banner div#covid_div div#virus_div img {
 	display: block;
-	max-width: 40vw;
-	max-height: 22vw;
+	max-width: 10vw;
+	max-height: 5vw;
 	width: auto;
 	height: auto;
 }
 a#covid_banner div#covid_div div#virus_div p {
-	font-size: 12px;
+	font-size: 8px;
 	text-align: center;
+	margin: 0;
 }
