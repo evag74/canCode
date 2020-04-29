@@ -10,6 +10,7 @@ RewriteRule ^team/?$ team.html
 RewriteRule ^sites/?$ sites.html
 RewriteRule ^photos/?$ photos.html
 RewriteRule ^student/maze_game/?$ maze_game.html
+RewriteRule ^student/drop_game/?$ drop_game.html
 RewriteRule ^contribute/?$ contribute.html
 RewriteRule ^apply/?$ contribute.html
 RewriteRule ^Apply/?$ contribute.html
