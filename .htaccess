@@ -4,13 +4,13 @@ RewriteCond %{HTTP_HOST} ^(www\.)?cancode\.us
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://www.cancode.us/$1 [L,R=301]
 RewriteBase /
-RewriteRule ^student/?$ student.html
 RewriteRule ^parent/?$ parent.html
 RewriteRule ^team/?$ team.html
 RewriteRule ^sites/?$ sites.html
 RewriteRule ^photos/?$ photos.html
-RewriteRule ^student/maze_game/?$ maze_game.html
-RewriteRule ^student/drop_game/?$ drop_game.html
+RewriteRule ^student/?$ student/student.html
+RewriteRule ^student/maze_game/?$ student/maze_game.html
+RewriteRule ^student/drop_game/?$ student/drop_game.html
 RewriteRule ^contribute/?$ contribute.html
 RewriteRule ^apply/?$ contribute.html
 RewriteRule ^Apply/?$ contribute.html

@@ -9,7 +9,11 @@ var expanded = false; // true when the "more" button is clicked
 function buttonHighlight(site, button) // Matches a site to the button in the navbar to highlight when on that site
 {
   if (((location.pathname.endsWith("/" + site) || location.pathname.endsWith("/" + site + ".html")) && !(location.pathname.endsWith("secret/")))
-        && location.pathname.indexOf("online") == -1) {
+        && location.pathname.indexOf("online") == -1 && location.pathname.indexOf("student") == -1) {
+    buttons[button].className = buttons[button].className + " highlight";
+  }
+  if (site == "student" && location.pathname.indexOf("student") != -1 && (location.pathname.endsWith("/student") || location.pathname.endsWith("/student.html")
+        || location.pathname.endsWith("student/"))) {
     buttons[button].className = buttons[button].className + " highlight";
   }
 }
