@@ -27,8 +27,6 @@
 <p>With schools closing due to COVID-19, we have decided to continue
   canCode lessons virtually. We are using <strong>zoom</strong>.
 <p><b>County-Distributed laptops</b>: you must be in the parent login</p>
-<p>04:00 PM Eastern Time<br>
-  Every week on Tuesday and Thursday<br><br></p>
 <p>
   You must input your child's name, digitally sign your name, and select one of the agreement options to join:
 </p>
@@ -45,8 +43,17 @@
     (please turn off video when you join)</label><br>
   <br>
   <input type="hidden" name="entry.1918520319" required></input>
+  Site: <select name="site_dropdown" onchange="changeSite()" required>
+    <option value="">-- Select a site --</option>
+    <option value="Florence Fuller">Florence Fuller</option>
+    <option value="Pearl Cats">Pearl Cats</option>
+    <option value="YAC">Youth Activity Center</option>
+    <option value="SOS">SOS</option>
+    <option value="Milagro Center">Milagro Center</option>
+    <option value="Other">Other</option>
+  </select><br><br>
+  <input type="hidden" name="entry.1056708592" value="" required></input>
   <button type="submit"><a class="inactive_join" id="joinbutton"><div class="largeButton">Join class</div></a></button>
-  <p>Note: 5/12 and 5/14 workshops are canceled due to our teachers' AP Exams. Wish us luck! See you on 5/19/2020</p>
 </form>
 
 <h2>Instructions</h2>
@@ -77,9 +84,15 @@ function changeCheck() {
   f["entry.1918520319"].value = document.zoom_form.agree.value;
   validateForm();
 }
+function changeSite() {
+  let f = document.zoom_form;
+  f["entry.1056708592"].value = document.zoom_form.site_dropdown.value;
+  validateForm();
+}
 function validateForm() {
   let f = document.zoom_form;
-  if (f.agree.value != "" && f["entry.1631020731"].value != "" && f["entry.323313554"].value != "") {
+  if (f.agree.value != "" && f["entry.1631020731"].value != "" && f["entry.323313554"].value != ""
+        && f["entry.1056708592"].value != "") {
     link = ZOOM;
     joinbutton.classList = "";
     return true;
