@@ -98,7 +98,6 @@ function expand() {
 
 function mobileFormat(event) // Function that is run every time the site is resized to work with the limits explained above
 {
-  console.log(window.location.pathname);
   if (document.documentElement.clientWidth <= MOBILE_LIMIT) {
     body.className = "mobile";
   } else {
