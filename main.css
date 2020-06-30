@@ -324,7 +324,7 @@ img.restrict {
 	max-width: 430px;
 }
 /* Images inside table cells will be automatically centered and not be over 500px wide */
-div.divTableCell img {
+div.divTableCell img,div.divTableCell iframe {
 	display: block;
 	max-width: 500px;
 	margin-left: auto;
