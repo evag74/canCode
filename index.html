@@ -76,27 +76,27 @@ body.mobile a#covid_banner div#covid_div p {
 <h1>Our Impact</h1>
 <div class="numbers">
   <div>
-    <p class="number">300+</p>
+    <p class="number">0</p>
     <p>students taught</p>
   </div>
   <div>
-    <p class="number">17</p>
+    <p class="number">0</p>
     <p>teenage teachers</p>
   </div>
   <div>
-    <p class="number">200+</p>
+    <p class="number">0</p>
     <p>workshop sessions</p>
   </div>
   <div>
-    <p class="number">1,500+</p>
+    <p class="number">0</p>
     <p>community service hours earned</p>
   </div>
   <div>
-    <p class="number">160+</p>
+    <p class="number">0</p>
     <p>students completed advanced workshops</p>
   </div>
   <div>
-		<a href = "https://www.cancode.us/sites"><p class = "number">10+</p><p>youth centers with canCode workshops</p></a>
+		<a href = "https://www.cancode.us/sites"><p class = "number">0</p><p>youth centers with canCode workshops</p></a>
   </div>
 </div>
 <div class="divTable"><div class="divTableBody">
@@ -380,6 +380,38 @@ function rotate() { // Changes the slideshow picture
 		i++;
 	}
 }
+var countStarted = false;
+var counts = 0;
+const MAX_COUNT = 1500/10;
+var numbers = document.getElementsByClassName("number");
+var displayNumbers = [0, 0, 0, 0, 0, 0];
+function countUp() { // counts up the stats
+	if (countStarted) {
+		if (counts < MAX_COUNT) {
+			displayNumbers[0] += 300/MAX_COUNT;
+			displayNumbers[1] += 17/MAX_COUNT;
+			displayNumbers[2] += 200/MAX_COUNT;
+			displayNumbers[3] += 1500/MAX_COUNT;
+			displayNumbers[4] += 160/MAX_COUNT;
+			displayNumbers[5] += 10/MAX_COUNT;
+			for (var i = 0; i < 6; i++) {
+				numbers[i].innerHTML = Math.round(displayNumbers[i]);
+			}
+			counts++;
+		} else if (counts == MAX_COUNT) {
+			numbers[0].innerHTML += "+";
+			numbers[2].innerHTML += "+";
+			numbers[3].innerHTML += "+";
+			numbers[4].innerHTML += "+";
+			numbers[5].innerHTML += "+";
+			counts++;
+		}
+	}
+	else if ((body.className == "mobile" && window.scrollY >= 1050) || (window.scrollY >= 1100)) {
+		countStarted = true;
+	}
+}
+setTimeout(function() {setInterval(countUp, 10);}, 300);
 
 if (isMobile()) {
   document.getElementById("mazeGameDesc").innerHTML = "Take a look at a game made by Adam M, a 4th Grader. Made in " +
