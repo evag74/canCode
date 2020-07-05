@@ -29,3 +29,4 @@ RewriteRule ^team/noah/?$ bios/noah.html
 RewriteRule ^team/nash/?$ bios/nash.html
 RewriteRule ^online/release?$ online/release.html
 RewriteRule ^online/workshop?$ online/workshop.html
+RewriteRule ^online/library?$ online/library.html
