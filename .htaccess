@@ -11,6 +11,7 @@ RewriteRule ^photos/?$ photos.html
 RewriteRule ^student/?$ student/student.html
 RewriteRule ^student/maze_game/?$ student/maze_game.html
 RewriteRule ^student/drop_game/?$ student/drop_game.html
+RewriteRule ^student/contest/?$ student/contest.html
 RewriteRule ^contribute/?$ contribute.html
 RewriteRule ^apply/?$ contribute.html
 RewriteRule ^Apply/?$ contribute.html
