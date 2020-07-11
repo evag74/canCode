@@ -21,12 +21,18 @@ function getUrlVars() {
 function covidBanner() {
   var banner = document.getElementById("covid_banner");
   if (banner != null) {
-    banner.innerHTML = "<div id='covid_div'><p>Due to COVID-19, we are not teaching students face-to-face at this time. " +
+    banner.innerHTML = "<div id='covid_div'><div class='divTable'><div class='divTableBody'><div class='divTableRow'>" +
+      "<div class='divTableCell'><p>Due to COVID-19, we are not teaching students face-to-face at this time. " +
       "However, we are continuing with virtual lessons so students can keep learning. Please " +
       "click on this banner to learn more about our virtual lessons." +
-      "<div id='virus_div'><img src='https://phil.cdc.gov//PHIL_Images/2871/2871_lores.jpg' height='197px' width='350px'>" +
-      "<p>CDC/ Alissa Eckert, MS; Dan Higgins, MAMS</p></div></div>";
+      "</div><div class='divTableCell'><div id='virus_div'><img src='https://phil.cdc.gov//PHIL_Images/2871/2871_lores.jpg' height='197px' width='350px'>" +
+      "<p>CDC/ Alissa Eckert, MS; Dan Higgins, MAMS</p></div>" +
+      "<div><a href='https://www.cancode.us/student/contest'><div class='smallButton'>Student Contest</div></a>" +
+      "<a href='http://events.pbclibrary.org/events/digital-activities?field_title_of_activity_value=cancode&field_location_tid_selective=All&field_digital_activity_type_value_selective=All' target='_blank'><div class='smallButton'>Library Workshops</div></a>" +
+      "<a href='https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform' target='_blank'><div class='smallButton'>Become a Teacher</div></a>" +
+      "</div></div></div></div></div></div>"; // buttons, cell, row, body, table, banner
     banner.href = "https://www.cancode.us/online";
+    console.log(banner.innerHTML);
   }
 }
 covidBanner();

@@ -520,8 +520,6 @@ a#covid_banner div#covid_div {
 	padding: 10px;
 	background-color: #0033DD;
 	color: #FFFFFF;
-	display: flex;
-	vertical-align: middle;
 }
 a#covid_banner div#covid_div p {
 	font-size: 14px;
@@ -547,4 +545,10 @@ a#covid_banner div#covid_div div#virus_div p {
 	font-size: 8px;
 	text-align: center;
 	margin: 0;
+}
+a#covid_banner div#covid_div div.smallButton {
+	background-color: #003322;
+}
+a#covid_banner div#covid_div div.smallButton:hover {
+	background-color: #006644;
 }
