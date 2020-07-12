@@ -540,6 +540,7 @@ a#covid_banner div#covid_div div#virus_div img {
 	max-height: 5vw;
 	width: auto;
 	height: auto;
+	margin: auto;
 }
 a#covid_banner div#covid_div div#virus_div p {
 	font-size: 8px;
@@ -551,4 +552,13 @@ a#covid_banner div#covid_div div.smallButton {
 }
 a#covid_banner div#covid_div div.smallButton:hover {
 	background-color: #006644;
+}
+a#covid_banner div#covid_div div#covid_buttons {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+a#covid_banner div#covid_div div#covid_buttons div.smallButton {
+	margin: 5px;
 }

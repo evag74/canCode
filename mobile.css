@@ -124,3 +124,7 @@ body.mobile a#covid_banner div#covid_div {
 body.mobile a#covid_banner div#virus_div {
 	display: none;
 }
+body.mobile a#covid_banner div#covid_div div#covid_buttons {
+	flex-direction: column;
+	align-items: center;
+}
