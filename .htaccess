@@ -29,6 +29,7 @@ RewriteRule ^team/ethan/?$ bios/ethan.html
 RewriteRule ^team/alexg/?$ bios/alexg.html
 RewriteRule ^team/alexm/?$ bios/alexm.html
 RewriteRule ^team/noah/?$ bios/noah.html
+RewriteRule ^noahrubin/?$ bios/noah.html
 RewriteRule ^team/nash/?$ bios/nash.html
 RewriteRule ^team/nikita/?$ bios/nikita.html
 RewriteRule ^online/release?$ online/release.html
