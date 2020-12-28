@@ -16,6 +16,7 @@ RewriteRule ^student/contest/?$ student/contest.html
 RewriteRule ^contribute/?$ contribute.html
 RewriteRule ^apply/?$ contribute.html
 RewriteRule ^Apply/?$ contribute.html
+RewriteRule ^Apply/?$ donate.html
 RewriteRule ^sponsors/?$ sponsors.html
 RewriteRule ^resources/?$ resources.html
 RewriteRule ^studentsafe/?$ studentsafe.html
