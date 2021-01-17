@@ -1,8 +1,11 @@
+/* donateHTML function: replaced by donate page
+
 function donateHTML(id) {
   document.getElementById(id).innerHTML = "<br>Thank you for your interest in helping " +
     " canCode. To donate, please contact one of the following:<br><ol><li>" +
     "(561) 251-7700</li><li>info@cancode.us</li></ol>Thank you!";
 }
+*/
 
 function showElement(id) {
   document.getElementById(id).style.display = "block";
