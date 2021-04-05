@@ -37,3 +37,5 @@ RewriteRule ^online/release?$ online/release.html
 RewriteRule ^online/workshop?$ online/workshop.html
 RewriteRule ^online/library?$ online/library.html
 RewriteRule ^hackathon/?$ hackathon.html
+RewriteRule ^hachathon/?$ hackathon.html
+RewriteRule ^competition/?$ hackathon.html
