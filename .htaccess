@@ -39,3 +39,5 @@ RewriteRule ^online/library?$ online/library.html
 RewriteRule ^hackathon/?$ hackathon.html
 RewriteRule ^hachathon/?$ hackathon.html
 RewriteRule ^competition/?$ hackathon.html
+RewriteRule ^HACKATHON/?$ hackathon.html
+RewriteRule ^Hackathon/?$ hackathon.html
