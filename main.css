@@ -452,12 +452,21 @@ table.schedule tbody tr th.year {
 table.schedule tbody tr th.day {
 	background-color: #FFFD38;
 	width: 20%;
+	text-align: center;
 }
+
+table.schedule tbody tr th.time {
+	background-color: #FFFD38;
+	width: 5%;
+	text-align: center;
+}
+
 table.schedule tbody tr td.site {
 	font-weight: bold;
+	text-align: center;
 }
 table.schedule tbody tr td.blank {
-	border: 1px solid #F4F4F4;
+	border: 1px solid #CCCCCC;
 	background-color: #F4F4F4;
 }
 div.extendedBioPicture {

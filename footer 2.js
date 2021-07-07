@@ -17,10 +17,11 @@ var footerHTML = '<div class="divTable">' +
 '<div class="divTableCell">' +
 '<br><a href="https://www.scratch.mit.edu" target="_blank"><img src="https://cancode.us/Images/Scratch_cat.png" width="40%"></a></div>' +
 
-'<div class="divTableCell">' + '<h3>canCode 2018</h3>' +
+'<div class="divTableCell">' + '<h3>canCode 2021</h3>' +
   '<div class="socialBox">' +
     '<div><a class="button" href="https://www.facebook.com/CanCode-160731814646570/" target="_blank"><img class="socialLink" src="https://cancode.us/Images/facebook_logo.png"></a></div>' +
     '<div><a class="button" href="https://www.instagram.com/cancodeus" target="_blank"><img class="socialLink" src="https://cancode.us/Images/instagram_logo.png"></a></div>' +
+    '<div><a class="button" href="https://www.twitter.com/cancodeus" target="_blank"><img class="socialLink" src="Images/twitter.png"></a></div>' +
   '</div>' + '<center>' +
   '<a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank"><div class="smallButton">Become a Teacher</div></a>' +
   '<a href="https://goo.gl/forms/DFZoOj39Oegoqafs1" target="_blank"><div class="smallButton">Become a Site</div></a>' +
