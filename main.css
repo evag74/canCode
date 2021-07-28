@@ -573,3 +573,8 @@ a#covid_banner div#covid_div div#covid_buttons {
 a#covid_banner div#covid_div div#covid_buttons div.smallButton {
 	margin: 5px;
 }
+
+.divPictureTableColumn {
+	display: flex;
+	flex-direction: column;
+}
