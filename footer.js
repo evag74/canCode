@@ -21,7 +21,6 @@ var footerHTMLGame = '<a href="https://www.cancode.us/games"><p style="line-heig
 
 var footerHTML2 =
 '<a href="https://www.cancode.us/thanks"><p style="line-height:20%" align="left">Thank You cards<p></a>' +
-'<a href="https://www.cancode.us/studentsafe"><p style="line-height:20%" align="left">Student Safe App<p></a>' +
 '<a href="https://www.cancode.us/secret"><p style="line-height:20%" align="left">Teacher Portal<p></a>' +
 '<p class="small silver">Made by the canCode web development team — Harys Dalvi, Alex Mark, and Akhil Deo</p>' + '</div>' +
 

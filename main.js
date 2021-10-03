@@ -25,8 +25,8 @@ function covidBanner() {
   var banner = document.getElementById("covid_banner");
   if (banner != null) {
     banner.innerHTML = "<div id='covid_div'>" +
-      "<div><p>Due to COVID-19, we are wearing masks and following CDC guidelines at all in-person classes. " +
-      "Please click on this banner to learn more about our in-person sites." +
+      "<div><center><p>Due to COVID-19, we are wearing masks and following CDC guidelines at all in-person classes. " +
+      "Please click on this banner to learn more about our in-person sites.</center>" +
       "</div><div><br><div id='virus_div'><img src='https://phil.cdc.gov//PHIL_Images/2871/2871_lores.jpg' height='197px' width='350px'>" +
       "<p>CDC/ Alissa Eckert, MS; Dan Higgins, MAMS</p></div></div>" +
       "<div id='covid_buttons'><a href='https://www.cancode.us/hackathon'><div class='smallButton'>Teen Hackathon</div></a>" +

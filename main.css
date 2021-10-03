@@ -559,10 +559,10 @@ a#covid_banner div#covid_div div#virus_div p {
 	margin: 0;
 }
 a#covid_banner div#covid_div div.smallButton {
-	background-color: #003322;
+	background-color: #ff9900;
 }
 a#covid_banner div#covid_div div.smallButton:hover {
-	background-color: #006644;
+	background-color: #fcd65a;
 }
 a#covid_banner div#covid_div div#covid_buttons {
 	display: -webkit-flex;
