@@ -22,7 +22,7 @@ var footerHTMLGame = '<a href="https://www.cancode.us/games"><p style="line-heig
 var footerHTML2 =
 '<a href="https://www.cancode.us/thanks"><p style="line-height:20%" align="left">Thank You cards<p></a>' +
 '<a href="https://www.cancode.us/secret"><p style="line-height:20%" align="left">Teacher Portal<p></a>' +
-'<p class="small silver">Made by the canCode web development team — Harys Dalvi, Alex Mark, and Akhil Deo</p>' + '</div>' +
+'<p class="small silver">Made by the canCode web development team — Harys Dalvi, Alex Mark, Akhil Deo, Semyon Baykov, Eva Gottsfield, and Logan Albala</p>' + '</div>' +
 
 '<div class="divTableCell">' +
 '<br><a href="https://www.scratch.mit.edu" target="_blank"><img src="https://cancode.us/Images/Scratch_cat.png" width="40%"></a></div>' +
