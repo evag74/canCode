@@ -8,163 +8,186 @@
 <link rel="shortcut icon" href="Images/small_icon.png" />
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="navbar">
-	<!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
-</div>
-<HEAD>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124637206-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-124637206-1');
-</script>
-
-</HEAD>
-<a id="covid_banner"></a>
-
-<!-- Page content -->
-<div class="limitContent">
-<br>
-
-<div class="bigPicture"><img src="Images/alex_teaching.jpg"></div>
-
-<!-- Meet the Teachers -->
-<h1>Contribute</h1>
-<!-- INFO SESSIONS
-<div class="divTable"><div class="divTableBody">
-  <div class="divTableRow">
-    <div class="divTableCell">
-		<a href = "https://forms.gle/J6MMrnnYTtvyLRm6A" target = "_blank"><img class="coolPicture" src="Images/canCode Info Session 8_6.png"></img></a>
-	</div>
-	<div class="divTableCell">
-		<a href = "https://forms.gle/J6MMrnnYTtvyLRm6A" target = "_blank"><div class="largeButton">Register</div></a>
-		</br>
-		<a href = "https://www.google.com/url?q=https://us02web.zoom.us/j/89182384373" target = "_blank"><div class="largeButton">Join the Info Session! Thursday August 6th @ 4:30</div></a>
-		<h1 class="center">Contact Info</h1>
-	    <p class="center"><b>Phone</b>: 561-251-7700</p>
-	    <p class="center"><b>Email</b>: info@canCode.us</p>
-	</div>
-	</div>
-</div></div>
--->
-<!-- <p>There are a lot of ways you can get involved with canCode!</p> -->
-
-
-<div>
-<div class="divTable"><div class="divTableBody">
-  <div class="divTableRow">
-    <div class="divTableCell">
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank"><div class="largeButton">Become a Teacher</div></a>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+        <!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
     </div>
-    <div class="divTableCell">
-		 <a href="#siteform"><div class="largeButton" onclick="showElement('contribute_siteform')">Become a Site</div></a>
-    </div>
-		<div class="divTableCell">
-			<a href="https://www.cancode.us/donate"><div class="largeButton">Donate</div></a>
-      <div id="donate1"></div>
-		</div>
-  </div>
-</div>
-</div>
-<a name="siteform"></a>
-<div id="contribute_siteform">
-  <iframe width="0" height="0" border="0" name="hidden_iframe" id="hidden_iframe"></iframe><br>
-  <form name="become_site" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSctoTF16pm9bTVRQmL5DzR5yERHVdYYBIlakdmDJMB7wN6g7A/formResponse" method="post" onsubmit="submitted=true; submitSiteForm();" target="hidden_iframe">
-    Please fill out the following form. Note that all questions are required.<br><br>
-    Are you in Palm Beach County?<br>
-    <input type="radio" name="entry.1008664021" value="Yes" required></input> YES<br>
-    <input type="radio" name="entry.1008664021" value="No" required></input> No<br><br>
-    What is the name of your site/location?<br>
-    <input type="text" name="entry.1356497670" required></input><br><br>
-    What is the address of this site/location?<br>
-    <input type="text" name="entry.1787839225" required></input><br><br>
-    How many kids do you have in total?<br>
-    <input type="number" name="entry.455212170" min="0" step="1" required></input><br><br>
-    How many kids 2<sup>nd</sup> grade-5<sup>th</sup> grade?<br>
-    <input type="number" name="entry.1006933673" min="0" step="1" required></input><br><br>
-    Director's name<br>
-    <input type="text" name="entry.1912202945" required></input><br><br>
-    Director's email<br>
-    <input type="email" name="entry.2138702361" required></input><br><br>
-    Director's phone number<br>
-    <input type="tel" name="entry.431303335" required></input><br><br>
-    Do you have computers in a designated room? If so how many?<br>
-    <input type="radio" name="has_computers" value="No" onchange="siteComputers()" required></input> No<br>
-    <input type="radio" name="has_computers" value="Yes" onchange="siteComputers()"></input> Yes:
-    <input type="number" name="num_computers" min="0" step="1" oninput="document.become_site.has_computers.value = 'Yes'; siteComputers();" onchange="document.become_site.has_computers.value = 'Yes'; siteComputers();"></input>
-    <input type="hidden" name="entry.458356054"></input><br><br>
-    What elementary schools do you take from?<br>
-    <input type="text" name="entry.1665904784" required></input><br><br>
-    <button type="submit"><div class="smallButton">Submit</div></button>
-  </form>
-  <b><p id="submitted_siteform"></p></b>
-</div>
-<h2>How do I become a teacher?</h2> <p>
-<ol style="margin-left: 60px">
-	<li><p>Click the button above and fill out the application</p></li>
-	<li><p>Once accepted, you will meet with Noah and learn the curriculum</p></li>
-  <li><p>You will shadow Noah or another teacher at The Youth Activity Center</p></li>
-  <li><p>Noah will shadow you at The Youth Activity Center and give feedback, as well as help if you get stuck</p></li>
-  <li><p>Noah will help you move into a new site!</p></li>
-	<li><p>You and your partner will teach on your own, keeping in touch with Noah and canCode</p></li>
-</ol>
-</p>
+    <HEAD>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124637206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-<h2>FAQ</h2>
-<div class="shift">
-<h3>Who can I contact?</h3><p>
-<ul>
-	<li><p>You can email info.cancode@gmail.com</p></li>
-	<li><p>Text or Call (prefer text) 561-353-7208<p></li>
-</ul></p>
-<h3>Do I get Community Service?</h3>
-<p>Of course! You get community service from teaching, studying for your workshops, and anything canCode related.</p>
+            gtag('config', 'UA-124637206-1');
+        </script>
 
-<h3>Where does canCode get its funding?</h3>
-<p>Through the generosity of the Philanthropists: John Scarpa, Rick Stone, Christine Stiller, and Jim Karp and Philanthropy Tank. Learn more on our <a href="https://www.cancode.us/sponsors">Sponsors Page<a>.</p>
-</div>
-<br>
-<!-- End page content -->
+    </HEAD>
+    <a id="covid_banner"></a>
 
-</div>
+    <!-- Page content -->
+    <div class="limitContent">
+        <br>
 
-<!-- Footer (edit footer.js to edit content of footer)-->
-<div id="footer"></div>
-<script src="footer.js"></script>
+        <div class="bigPicture"><img src="Images/alex_teaching.jpg"></div>
 
-<!-- Mobile compatibility -->
-<script src="mobile.js"></script>
+        <!-- Meet the Teachers -->
+        <div class="left" style="padding-right:35px">
+            <h1>Contribute</h1>
+        </div>
+        <!-- INFO SESSIONS
+        <div class="divTable"><div class="divTableBody">
+          <div class="divTableRow">
+            <div class="divTableCell">
+                <a href = "https://forms.gle/J6MMrnnYTtvyLRm6A" target = "_blank"><img class="coolPicture" src="Images/canCode Info Session 8_6.png"></img></a>
+            </div>
+            <div class="divTableCell">
+                <a href = "https://forms.gle/J6MMrnnYTtvyLRm6A" target = "_blank"><div class="largeButton">Register</div></a>
+                </br>
+                <a href = "https://www.google.com/url?q=https://us02web.zoom.us/j/89182384373" target = "_blank"><div class="largeButton">Join the Info Session! Thursday August 6th @ 4:30</div></a>
+                <h1 class="center">Contact Info</h1>
+                <p class="center"><b>Phone</b>: 561-251-7700</p>
+                <p class="center"><b>Email</b>: info@canCode.us</p>
+            </div>
+            </div>
+        </div></div>
+        -->
 
-<script src="main.js"></script>
 
-<script>
-function siteComputers() {
-  if (document.become_site.has_computers.value == "Yes") {
-    document.become_site.num_computers.required = true;
-    document.become_site["entry.458356054"].value = document.become_site.num_computers.value;
-    document.become_site.num_computers.style.backgroundColor = "";
-    document.become_site.num_computers.style.color = "";
-  } else {
-    document.become_site.num_computers.required = false;
-    document.become_site["entry.458356054"].value = "No";
-    document.become_site.num_computers.style.backgroundColor = "#EEEEEE";
-    document.become_site.num_computers.style.color = "#666666";
-  }
-}
-function submitSiteForm() {
-  document.become_site.style.display = "none";
-  document.getElementById("submitted_siteform").innerHTML = "Your answers have been sent. Thank you for contributing to canCode!";
-  window.scroll({top: document.getElementById("submitted_siteform").getBoundingClientRect().top + window.scrollY - 150, behavior: "smooth"});
-}
-if (getUrlVars()["openform"] == "site") {
-  showElement("contribute_siteform");
-  window.scroll({top: document.become_site.getBoundingClientRect().top + window.scrollY - 150, behavior: "smooth"});
-}
-</script>
 
+        <div>
+            <div class="divTable">
+                <div class="divTableBody">
+                    <center>
+                        <div class="divTableRow">
+                            <div class="left" style="padding-right: 90px">
+                                <div class="divTableCell">
+                                    <a href="#siteform"><div class="largeButton" onclick="showElement('contribute_siteform')">Become a Site</div></a>
+                                </div>
+                                <div class="left" style="padding-right: 0px">
+                                    <div class="divTableCell">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScFFaOUJyAn4SEs3n6gKJGPYcmzzfVWXgnjXdLdYJbWYHk__w/viewform" target="_blank">
+                                            <div class="largeButton">
+                                                Become a Teacher
+                                            </div>
+                                            <div class="left" style="padding-right: -10px">
+                                                <div class="divTableCell">
+                                                    <a href="https://www.cancode.us/donate"><div class="largeButton">Donate</div></a>
+                                                    <div id="donate1"></div>
+                                                </div>
+
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <a name="siteform"></a>
+            <div id="contribute_siteform">
+                <iframe width="0" height="0" border="0" name="hidden_iframe" id="hidden_iframe"></iframe><br>
+                <form name="become_site" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSctoTF16pm9bTVRQmL5DzR5yERHVdYYBIlakdmDJMB7wN6g7A/formResponse" method="post" onsubmit="submitted=true; submitSiteForm();" target="hidden_iframe">
+                    Please fill out the following form. Note that all questions are required.<br><br>
+                    Are you in Palm Beach County?<br>
+                    <input type="radio" name="entry.1008664021" value="Yes" required></input> YES<br>
+                    <input type="radio" name="entry.1008664021" value="No" required></input> No<br><br>
+                    What is the name of your site/location?<br>
+                    <input type="text" name="entry.1356497670" required></input><br><br>
+                    What is the address of this site/location?<br>
+                    <input type="text" name="entry.1787839225" required></input><br><br>
+                    How many kids do you have in total?<br>
+                    <input type="number" name="entry.455212170" min="0" step="1" required></input><br><br>
+                    How many kids 2<sup>nd</sup> grade-5<sup>th</sup> grade?<br>
+                    <input type="number" name="entry.1006933673" min="0" step="1" required></input><br><br>
+                    Director's name<br>
+                    <input type="text" name="entry.1912202945" required></input><br><br>
+                    Director's email<br>
+                    <input type="email" name="entry.2138702361" required></input><br><br>
+                    Director's phone number<br>
+                    <input type="tel" name="entry.431303335" required></input><br><br>
+                    Do you have computers in a designated room? If so how many?<br>
+                    <input type="radio" name="has_computers" value="No" onchange="siteComputers()" required></input> No<br>
+                    <input type="radio" name="has_computers" value="Yes" onchange="siteComputers()"></input> Yes:
+                    <input type="number" name="num_computers" min="0" step="1" oninput="document.become_site.has_computers.value = 'Yes'; siteComputers();" onchange="document.become_site.has_computers.value = 'Yes'; siteComputers();"></input>
+                    <input type="hidden" name="entry.458356054"></input><br><br>
+                    What elementary schools do you take from?<br>
+                    <input type="text" name="entry.1665904784" required></input><br><br>
+                    <button type="submit"><div class="smallButton">Submit</div></button>
+                </form>
+                <b><p id="submitted_siteform"></p></b>
+            </div>
+            <h2><center>How do I become a teacher?</center></h2> <p>
+                <ol style="margin-left: 60px">
+                    <li>
+            <p>Click the button above and fill out the application</p></li>
+            <li><p>Once accepted, you will meet with Noah and learn the curriculum</p></li>
+            <li><p>You will shadow Noah or another teacher at The Youth Activity Center</p></li>
+            <li><p>Noah will shadow you at The Youth Activity Center and give feedback, as well as help if you get stuck</p></li>
+            <li><p>Noah will help you move into a new site!</p></li>
+            <li><p>You and your partner will teach on your own, keeping in touch with Noah and canCode</p></li>
+            </ol>
+            </p>
+
+            <h2>FAQ</h2>
+            <div class="shift">
+                <h3>Who can I contact?</h3><p>
+                    <ul>
+                        <li>
+                <p>You can email info.cancode@gmail.com</p></li>
+                <li><p>Text or Call (prefer text) 561-353-7208<p></li>
+                </ul></p>
+                <h3>Do I get Community Service?</h3>
+                <p>Of course! You get community service from teaching, studying for your workshops, and anything canCode related.</p>
+
+                <h3>Where does canCode get its funding?</h3>
+                <p>Through the generosity of the Philanthropists: John Scarpa, Rick Stone, Christine Stiller, and Jim Karp and Philanthropy Tank. Learn more on our <a href="https://www.cancode.us/sponsors">Sponsors Page<a>.</p>
+            </div>
+            <br>
+            <!-- End page content -->
+
+        </div>
+
+        <!-- Footer (edit footer.js to edit content of footer)-->
+        <div id="footer"></div>
+        <script src="footer.js"></script>
+
+        <!-- Mobile compatibility -->
+        <script src="mobile.js"></script>
+
+        <script src="main.js"></script>
+
+        <script>
+            function siteComputers() {
+                if (document.become_site.has_computers.value == "Yes") {
+                    document.become_site.num_computers.required = true;
+                    document.become_site["entry.458356054"].value = document.become_site.num_computers.value;
+                    document.become_site.num_computers.style.backgroundColor = "";
+                    document.become_site.num_computers.style.color = "";
+                } else {
+                    document.become_site.num_computers.required = false;
+                    document.become_site["entry.458356054"].value = "No";
+                    document.become_site.num_computers.style.backgroundColor = "#EEEEEE";
+                    document.become_site.num_computers.style.color = "#666666";
+                }
+            }
+            function submitSiteForm() {
+                document.become_site.style.display = "none";
+                document.getElementById("submitted_siteform").innerHTML = "Your answers have been sent. Thank you for contributing to canCode!";
+                window.scroll({ top: document.getElementById("submitted_siteform").getBoundingClientRect().top + window.scrollY - 150, behavior: "smooth" });
+            }
+            if (getUrlVars()["openform"] == "site") {
+                showElement("contribute_siteform");
+                window.scroll({ top: document.become_site.getBoundingClientRect().top + window.scrollY - 150, behavior: "smooth" });
+            }
+        </script>
+        <!--                ______          __
+          _________ _____  / ____/___  ____/ /__
+         / ___/ __ `/ __ \/ /   / __ \/ __  / _ \
+        / /__/ /_/ / / / / /___/ /_/ / /_/ /  __/
+        \___/\__,_/_/ /_/\____/\____/\__,_/\___/
+
+                                                    -->
 </body>
 </html>
