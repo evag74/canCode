@@ -1,2 +1,2 @@
 # canCode
-A website teaching kids to code,
+A website teaching kids to code
