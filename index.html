@@ -410,7 +410,7 @@
 			if (countStarted) {
 				if (counts < MAX_COUNT) {
 					displayNumbers[0] += 400 / MAX_COUNT;
-					displayNumbers[1] += 17 / MAX_COUNT;
+					displayNumbers[1] += 20 / MAX_COUNT; //changed 3/11/21
 					displayNumbers[2] += 200 / MAX_COUNT;
 					displayNumbers[3] += 1500 / MAX_COUNT;
 					displayNumbers[4] += 160 / MAX_COUNT;
@@ -421,6 +421,7 @@
 					counts++;
 				} else if (counts == MAX_COUNT) {
 					numbers[0].innerHTML += "+";
+					numbers[1].innerHTML += "+";
 					numbers[2].innerHTML += "+";
 					numbers[3].innerHTML += "+";
 					numbers[4].innerHTML += "+";
