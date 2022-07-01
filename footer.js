@@ -22,8 +22,8 @@ var footerHTMLGame = '<a href="https://www.cancode.us/games"><p style="line-heig
 var footerHTML2 =
 '<a href="https://www.cancode.us/thanks"><p style="line-height:20%" align="left">Thank You cards<p></a>' +
 '<a href="https://www.cancode.us/secret"><p style="line-height:20%" align="left">Teacher Portal<p></a>' +
-'<p class="small silver">Made by the canCode web development team — Harys Dalvi, Alex Mark, Akhil Deo, Semyon Baykov, Eva Gottsfield, and Logan Albala</p>' + '</div>' +
-
+'<p class="small silver">Made by the canCode web development team</p>' + '<br>' + '</br>' + '<p class="small silver">Current website dev team: Semyon Baykovm, Eva Gottsfield, Logan Albala, Aditya Arora, and Maximilian Meiler</p>' + '</div>' +
+// '<p class="small silver">Harys Dalvi, Alex Mark, Akhil Deo, Semyon Baykov, Eva Gottsfield, Logan Albala, Aditya Arora, and Maximilian Meiler</p>' + '<br>' + '</br>' + 
 '<div class="divTableCell">' +
 '<br><a href="https://www.scratch.mit.edu" target="_blank"><img src="https://cancode.us/Images/Scratch_cat.png" width="40%"></a></div>' +
 
