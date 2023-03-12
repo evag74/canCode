@@ -44,7 +44,7 @@ document.getElementsByClassName("navbar")[0].innerHTML =
     '</a>' +
     '<a href="https://www.cancode.us/photos" class="button">Photos</a>' +
     '<a href="https://www.cancode.us/sites" class="button">Sites</a>' +
-    '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>' +
+    '<a href="https://forms.gle/1S7KiWe1aXtuGfg58" class="button">Become a Teacher</a>' +
   '</ul>' +
   '<div id="hiddenNavbar"></div>';
 document.getElementById("hiddenNavbar").innerHTML =
@@ -54,6 +54,9 @@ document.getElementById("hiddenNavbar").innerHTML =
   '<a href="https://www.cancode.us/team" class="button">Team</a>' +
   '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>' +
   '<a href="https://www.cancode.us/sites" class="button">Sites</a>';
+
+  document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/sponsors" class="button">Sponsors</a>' + 
+  '<a href="https://www.cancode.us/hackathon" class="button">Past Hackathons</a>';
 
 if (!isMobile()) {
   document.getElementById("hiddenNavbar").innerHTML += '<a href="https://www.cancode.us/games" class="button">Games</a>';
