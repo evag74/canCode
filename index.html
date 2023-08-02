@@ -405,19 +405,18 @@
 				i++;
 			}
 		}
-		var countStarted = false;
-		var counts = 0;
-		const MAX_COUNT = 1500 / 10;
-		var numbers = document.getElementsByClassName("number");
-		var displayNumbers = [0, 0, 0, 0, 0, 0];
+		let countFinished = false;
+	    let counts = 0;
+		const MAX_COUNT = 120; // controls how fast the nums will count up
+		const numbers = document.getElementsByClassName("number");
+		let displayNumbers = [0, 0, 0, 0, 0, 0];
 		function countUp() { // counts up the stats
-			if (countStarted) {
 				if (counts < MAX_COUNT) {
-					displayNumbers[0] += 400 / MAX_COUNT;
-					displayNumbers[1] += 20 / MAX_COUNT; //changed 3/11/21
-					displayNumbers[2] += 200 / MAX_COUNT;
-					displayNumbers[3] += 1500 / MAX_COUNT;
-					displayNumbers[4] += 160 / MAX_COUNT;
+					displayNumbers[0] += 600 / MAX_COUNT;
+					displayNumbers[1] += 20 / MAX_COUNT;
+					displayNumbers[2] += 350 / MAX_COUNT;
+					displayNumbers[3] += 2500 / MAX_COUNT;
+					displayNumbers[4] += 210 / MAX_COUNT;
 					displayNumbers[5] += 10 / MAX_COUNT;
 					for (var i = 0; i < 6; i++) {
 						numbers[i].innerHTML = Math.round(displayNumbers[i]);
@@ -431,13 +430,31 @@
 					numbers[4].innerHTML += "+";
 					numbers[5].innerHTML += "+";
 					counts++;
+					countFinished=true;
 				}
-			}
-			else if ((body.className == "mobile" && window.scrollY >= 1050) || (window.scrollY >= 1100)) {
-				countStarted = true;
-			}
 		}
-		setTimeout(function () { setInterval(countUp, 10); }, 300);
+
+		// Set up observer object
+		let options = {
+			threshold: 1,
+		};
+
+		// Triggers when the target (.numbers) is visible on screen, which will then start counting up
+		function callback(entries, observer) {
+			entries.forEach(entry => {
+				if (entry.isIntersecting && !countFinished) { // !countFinished prevents the function from being redundantly called once it's run one time
+					console.log("Number viewed")
+					countUp();
+					setTimeout(function () { setInterval(countUp, 10); }, 300);
+				}
+			});
+			
+		}
+
+		const observer = new IntersectionObserver(callback, options);
+		const target = document.querySelector(".numbers");
+		observer.observe(target);
+
 
 		if (isMobile()) {
 			document.getElementById("mazeGameDesc").innerHTML = "Take a look at a game made by Adam M, a 4th Grader. Made in " +
