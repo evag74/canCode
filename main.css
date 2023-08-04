@@ -243,6 +243,12 @@ a.button:hover img#burger_closed {
 	display: none;
 }
 
+/* For button in mission */
+div.buttonCenterContainer {
+	padding:3.3rem;
+	padding-top:3.5rem;
+}
+
 div.largeButton {
 	color: #FFFFFF;
 	background-color: #2C50AF;
