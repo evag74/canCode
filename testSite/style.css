@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: worder-box;
     padding: 0;
     margin: 0;
     font-family:Montserrat;
@@ -13,27 +13,35 @@ a {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 1vh 8vw;
     background: var(--dark-blue);
     color: white;
 }
 
+.navbar-left {
+    grid-column: 1
+}
+
+.navbar-right {
+    grid-column: 3;
+    display: flex;
+    justify-items: flex-end;
+}
 
 .navbar-middle {
+    grid-column: 2;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    padding-left: 18%;
-    padding-right: 18%;
+    align-items: center;
     flex-grow: 1;
 }
 
 
 .navbar-left--logo {
-    max-width: 10vw;
+    max-width: 10em;
 }
 
 .hero {
@@ -55,45 +63,53 @@ nav {
 
 .svg-container {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -290px;
+    top: 0px;
     z-index: -1;
-    height: 100vh;
-    width: 80vw;
+    max-height: 100vh;
+    width: 75vw;
 }
 
 h1, h3, h5 {
     text-align: center;
-    margin: 0.5em;
+    text-transform: capitalize;
+    margin: 0.25em;
 }
 
 h1 {
     font-family:"Playfair Display";
-    font-size: xxx-large;
+    font-size: 72px;
     font-weight: 700;
 }
 
 h3 {
-    font-size: large;
+    font-size: 20px;
     font-weight: 600;
 }
 
 h5 {
-    font-size: smaller;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .hero--middle-text {
     margin-top: 8em;
+    margin-bottom: 2em;
 }
 
 button {
     display: inline-flex;
+    margin: 0px 10px;
     padding: 1em 2em;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border: 1px solid #2F4897;
+    font-size:16px;
+}
+
+button:hover {
+    filter:brightness(90%)
 }
 
 .button-clear {
