@@ -20,6 +20,43 @@ nav {
     color: white;
 }
 
+h1, h3, h5 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.25em;
+}
+
+h1 {
+    font-family:"Playfair Display";
+    font-size: 72px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button {
+    display: inline-flex;
+    margin: 0px 10px;
+    padding: 1em 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #2F4897;
+    font-size:16px;
+}
+
+button:hover {
+    filter:brightness(90%)
+}
+
 .navbar-left {
     grid-column: 1
 }
@@ -27,7 +64,7 @@ nav {
 .navbar-right {
     grid-column: 3;
     display: flex;
-    justify-items: flex-end;
+    justify-content: flex-end;
 }
 
 .navbar-middle {
@@ -38,7 +75,6 @@ nav {
     align-items: center;
     flex-grow: 1;
 }
-
 
 .navbar-left--logo {
     max-width: 10em;
@@ -70,46 +106,9 @@ nav {
     width: 75vw;
 }
 
-h1, h3, h5 {
-    text-align: center;
-    text-transform: capitalize;
-    margin: 0.25em;
-}
-
-h1 {
-    font-family:"Playfair Display";
-    font-size: 72px;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: 400;
-}
-
 .hero--middle-text {
     margin-top: 8em;
     margin-bottom: 2em;
-}
-
-button {
-    display: inline-flex;
-    margin: 0px 10px;
-    padding: 1em 2em;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid #2F4897;
-    font-size:16px;
-}
-
-button:hover {
-    filter:brightness(90%)
 }
 
 .button-clear {
