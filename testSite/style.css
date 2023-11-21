@@ -145,14 +145,14 @@ nav * {
 }
 
 .aboutUs-section {
-    padding: 8vw;
+    padding: 2em 8vw;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
 }
 
 .aboutUs-left {
     position: relative;
-    margin-right: 2em;
+    margin-right: 3vw;
 }
 
 .aboutUs-left--bigImage {
@@ -180,4 +180,8 @@ nav * {
 .aboutUs-right * {
     margin: 1em;
     display: flex;
+}
+
+.aboutUs-right p {
+    margin-bottom: 2em;
 }
