@@ -2,8 +2,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:Montserrat;
+    font-family: Montserrat;
     --dark-blue: #05164B;
+    --light-blue: #2f4897;
+    --light-green: #EDF7F5;
 }
 
 a {
@@ -18,14 +20,16 @@ nav {
     background: var(--dark-blue);
 }
 
-h1, h3, h5 {
+h1,
+h3,
+h5 {
     text-align: center;
     text-transform: capitalize;
     margin: 0.25em;
 }
 
 h1 {
-    font-family:"Playfair Display";
+    font-family: "Playfair Display";
     font-size: 72px;
     font-weight: 700;
 }
@@ -35,6 +39,7 @@ h2 {
     font-size: 39px;
     font-style: normal;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 h3 {
@@ -63,12 +68,12 @@ button {
     align-items: center;
     gap: 10px;
     border: 1px solid #2F4897;
-    font-size:16px;
+    font-size: 16px;
     text-transform: capitalize;
 }
 
 button:hover {
-    filter:brightness(90%)
+    filter: brightness(90%)
 }
 
 .button-clear {
@@ -118,7 +123,10 @@ nav * {
 .hero::before {
     content: "";
     position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: url("Images/achievementCropped.jpg") center no-repeat;
     background-size: cover;
     z-index: -2;
@@ -145,14 +153,17 @@ nav * {
 }
 
 .two-div-grid {
-    padding: 4em 8vw;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    padding: 4em 6vw;
 }
 
 .two-el-collage {
     position: relative;
-    margin: 0px 3vw;
+    padding-right: 10vw;
 }
 
 .collage-bigImage {
@@ -161,40 +172,34 @@ nav * {
 
 .collage-littleImage {
     position: absolute;
-    right: -10%;
-    bottom: -10%;
+    top: 50%;
+    left: 40%;
     z-index: 1;
-    width: 60%;
+    width: 50%;
 }
 
-.two-el-collage > * {
+.two-el-collage>* {
     border: 10px solid rgba(47, 72, 151, 0.20);
-    transform: scale(0.8);
 }
 
-.aboutUs-right {
+.text-block {
     padding-top: 5em;
+    margin-right: 10vw;
 }
 
-.aboutUs-right * {
+.text-block>* {
     margin: 1em;
     display: flex;
 }
 
-.aboutUs-right p {
+.text-block>p {
     margin-bottom: 2em;
-}
-
-.two-div-grid-alt {
-    padding: 4em 8vw;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
 }
 
 .mission-block-group {
     padding-top: 1em;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .mission-block {
@@ -211,10 +216,79 @@ nav * {
 }
 
 .mission-block p {
-    padding-top: 1em;
+    padding: 1em;
 }
 
 .achievements-right--littleDiv {
     background: white;
     padding: 2em;
+    aspect-ratio: 4/3;
 }
+
+.progress-block {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.progress-desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+
+.progress-desc>p {
+    font-weight: 1000;
+}
+
+.progress-bar-outside {
+    background-color: var(--light-green);
+    height: 12px;
+    width: 100%;
+}
+
+.progress-bar-inside {
+    display: block;
+    background-color: var(--light-blue);
+    height: 100%;
+}
+
+.progress-bar-animation {
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Animating the progress bar by
+        initially starting from 0*/
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+.progress-one {
+    width: 48%;
+}
+
+.progress-two {
+    width: 82%;
+}
+
+.members-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.members-card-div {
+    box-shadow: 0px 4px 20px 3px lightgray;
+}
+
+.members-card-div>* {
+    padding: 0.8em 8%;
+}
+
+.members-card-div>img {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+}
+
