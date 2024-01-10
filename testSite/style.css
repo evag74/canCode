@@ -20,9 +20,7 @@ nav {
     background: var(--dark-blue);
 }
 
-h1,
-h3,
-h5 {
+h1, h3, h5 {
     text-align: center;
     text-transform: capitalize;
     margin: 0.25em;
@@ -108,8 +106,20 @@ nav * {
     flex-grow: 1;
 }
 
+.navbar--link {
+    display: none;
+}
+
+.navbar--link:first-child {
+    display: block;
+}
+
+.navbar--link.show {
+    display: block;
+}
+
 .navbar-left--logo {
-    max-width: 10em;
+    max-width: clamp(2em, 5em, 10em);
 }
 
 .hero {
