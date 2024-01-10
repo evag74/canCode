@@ -14,13 +14,15 @@ a {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     padding: 1vh 8vw;
     background: var(--dark-blue);
 }
 
-h1, h3, h5 {
+h1,
+h3,
+h5 {
     text-align: center;
     text-transform: capitalize;
     margin: 0.25em;
@@ -60,14 +62,15 @@ p {
 
 button {
     display: inline-flex;
-    margin: 0px 10px;
-    padding: 1em 2em;
+    margin: 0px 0.5em;
+    padding: 10px 10px;
+    min-width: 200px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border: 1px solid #2F4897;
     font-size: 16px;
+    border: 1px solid #2F4897;
     text-transform: capitalize;
+    transition: all 0.3s ease;
 }
 
 button:hover {
@@ -87,39 +90,26 @@ nav * {
     color: #fff;
 }
 
-.navbar-left {
-    grid-column: 1
-}
-
 .navbar-right {
-    grid-column: 3;
     display: flex;
     justify-content: flex-end;
 }
 
 .navbar-middle {
-    grid-column: 2;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-grow: 0.5;
+    justify-content: space-evenly;
     align-items: center;
-    flex-grow: 1;
 }
 
-.navbar--link {
-    display: none;
-}
-
-.navbar--link:first-child {
-    display: block;
-}
-
-.navbar--link.show {
-    display: block;
+.navbar-left {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-left--logo {
-    max-width: clamp(2em, 5em, 10em);
+    max-width: 10em;
 }
 
 .hero {
@@ -148,47 +138,47 @@ nav * {
     color: #FFF;
 }
 
-.svg-container {
-    position: absolute;
-    left: -20px;
-    top: 0px;
-    z-index: -1;
-    height: 100%;
-    min-width: 80%;
-}
-
 .hero--middle-text {
     margin-top: 8em;
     margin-bottom: 2em;
 }
 
-.two-div-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 section {
-    padding: 4em 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.two-el-collage {
+.achievements-right {
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-container {
     position: relative;
-    padding-right: 10vw;
+    height: 500px;
+    width: 500px;
 }
 
-.collage-bigImage {
-    width: 100%;
-}
-
-.collage-littleImage {
+.base-image {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    width: 450px;
+    top: 0px;
+    left: 0px;
     z-index: 1;
-    width: 50%;
 }
 
-.two-el-collage>* {
+.top-image {
+    position: absolute;
+    width: 300px;
+    top: 200px;
+    left: 200px;
+    z-index: 2;
+}
+
+.image-container>* {
     border: 10px solid rgba(47, 72, 151, 0.20);
 }
 
@@ -227,12 +217,6 @@ section {
 
 .mission-block p {
     padding: 1em;
-}
-
-.achievements-right--littleDiv {
-    background: white;
-    padding: 2em;
-    aspect-ratio: 4/3;
 }
 
 .progress-block {
@@ -302,3 +286,20 @@ section {
     padding: 0;
 }
 
+/* To Address mobile devices */
+@media (max-width: 916px) {
+    .navbar-middle {
+        flex-grow: 0;
+        flex-direction: column;
+    }
+
+    .navbar-left--logo {
+        max-width: 5em;
+    }
+
+    button {
+        padding: 5px 5px;
+        min-width: 150px;
+        font-size: 14px;
+    }
+}

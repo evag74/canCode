@@ -24,11 +24,14 @@ function hideElement(id) {
 }
 
 //document.querySelector(".navbar--link").addEventListener("onmouseover", toggleDropdown);;
-document.getElementsByClassName("navbar--link").item(0)
-    .addEventListener("onmouseover", toggleDropdown());
+console.log(document.getElementsByClassName("navbar--link"));
+document.getElementsByClassName("navbar--link").item(0).addEventListener("onmouseover", toggleDropdown());
 
-// working on iterating elements of class navbar--link to show them on-screen
-// last Error: toggle() is not a function
 function toggleDropdown() {
-    Array.from(document.getElementsByClassName("navbar--link")).forEach((x) => x.toggle("show"));
+    navLinks = document.getElementsByClassName("navbar--link");
+
+   for (let el of navLinks) {
+        el.classList.toggle("show");
+    }
 }
+
