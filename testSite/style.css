@@ -92,13 +92,12 @@ nav * {
 
 .navbar-right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .navbar-middle {
     list-style: none;
     display: flex;
-    flex-grow: 0.5;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -148,18 +147,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.achievements-right {
-    height: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 10vh;
 }
 
 .image-container {
     position: relative;
     height: 500px;
     width: 500px;
+    margin: 50px;
 }
 
 .base-image {
@@ -167,6 +162,14 @@ section {
     width: 450px;
     top: 0px;
     left: 0px;
+    z-index: 1;
+}
+
+.base-imageALT {
+    position: absolute;
+    width: 450px;
+    top: 0px;
+    right: 0px;
     z-index: 1;
 }
 
@@ -178,14 +181,20 @@ section {
     z-index: 2;
 }
 
+.top-imageALT {
+    position: absolute;
+    width: 300px;
+    top: 300px;
+    right: 200px;
+    z-index: 2;
+    background-color: white;;
+    padding-left: 20px;
+}
+
 .image-container>* {
     border: 10px solid rgba(47, 72, 151, 0.20);
 }
 
-.text-block {
-    padding-top: 5em;
-    margin-right: 10vw;
-}
 
 .text-block>* {
     margin: 1em;
