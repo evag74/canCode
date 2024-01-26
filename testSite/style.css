@@ -275,6 +275,24 @@ section {
     width: 82%;
 }
 
+.members-header {
+    display: block;
+}
+
+.button-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container {
+    font-size: 40px;
+}
+
+.button-container>* {
+    padding: 5px;
+}
+
 .members-carousel {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
