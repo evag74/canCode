@@ -1,6 +1,6 @@
-    export class TeamMember {
-    constructor(highschool, name, description) {
-        this.highschool = highschool;
+export class TeamMember {
+    constructor(highSchool, name, description) {
+        this.highSchool = highSchool;
         this.name = name;
         this.description = description;
     }

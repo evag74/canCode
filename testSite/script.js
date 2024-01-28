@@ -1,5 +1,11 @@
 import { TeamMember } from './membersParse.js'
 
+// Initialize TeamMember Arr from JSON file.
+const data = await fetch('./teamData.json')
+    .then((response) => response.json())
+
+const teamArr = data.map(obj => new TeamMember(obj.HighSchool, obj.Name, obj.Description));
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -15,9 +21,19 @@ const observer = new IntersectionObserver(entries => {
 // Triggered when page loads
 window.addEventListener('load', function() {
     const progressBars = document.querySelectorAll(".progress-bar-inside");
+
     progressBars.forEach(bar => observer.observe(bar));
 
-    const request = window.indexedDB.open("testDB", 3);
+    const teamMemberBanners = document.querySelectorAll(".members-card-div");
+
+    console.log(teamMemberBanners);
+    console.log(teamArr);
+
+    teamMemberBanners.forEach((banner, i) => {
+        banner.children[1].innerHTML = teamArr[i].highSchool;
+        banner.children[2].innerHTML = teamArr[i].name;
+        banner.children[3].innerHTML = teamArr[i].description;
+    });
 })
 
 
