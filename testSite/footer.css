@@ -1,0 +1,19 @@
+footer {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+footer>* {
+    padding: 2vh;
+}
+
+.footer-logo {
+    max-width: 10em;
+}
+
+.copyright--Container {
+    background-color: blue;
+}

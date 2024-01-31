@@ -1,0 +1,23 @@
+.members-header {
+    display: block;
+}
+
+.members-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.members-card-div {
+    box-shadow: 0px 4px 20px 3px lightgray;
+    padding: 10px;
+}
+
+.members-card-div>* {
+    padding: 0.8em 8%;
+}
+
+.members-card-div>img {
+    width: 100%;
+    padding: 0;
+}
