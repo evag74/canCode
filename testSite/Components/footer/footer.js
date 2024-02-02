@@ -3,7 +3,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
     <footer>
         <img src="../Images/canCodePlain1.png" alt="logo of canCode" class='footer-logo'>
-        <p>Fighting for a better tommorrow.</p>
+        <p>Fighting for a brighter tommorrow.</p>
         <div class="socialMediaList">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
