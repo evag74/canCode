@@ -14,13 +14,6 @@ a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh 8vw;
-    background: var(--dark-blue);
-}
-
 h1,
 h3,
 h5 {
@@ -65,7 +58,6 @@ button {
     display: inline-flex;
     margin: 0px 0.5em;
     padding: 10px 10px;
-    min-width: 200px;
     justify-content: center;
     align-items: center;
     font-size: 16px;
@@ -87,30 +79,6 @@ button:hover {
     color: white;
 }
 
-nav * {
-    color: #fff;
-}
-
-.navbar-right {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-middle {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-left--logo {
-    max-width: 10em;
-}
 
 .hero {
     display: flex;
@@ -130,7 +98,7 @@ nav * {
     background: url("Images/achievementCropped.jpg") center no-repeat;
     background-size: cover;
     z-index: -2;
-    filter: brightness(75%);
+    filter: brightness(40%);
     pointer-events: none;
 }
 

@@ -8,34 +8,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left-o.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right-o.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://kit.fontawesome.com/d65597d785.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right-o.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <link rel="stylesheet" type="text/css" href="./Components/footer/footer.css">
+    <script type="module" src="./Components/footer/footer.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./Components/navbar/navbar.css">
+    <script type="module" src="./Components/navbar/navbar.js"></script>
+
     <script type="module" src="./progressBars.js"></script>
     <script type="module" src="./teamCarousel.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class='navbar-left'>
-                <img src="../Images/canCodePlain1.png" alt="logo of canCode" class='navbar-left--logo'>
+    <my-navbar>
+    </my-navbar>
 
-            </div>
-
-            <div class="navbar-right">
-                <ul class='navbar-middle'>
-                    <li class="navbar--link" onmouseover="toggleDropdown()"><a href="/index.html">Home</a></li>
-                    <li class="navbar--link"><a href="/contribute.html">Contribute</a></li>
-                    <li class="navbar--link"><a href="/sites.html">Sites</a></li>
-                    <li class="navbar--link"><a href="/events">Events</a></li>
-                </ul>
-                <button type="button" class="button-solid">Contact Us</button>
-                <button type="button" class="button-clear">Search</button>
-
-            </div>
-        </nav>
-        <section class='hero'>
+    <header class='hero'>
             <div class='hero--middle-text'>
                 <h3>Forging Futures</h3>
                 <h1>Making Coding Fun <br> For Kids</h1>
@@ -47,7 +38,6 @@
                 <button type="button" class="button-solid">Contribute Now</button>
                 <button type="button" class="button-clear">Get Involved</button>
             </div>
-        </section>
     </header>
 
     <section class="aboutUs-section two-div-grid">
@@ -135,22 +125,8 @@
         </div>
     </section>
 
-    <footer>
-        <img src="../Images/canCodePlain1.png" alt="logo of canCode" class='navbar-left--logo'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis soluta quia temporibus voluptatibus est
-            excepturi magnam tenetur laudantium dolore unde, nulla molestiae ipsum iure! Voluptas natus commodi saepe
-            tenetur est.</p>
-        <div class="socialMediaList">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div class="copyrightContainer">
-            <p>
-                Copyright © canCode 2023
-            </p>
-        </div>
-    </footer>
+    <my-footer>
+    </my-footer>
 
 
 </body>

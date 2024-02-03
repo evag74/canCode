@@ -21,3 +21,29 @@
     width: 100%;
     padding: 0;
 }
+
+.mini-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10vh;
+}
+
+.mini-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("Images/achievementCropped.jpg") center no-repeat;
+    background-size: cover;
+    z-index: -2;
+    filter: brightness(40%);
+    pointer-events: none;
+}
+
+.mini-hero * {
+    color: #FFF;
+}

@@ -1,0 +1,38 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+    padding: 1vh 8vw;
+    background: var(--dark-blue);
+}
+
+nav * {
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-middle>* {
+    font-size: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-left--logo {
+    margin: 0px 0.5em;
+    max-width: 10em;
+}
