@@ -1,4 +1,7 @@
-class Navbar extends HTMLElement {
+class Navbar extends HTMLDivElement {
+    constructor() {
+        super();
+    }
     connectedCallback() {
         this.innerHTML = `
         <nav>

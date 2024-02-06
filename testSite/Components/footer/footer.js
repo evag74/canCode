@@ -1,4 +1,7 @@
-class Footer extends HTMLElement {
+class Footer extends HTMLDivElement {
+    constructor() {
+        super();
+    }
     connectedCallback() {
         this.innerHTML = `
     <footer>

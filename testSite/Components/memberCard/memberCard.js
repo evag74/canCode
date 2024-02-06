@@ -1,4 +1,8 @@
-class MemberCard extends HTMLElement { connectedCallback() {
+class MemberCard extends HTMLDivElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
         this.innerHTML = `
             <div class='members-card-div' >
                 <img src="./Images/output-onlinetools.png" alt="">

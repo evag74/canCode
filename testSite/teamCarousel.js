@@ -1,37 +1,42 @@
 //for slide information
-class TeamMember {
-    constructor(highSchool, name, description) {
-        this.highSchool = highSchool;
-        this.name = name;
-        this.description = description;
-    }
+/**
+    * Create new memberCard element
+    * @constructor
+    * @param {json} teamData
+    * @return {element} newCard
+    */
+function createMemberCard(teamData) {
+    const { highSchool, name, description } = teamData;
+    const newCard = document.createElement("div", { is: "my-member-card" });
+    newCard.querySelector("h4").innerHTML(`${highSchool}`);
+    newCard.querySelector("h6").innerHTML(`${name}`);
+    newCard.querySelector("p").innerHTML(`${description}`);
+
+    return newCard;
 }
 
-(function() { // IIFE to not pollute namespace
-    // Initialize TeamMember Arr from JSON file.
-    const fs = require('fs')
+let teamArr;
 
-    let data = fs.readFileSync('./teamData.json');
-    teamArr = JSON.parse(data).map(obj => new TeamMember(obj.HighSchool, obj.Name, obj.Description));
-
-    // All startup functionality goes into this function.
-    // Triggered when page loads
-    window.addEventListener('load', function() {
-        let bannerStart = 0;
-        let bannerEnd = bannerStart + 4;
-        const teamMemberBanners = document.querySelectorAll(".members-card-div");
-        const bannerLength = teamMemberBanners.length;
-
-        console.log(teamMemberBanners);
-        console.log(teamArr);
-
-        // length: 5, i = 3, endI = 7,
-        teamMemberBanners
-            .slice(bannerStart, bannerEnd)
-            .forEach((banner, i) => {
-                banner.children[1].innerHTML = teamArr[i].highSchool;
-                banner.children[2].innerHTML = teamArr[i].name;
-                banner.children[3].innerHTML = teamArr[i].description;
-            });
+fetch('./teamData.json')
+    .then((response) => {
+        if (!response.ok) {
+            throw Error("Response not ok");
+        }
+        return response.json
     })
-})()
+    .then(json => {
+        teamArr = JSON.parse(json).map(obj => new TeamMember(obj.HighSchool, obj.Name, obj.Description));
+    })
+    .then(function() { // IIFE to not pollute namespace
+        // Initialize TeamMember Arr from JSON file.
+        const membersContainer = document.getElementById("members-container");
+        teamArr.forEach(member => {
+            console.log(createMemberCard(member));
+            membersContainer.appendChild(createMemberCard(member));
+        });
+
+        // All startup functionality goes into this function.
+        // Triggered when page loads
+        window.addEventListener('load', function() {
+        })
+    });
