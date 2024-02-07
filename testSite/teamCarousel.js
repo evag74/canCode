@@ -1,6 +1,6 @@
 // start of populating tables
 function createMemberCard(membersContainer) {
-    const newCard = document.createElement("div", { is: "my-member-card" });
+    const newCard = document.createElement("my-member-card");
     return membersContainer.appendChild(newCard);
 }
 
@@ -9,7 +9,6 @@ function populateMemberCard(newCard, teamData) {
     newCard.querySelector("h4").innerText = `${HighSchool}`;
     newCard.querySelector("h6").innerText = `${Name}`;
     newCard.querySelector("p").innerText = `${Description}`;
-    newCard.querySelector(".members-card-div").classList.remove("active");
 }
 
 //it has to be async due to fetch, sucks...
@@ -36,30 +35,37 @@ function populateMemberCard(newCard, teamData) {
     // start of button interactity
     const nextBtn = document.getElementById("team-arrow--right");
     const prevBtn = document.getElementById("team-arrow--left");
-    let index = 0;
+    const cardsArr = Array.from(document.getElementsByTagName("my-member-card"));
+    let currCard = 0;
+    const lastCard = cardsArr.length - 1;
 
-    // TODO: the classes for elements inside the array aren't changing, could be
-    // due to it not being HTMLCollect or b/c it's converted to an array.
-        // Look to progressBars.js for proper implementation.
-    const cardsArr = Array.from(document.getElementsByClassName("members-card-div"));
+    const nextBtnHandler = () => {
+        currCard === lastCard - 3 ? currCard = 0 : currCard++;
 
-    function move(change) {
-        index += change;
-
-        if (index < 0) {
-            index = cardsArr.length - 5;
-        } else if (index + 4 >= cardsArr.length) {
-            index = 0;
-        } else {
-        // TODO: this pieces should add one active tag to the end jel,
-        // and remove a tag from the first.
-            if (change == 1) {
-            } else if (change == -1) {
-            }
+        cardsArr.forEach(el => el.classList.remove("active"));
+        for (let i = currCard; i < currCard + 4; i++) {
+            cardsArr[i].classList.add("active");
+            // supposed to be animation, not working correctly
+            //cardsArr[i].style.transform = `translateX(-100%)`;
         }
     }
-    move(0);
 
-    nextBtn.addEventListener("click", () => move(1));
-    prevBtn.addEventListener("click", () => move(-1));
+    const prevBtnHandler = () => {
+        currCard === 0 ? currCard = lastCard - 3 : currCard--;
+
+        cardsArr.forEach(el => el.classList.remove("active"));
+        for (let i = currCard; i < currCard + 4; i++) {
+            cardsArr[i].classList.add("active");
+            // supposed to be animation, not working correctly
+            //cardsArr[i].style.transform = `translateX(100%)`;
+        }
+    }
+
+    //init first four elements.
+    for (let i = currCard; i < currCard + 4; i++) {
+        cardsArr[i].classList.add("active");
+    }
+
+    nextBtn.addEventListener("click", nextBtnHandler);
+    prevBtn.addEventListener("click", prevBtnHandler);
 })();

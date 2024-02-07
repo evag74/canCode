@@ -1,5 +1,5 @@
 class MyNavbar extends HTMLElement {
-    connectedCallback() {
+     connectedCallback() {
         this.innerHTML = `
         <nav>
             <div class='navbar-left'>
