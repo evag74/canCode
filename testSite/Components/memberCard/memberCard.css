@@ -1,0 +1,25 @@
+my-member-card {
+    display: none;
+    transition: all 0.5s;
+}
+
+my-member-card.active {
+    position: relative;
+    display: block;
+}
+
+.members-card-div {
+    background-color: whitesmoke;
+    z-index: 2;
+    filter: drop-shadow(0px 10px 10px #4444dd);
+    padding-bottom: 10px;
+}
+
+.members-card-div>* {
+    padding: 0.8em 8%;
+}
+
+.members-card-div>img {
+    width: 100%;
+    padding: 0;
+}

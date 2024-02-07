@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Montserrat;
+    font-family: Roboto;
     --dark-blue: #05164B;
     --darker-blue: #19264D;
     --light-blue: #2f4897;
@@ -23,13 +23,13 @@ h5 {
 }
 
 h1 {
-    font-family: "Playfair Display";
+    font-family: "Oswald";
     font-size: 72px;
     font-weight: 700;
 }
 
 h2 {
-    font-family: "Playfair Display";
+    font-family: "Oswald";
     font-size: 39px;
     font-style: normal;
     font-weight: 700;
@@ -48,7 +48,7 @@ h5 {
 
 p {
     color: #444;
-    font-family: Montserrat;
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
@@ -162,7 +162,8 @@ section {
     top: 300px;
     right: 200px;
     z-index: 2;
-    background-color: white;;
+    background-color: white;
+    ;
     padding-left: 20px;
 }
 
