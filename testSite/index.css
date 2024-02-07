@@ -63,11 +63,13 @@ button {
     font-size: 16px;
     border: 1px solid #2F4897;
     text-transform: capitalize;
-    transition: all 0.3s ease;
+    transition: brightness 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
 button:hover {
-    filter: brightness(90%)
+    filter: brightness(90%);
+    transform: scale(1.10);
 }
 
 .button-clear {

@@ -1,7 +1,4 @@
-class Navbar extends HTMLDivElement {
-    constructor() {
-        super();
-    }
+class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <nav>
@@ -26,4 +23,4 @@ class Navbar extends HTMLDivElement {
     }
 }
 
-customElements.define('my-navbar', Navbar);
+customElements.define('my-navbar', MyNavbar);

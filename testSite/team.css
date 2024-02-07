@@ -11,6 +11,13 @@
 .members-card-div {
     box-shadow: 0px 4px 20px 3px lightgray;
     padding: 10px;
+    display: none;
+}
+
+.members-card-div.active {
+    box-shadow: 0px 4px 20px 3px lightgray;
+    padding: 10px;
+    display: block;
 }
 
 .members-card-div>* {
@@ -20,6 +27,14 @@
 .members-card-div>img {
     width: 100%;
     padding: 0;
+}
+
+.fa-solid {
+    transition: transform 0.25s ease;
+}
+
+.fa-solid:hover {
+    transform: scale(1.25);
 }
 
 .mini-hero {

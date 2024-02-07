@@ -1,7 +1,4 @@
-class Footer extends HTMLDivElement {
-    constructor() {
-        super();
-    }
+class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
     <footer>
@@ -22,4 +19,4 @@ class Footer extends HTMLDivElement {
     }
 }
 
-customElements.define('my-footer', Footer);
+customElements.define('my-footer', MyFooter);

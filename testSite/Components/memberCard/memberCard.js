@@ -1,7 +1,4 @@
 class MemberCard extends HTMLDivElement {
-    constructor() {
-        super();
-    }
     connectedCallback() {
         this.innerHTML = `
             <div class='members-card-div' >
@@ -16,4 +13,4 @@ class MemberCard extends HTMLDivElement {
     }
 }
 
-customElements.define('my-member-card', MemberCard);
+customElements.define('my-member-card', MemberCard, { extends: "div" });
