@@ -11,8 +11,9 @@ my-member-card.active {
 .members-card-div {
     background-color: whitesmoke;
     z-index: 2;
-    filter: drop-shadow(0px 10px 10px #4444dd);
+    filter: drop-shadow(0px 10px 10px gray);
     padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 .members-card-div>* {

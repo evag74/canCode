@@ -1,9 +1,11 @@
 class MyNavbar extends HTMLElement {
-     connectedCallback() {
+    connectedCallback() {
         this.innerHTML = `
         <nav>
             <div class='navbar-left'>
-                <img src="../Images/canCodePlain1.png" alt="logo of canCode" class='navbar-left--logo'>
+                <a href="./index.html">
+                    <img src="../Images/canCodePlain1.png" alt="logo of canCode" class='navbar-left--logo'>
+                </a>
             </div>
 
             <ul class='navbar-middle'>
@@ -14,7 +16,7 @@ class MyNavbar extends HTMLElement {
             </ul>
 
             <div class="navbar-right">
-                <button type="button" class="button-navbar button-solid">Contribute</button>
+                <button type="button" class="button-navbar button-solid" onclick="window.location.href='./contribute.html'">Contribute</button>
                 <button type="button" class="button-navbar button-clear">Search</button>
 
             </div>
