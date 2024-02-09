@@ -1,6 +1,6 @@
 my-member-card {
     display: none;
-    transition: all 0.5s;
+    transition: all ease-in-out 0.5s;
 }
 
 my-member-card.active {

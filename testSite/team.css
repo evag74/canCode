@@ -1,3 +1,7 @@
+section {
+    padding: 10vh 10vw;
+}
+
 .members-header {
     display: block;
 }
