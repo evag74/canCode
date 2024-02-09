@@ -118,7 +118,7 @@ button:active {
 }
 
 
-section {
+.img-content-layout {
     display: flex;
     justify-content: center;
     align-items: center;
