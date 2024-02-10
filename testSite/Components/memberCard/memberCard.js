@@ -6,7 +6,7 @@ class MemberCard extends HTMLElement {
                 <div class="content-container">
                     <h4>High School Name</h4>
                     <h6>Full Name</h6>
-                    <p>Short Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil pariatur amet
+                    <p class="description">Short Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil pariatur amet
                         deleniti quo similique voluptatibus soluta esse ipsa?</p>
                     <button class='button button-solid'>Learn More</button>
                 </div>

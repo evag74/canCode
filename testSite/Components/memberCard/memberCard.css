@@ -15,10 +15,17 @@ my-member-card {
 }
 
 .content-container>* {
-    padding-bottom: 0.8em;
+    margin-bottom: 0.8em;
 }
 
 .members-card-div>img {
+    max-height: 400px;
     width: 100%;
     padding: 0;
+}
+
+.description {
+    max-height: 200px;
+    overflow:scroll;
+
 }
