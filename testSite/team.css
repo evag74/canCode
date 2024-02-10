@@ -8,20 +8,7 @@ section {
 
 .members-carousel {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-}
-
-
-.fa-solid {
-    transition: transform 0.25s ease;
-}
-
-.fa-solid:hover {
-    transform: scale(1.20);
-}
-
-.fa-solid:active {
-    transform: scale(0.90);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5em;
 }
 

@@ -1,62 +1,159 @@
 [
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sont",
-    "Name": "James",
-    "Description": "fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  },
-  {
-    "HighSchool": "Sint",
-    "Name": "Jova",
-    "Description": "Just having fun"
-  }
+    {
+        "Description": "Hello! My name is Eva, and I am in the class of 2024 at Rosenblatt High School. I love learning about computer science and all types of engineering in general! In 4th grade, I was introduced to Scratch through my school, and I have been into coding ever since.             I am also on the FIRST Robotics Team 3932, The Dirty Mechanics. I am so glad I am able to teach other kids Scratch through canCode, just as I had been taught Scratch when I was younger. It is amazing to see kids who are so excited and engaged in coding!",
+        "Picture": "Images/eva.jpg",
+        "Name": "Eva Gottesfeld",
+        "Position": "President Instructor Curriculum Manager February 2021 - Present"
+    },
+    {
+        "Description": "My name is Semyon Baykov and I am a student at West Boca High. Coding is my greatest passion, which developed early on in my             childhood and has been growing ever since. I am excited to share my knowledge and experience with canCode students!             My knowledge of computer programming spans over multiple languages suchs as LUA, JavaScript, and Python. I've worked on             projects like in-game HUDs and NPC AI, and have never stopped learning new things about coding!               Seeing new students develop an excitement for coding proved to me that joining canCode was one of the best             decisions that I've ever made! I am very happy to be a part of the team!",
+        "Picture": "Images/semyon.png",
+        "Name": "Semyon Baykov",
+        "Position": "Vice President Instructor Webmaster May 2021 - Present"
+    },
+    {
+        "Description": "My name is Chelsea Liebenthal and I am in the West Boca Raton High School class of 2023.               I am very passionate about computer programming, robotics, mechanical and aerospace engineering,               science, music, volunteering in my community, and art! I am part of the Dirty Mechanics robotics               team 3932 and love to work on all types of projects.                 Teaching for canCode and getting to know the students is always the highlight of my week. Helping               younger students learn valuable skills is something I really enjoy doing!",
+        "Picture": "Images/chelsea.jpg",
+        "Name": "Chelsea Liebenthal",
+        "Position": "Instructor Aug 2020 - Present"
+    },
+    {
+        "Description": "My name is Logan Albala a current student at West Boca Raton Highschool in Palm Beach County Florida. I joined canCode as I found it a great opportunity to share my passion for coding with newer generations.             Coding has been a great influence in my life and will continue to influence my future. I really want to get more people into coding just because of how great it is and I think teaching kids how to code early             on is one of the best ways to do so. My coding knowledge touches on Python, CSS, & JavaScript as well as Scratch and I have every intention of expanding that list in the near future.               While teaching I've seen many different students each with their own passions for coding and guiding them through different curriculums has been a great experience and one that I can't wait to do again.",
+        "Picture": "Images/logan.png",
+        "Name": "Logan Albala",
+        "Position": "Instructor Webmaster May 2021 - Present"
+    },
+    {
+        "Description": "My name is Maximilian Meiler, and I'm a student of Spanish River High School's class of 2022. To me, programming is so appealing because it represents the perfect fusion between logical problem-solving and creative expression.                 I was originally introduced into programming through Scratch, but have since worked in Scheme, Haskell, Python, Java, and Javascript. I am also interested in video editing and 3d rendering - essentially anything technological interests me.                   I joined canCode after winning their 2021 Hackathon, intrigued by the idea of sharing the opportunity of coding to those who may never have otherwise been introduced to it.                 For me, canCode is the ideal volunteering experience. Being able to creatively impact the organization while inspiring young learners is an incredibly satisfying and fulfilling application of my love for tech.",
+        "Picture": "Images/Maximilian.PNG",
+        "Name": "Maximilian Meiler",
+        "Position": "Instructor Video Editor Webmaster June 2021 - Present"
+    },
+    {
+        "Description": "Hi, my name is Aditya and I am a canCode instructor and student at West Boca Raton Highschool. From a young age I've had a passion of coding that I have desired to share with others. I wish to help other kids who have the                 same kind of excitement I do. I know multiple languages such as Java, Javascript, Html, and css! I love interacting and experimenting with computer programs and showing others how to do so!                   I joined canCode to fuel my hunger for coding and to help others realize hidden talents and passions of their own, as they may do the same as me in the future.",
+        "Picture": "Images/Aditya.jpg",
+        "Name": "Aditya Arora",
+        "Position": "Instructor Webmaster December 2021 - Present"
+    },
+    {
+        "Description": "My name is Justin Berke and I'm in the class of 2022 at American Heritage. I discovered programming in 6th grade when my teacher introduced me to Scratch, but it wasn't until I took a coding course in 9th grade when                   I realized my passion for programming. Since then, I have learned Java and Python and researched topics such as AI and game development. Some of my other interests include cyber security, physics, and mathematics.                     I joined canCode to give students the chance to discover how great programming is. I'm glad to have the opportunity to teach students how to code, and I hope they will come to love programming.",
+        "Picture": "Images/justing-b.jpg",
+        "Name": "Justin Berke",
+        "Position": "Instructor Social Media Manager June 2021 - Present"
+    },
+    {
+        "Description": "I am an 11th grade student at Florida Atlantic University (FAU) High School where I take college level advanced math and computer science classes. I have enjoyed programming since I was 6 years old and know Python, C++, C, C#, Swift, and Scratch.                 I also enjoy machine learning and AI and currently am an undergraduate researcher at the FAU Machine Perception and Cognitive Robotics (MPCR) lab. I am working on a paper that I hope to publish this year. In my free time I play video games, Dungeons and Dragons,                 tennis, and golf with my friends.",
+        "Picture": "Images/IsaacDash.jpeg",
+        "Name": "Isaac Dash",
+        "Position": "Instructor August 2022 - Present"
+    },
+    {
+        "Description": "My name is Sienna Gaita-Monjaraz. I am 17 years old and a junior at FAU where I study Computer Science. I started robotics at the age of 7 where I was first introduced to coding languages Java and Python.               I have been teaching coding to kids since 2019 and am a lead Instructor at code ninjas as well as software lead on FRC Team 3932 The Dirty Mechanics.                In my free time I do AI research at the College of Engineering, hold workshops for FAU's Society of Women's Engineers, and go to robotics meetings/competitions.               I was very lucky to get into coding at a young age and to have the resources to learn more coding languages.               I started working with canCode to help provide those resources to children and make STEM more accessible.               I believe that teaching children and giving them the tools they need to succeed is the best way to give back to a community.",
+        "Picture": "Images/Sienna.jpg",
+        "Name": "Sienna Gaita-Monjaraz",
+        "Position": "Curriculum Team Member November 2021 - Present"
+    },
+    {
+        "Description": "Hi my name is Ally Greenberg and I am a senior at Spanish River High School.               I have always had a passion for coding and a love for engineering and technology in general.               I am hoping to study cybersecurity in college and possibly even work in the government division of cybersecurity.               I have been coding since I was in elementary school, beginning with block code and now developing complex programs using html, python, and javascript.               Part of the reason why I decided to join canCode was because I really enjoy working with young kids, especially helping them to learn and discover new things.               I love how we teach the valuable and fundamental skills of code, that these children will continue to use throughout their entire coding careers.               Working with the canCode team and teaching is one of the best parts of my week!",
+        "Picture": "Images/ally.jpg",
+        "Name": "Ally Greenberg",
+        "Position": "Instructor April 2022 - Present"
+    },
+    {
+        "Description": "My name is Nikita Pavlenko, and I am in the class of 2022 at Saint Andrews School in Boca Raton, Florida. My interests include Computer Science, Engineering, Chemistry, Physics, and music.         I have been a member of the FIRST robotics team 3932 (The Dirty Mechanics) since my freshman year. My dream is to start something that can have a positive impact on people in the world.          I joined Cancode because it is a good cause that I saw potential in and I enjoy spreading my passion for       computer science and programming to other people. Read my extended bio here.",
+        "Picture": "Images/nik.jpg",
+        "Name": "Nikita Pavlenko",
+        "Position": "Instructor Jun 2019 - Present"
+    },
+    {
+        "Description": "Ethan Is a passionate 10th grader who loves teaching and technology. During his 9th grade year attending Olympic       Heights High School he became aware of canCode and was immediately drawn to the program because of its combination       of both his passions. Additionally, Ethan is a member of FIRST Robotics Team 3932 (The Dirty Mechanics) and heads       up the IT team, leads the Data Recon Team and has been offered the opportunity of lead technician of the drive team.       In his free time he engineers new worlds and develops automation within Minecraft.       Read his extended bio here.",
+        "Picture": "Images/ethan.jpg",
+        "Name": "Ethan Baker",
+        "Position": "Social Media Manager Instructor Vice President Jan 2019 - Present"
+    },
+    {
+        "Description": "My name is Gabriella Davis, and I'm a student at Olympic Heights graduating class of 2022! My relationship with       programming had a rocky start but after a while I've grown to truly appreciate the subject and really enjoy teaching       it as well. Today, I'm an active member of the FRC community for two years and this helps me with teaching too!       Along with robotics I also actively participate in debate competitions every month and have achieved high placements       before. In the future, I'm looking forward to potential careers in engineering or law, and I hope to encourage kids       to pursue their interests in whatever they choose!",
+        "Picture": "Images/gabby.jpg",
+        "Name": "Gabby Davis",
+        "Position": "Instructor President Jan 2019 - Present"
+    },
+    {
+        "Description": "My name is Chris Colella and I am a student at Saint John Paul II Academy graduating in 2023.       I've always enjoyed anything that had to do with computers, and my passion was further explored       when I was introduced to scratch in elementary school. This interest led me to explore programs       like C++, Java, and mostly Python.         By teaching at CanCode, I am able to share this passion with other kids, and hopefully have at       least one of them look into a career having to do with coding.",
+        "Picture": "Images/chris.jpg",
+        "Name": "Chris Coella",
+        "Position": "Instructor Sep 2019 - Present"
+    },
+    {
+        "Description": "My name is Luca Qumsieh and I am a student at Saint Andrew's school graduating 2023.                       My first experience with programming was in the 6th grade when my science teacher                       introduced me to JavaScript through Khan Academy. When I was taught the basics I wanted more,                       so I finished the entirety of JavaScript at Khan academy in the following weeks. After that                       I learnt Python and now I am starting HTML and CSS. I am currently part of the FTC team at                       Saint Andrew's. My main passions are engineering, programming, physics, math, and history.                         What I want to achieve in life is everyone to be educated, especially in programming. Through canCode,                       I can do this because it gives all kids an opportunity to learn to program. Because they get this opportunity,                       I hope they get a passion for programming, and someday become a programmer in whichever field they choose.",
+        "Picture": "Images/luca.jpg",
+        "Name": "Luca Qumsieh",
+        "Position": "Instructor Sep 2019 - Present"
+    },
+    {
+        "Description": "I'm in tenth grade and am enrolled at G-star school of the arts.                   I love learning new skills relating to technology, art, music, and code, and I also                   love teaching and working with scratch. I have been working with scratch for over 6                   years and I also was a junior counselor in a scratch class at Digi-Camp over the summer                   last year. I'm part of the FIRST Robotics Team 3932 (The Dirty Mechanics) and am in                   charge of the art and design team.  In my free time I make music, code games with                   different game engines like Unity, mess around with different projects on scratch,                   use different modeling and animation tools like Maya to make projects and play with                   my friends on Minecraft on a server I made and oversee. I'm excited to be part of                   canCode and can't wait for the next opportunity to teach scratch.",
+        "Picture": "Images/asher.jpg",
+        "Name": "Asher Moffitt",
+        "Position": "Instructor Jan 2020 - Present"
+    },
+    {
+        "Description": "My name is Megan Enriquez and I am a student at Grandview Preparatory School graduating in 2022.             I am passionate about community service, and STEM. Outside of canCode I am a team Captain of the             FIRST Robotics Competition Team Dirty Mechanics, the Founder of PERIOD at Boca Raton, and the             President of the Grandview Prep Key Club.               I really enjoy teaching with canCode because it's exciting to see students become confident in             themselves by creating their own programs that they can be proud of.",
+        "Picture": "Images/megan.png",
+        "Name": "Megan Enriquez",
+        "Position": "Instructor Aug 2020 - Present"
+    },
+    {
+        "Description": "My name is Keanu Brayman. I am a 10th grade Home-School student. I have always had           an interest in technology and programming. Ever since learning the basics of Scratch when I           was eight, I have been working with different programming languages and developing digital           projects. Some of my interests include 3D design and animation, robotics, and astrophysics.           In addition, I am a member of FIRST Robotics Team 3932, The Dirty Mechanics.             I really love being able to teach kids about coding, giving them skills that will be           invaluable in their futures. Learning about programming at an early age is an amazing           opportunity that everyone should have. I always look forward to teaching at canCode!",
+        "Picture": "Images/keanu.jpg",
+        "Name": "Keanu Brayman",
+        "Position": "Instructor Vice President Jan 2020 - Present"
+    },
+    {
+        "Description": "My name is Harys Dalvi and I am a student at     American Heritage Boca Delray graduating 2021. When I was six years old, I was introduced to Scratch programming. At first, I was very confused. Although I had all the coding blocks in front of me, I didn't understand what code was! I learned slowly because I didn't have a teacher. I want to change that.        Today, as a high schooler, I can program in Python, HTML, JavaScript, and CSS. Using skills learned in Scratch, I have developed many video games and even this website! I am passionate about teaching coding so students can contribute to our increasingly computer-oriented world.     Read my extended bio here.",
+        "Picture": "Images/harys.jpg",
+        "Name": "Harys Dalvi",
+        "Position": "Chief Technology Officer Webmaster Instructor Mar 2018 - June 2021"
+    },
+    {
+        "Description": "My name is Alex Mark and I am a student at     American Heritage High School graduating 2021. I first learned programming in 6th grade when I taught myself Java using online tutorials. Since then I       have learned Python, HTML, Javascript, C++, and Scratch!        Before middle school, I had not even heard of     programming. Once I learned how to program, I was shocked that more schools weren't teaching it. I want to give kids the chance to do things that other     people don't start until college. Read my extended bio here.",
+        "Picture": "Images/alex.jpg",
+        "Name": "Alex Mark",
+        "Position": "Chief Operating Officer Webmaster Instructor Mar 2018 - June 2021"
+    },
+    {
+        "Description": "My name is Alex Gaynor and I am a student at Spanish River High School graduating in 2021. I first learned coding in elementary school in a very basic program. Then, in 6th grade, my keyboarding teacher showed us a basic coding game; I had so much fun with it and this        sparked my interest. My largest passions are in math, engineering, and computer science. Read my extended bio here.   My main goal in life is giving everyone the same opportunity and canCode is all about this. Every child through canCode is given the opportunity to experience coding as I did. It's so powerful watching the children have so much fun doing what you are passionate about and did as a kid.",
+        "Picture": "Images/alexgaynor.jpg",
+        "Name": "Alex Gaynor",
+        "Position": "Social Media Manager Teacher Trainer Instructor Aug 2018 - June 2021"
+    },
+    {
+        "Description": "My passion in life is computer science. I love programming and know how to program in Java and Python.        I am experienced in applying my programming skills with Raspberry Pi, Robotics, Arduino, and Android        Studio. With Android Studio, I have made a unique planner app that is currently on the Google Play        Store called Plan4Success. You can check it out with        this Google Play Store link.",
+        "Picture": "Images/adi.jpg",
+        "Name": "Adi Kumar",
+        "Position": "Instructor Jun 2019 - June 2021"
+    },
+    {
+        "Description": "My name is Akhil Deo and I am a part of the class of 2021 at North Broward Preparatory School. I         am also an IB Diploma candidate. In fifth grade, I started learning how to code in Scratch. I         didn't realize what everything meant or how it all worked, but I was able to figure it out         and coding is now my greatest passion. Now, I know Java, Python, HTML and CSS.           When I learned about Cancode, I was eager to become an instructor. I want everyone to have the         opportunity to learn Scratch just like I did. I believe that coding is such an essential skill         in this day and age and everyone should learn how to code. Outside of school and cancode,         I am the Founder and President of my school's Cybersecurity team, the President of the Computer  Science Club and the Captain of FIRST Tech Challenge team 9986. I am also the Secretary of the NBPS Engineering Club  and a Member of FIRST Robotics Competition team 5410.",
+        "Picture": "Images/akhil.jpg",
+        "Name": "Akhil Deo",
+        "Position": "Curriculum Developer Webmaster Instructor Aug 2019 - June 2021"
+    },
+    {
+        "Description": "My name is Jacob Abramchaev, and I am in the class of 2022 at the Claire and Emanuel G. Rosenblatt     High School at Donna Klein Jewish Academy. I was first introduced to the Python programming language     through a CodeAcademy course. After finishing the course along with all the projects I just wanted     to do more. I built a web app, and when I got an iPhone I was inspired to learn Xcode.       Through canCode, my goal is to introduce younger children to the wonders of Computer Programming and to inspire them to do more.",
+        "Picture": "Images/jacob.jpg",
+        "Name": "Jacob Abramchaev",
+        "Position": "Instructor Aug 2018 - Jun 2019"
+    },
+    {
+        "Description": "Hi! My name is Yakov Wahnich and I am a high schooler at Donna Klein Jewish Academy in Boca Raton, graduating in 2021. I was first introduced to Scratch through a basic programming class it took during elementary school. I loved the program, thought it was fun, and always wanted to learn how to do more with it. This sparked an interest in me to pursue coding and engineering, which has turned into my passion! Every child should have that opportunity, just as I did.   Through canCode, your child will have a blast learning how to program. Scratch is a great foundation for your child if they find coding interesting and have the desire to continue doing it down the road. At canCode, we create a fun and safe learning environment for your child and simplify learning materials so every child can easily understand and absorb each lesson. We hope to see you here soon!",
+        "Picture": "Images/yakov.jpg",
+        "Name": "Yakov Wahnich",
+        "Position": "Past Social Media Manager Instructor Mar 2018 - Jun 2019"
+    },
+    {
+        "Description": "My name is Nash Zheng and I am in the class of 2020 at Spanish River High School.     I was first introduced to computer programming sometime in middle school. I remember learning how to use     Scratch and the joy that came with making my sprite move around on the screen. Learning     Scratch taught me to think critically about organization and logic and helped me to explore other languages such as Java, JavaScript, and Python.   Through canCode, I want to help other kids experience the fun and excitement around coding as early as possible. My goal is to inspire them to explore coding as they get older and to hopefully, discover a passion for it.     Read my extended bio here.",
+        "Picture": "Images/nash.jpg",
+        "Name": "Nash Zheng",
+        "Position": "Instructor Jan 2019 - May 2020"
+    }
 ]
+
