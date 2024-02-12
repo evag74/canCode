@@ -1,0 +1,15 @@
+.actionCall-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh;
+}
+
+.actionCall-section>* {
+    padding-bottom: 2em;
+}
+
+.contributionOptions-div {
+    direction: flex;
+    justify-content: space-evenly;
+}
