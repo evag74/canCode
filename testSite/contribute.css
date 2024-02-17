@@ -7,9 +7,25 @@
 
 .actionCall-section>* {
     padding-bottom: 2em;
+    position: relative;
+}
+
+.actionCall-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("Images/achievementCropped.jpg") center no-repeat;
+    background-size: cover;
+    z-index: -2;
+    filter: brightness(40%);
+    pointer-events: none;
 }
 
 .contributionOptions-div {
     direction: flex;
     justify-content: space-evenly;
 }
+
