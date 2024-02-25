@@ -17,8 +17,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: url("Images/achievementCropped.jpg") center no-repeat;
-    background-size: cover;
     z-index: -2;
     filter: brightness(40%);
     pointer-events: none;

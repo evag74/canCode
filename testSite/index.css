@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 10vh;
+}
+
 h1,
 h3,
 h5 {
@@ -123,7 +127,6 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10vh;
 }
 
 .image-container {
@@ -267,6 +270,26 @@ button:active {
     padding: 5px;
 }
 
+.contributions {
+    background-color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.contributions>* {
+    display: inline-block;
+}
+
+.contribution-arrow {
+    height: 10em;
+    width: auto;
+
+}
+
+.contribution-arrow-left {
+    transform: scaleX(-1);
+    height: 10em;
+    width: auto;
+}
 
 /* To Address mobile devices */
 @media (max-width: 916px) {
