@@ -16,7 +16,7 @@ a {
 }
 
 section {
-    padding: 10vh;
+    margin: 10vh;
 }
 
 h1,
@@ -178,7 +178,6 @@ button:active {
 
 .text-block>* {
     margin: 1em;
-    display: flex;
 }
 
 .text-block>p {
@@ -271,40 +270,79 @@ button:active {
 }
 
 .contributions {
-    background-color: var(--dark-blue);
-    margin-bottom: 10px;
+    background-color: var(--darker-blue);
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
-.contributions>* {
-    display: inline-block;
+.contributions-header {
+    text-align: center;
+}
+
+.contributions * {
+    color: whitesmoke;
+}
+
+.contribution-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contribution-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.contribution-img {
+    border-radius: 50%;
+    height: 10em;
+    margin: 2em;
 }
 
 .contribution-arrow {
-    height: 10em;
+    height: 7em;
     width: auto;
-
+    filter: invert(1) brightness(0.80);
 }
 
 .contribution-arrow-left {
     transform: scaleX(-1);
-    height: 10em;
-    width: auto;
 }
 
-/* To Address mobile devices */
-@media (max-width: 916px) {
-    .navbar-middle {
-        flex-grow: 0;
-        flex-direction: column;
-    }
+.achievement-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .navbar-left--logo {
-        max-width: 5em;
-    }
+.achievement-box {
+    margin: 0em 0.5em;
+    padding: 5px;
+    height: 30vh;
+    width: 15vw;
+    background-color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    button {
-        padding: 5px 5px;
-        min-width: 150px;
-        font-size: 14px;
-    }
+.achievement-icon-container {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.achievement-icon {
+    font-size: 4em;
 }
