@@ -9,6 +9,7 @@
             entry.target.classList.remove('progress-bar-animation');
         })
     });
+
     window.addEventListener('load', function() {
         const progressBars = document.querySelectorAll(".progress-bar-inside");
 

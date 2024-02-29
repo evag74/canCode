@@ -235,7 +235,7 @@ button:active {
 }
 
 .progress-bar-animation {
-    animation: progress 1500ms ease-in 1;
+    animation: progress 1s ease-in 1;
 }
 
 /* Animating the progress bar by
@@ -274,7 +274,7 @@ button:active {
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 5em;
 }
 
 .contributions-header {
@@ -314,14 +314,24 @@ button:active {
     transform: scaleX(-1);
 }
 
+
 .achievement-box-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    .achievement-box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .achievement-box {
-    margin: 0em 0.5em;
+    margin: 0.5em 0.5em;
     padding: 5px;
     height: 30vh;
     width: 15vw;
@@ -340,9 +350,23 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 0.5em;
 }
 
 .achievement-icon {
     font-size: 4em;
+    color: var(--light-blue);
+}
+
+.achievement-circle-progressBar {
+    background: conic-gradient(from 0deg, var(--light-blue) 0%, var(--light-blue) var(--circle-percent), whitesmoke var(--circle-percent), whitesmoke 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Currently not working */
+.circle-progressBar-animation {
+    animation: 1s ease-in 1;
 }
