@@ -1,4 +1,4 @@
-class MemberCard extends HTMLElement {
+export class MemberCard extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class='members-card-div' >
@@ -12,6 +12,20 @@ class MemberCard extends HTMLElement {
                 </div>
             </div>
             `;
+    }
+
+
+    static createMemberCard(membersContainer) {
+        const newCard = document.createElement("my-member-card");
+        return membersContainer.appendChild(newCard);
+    }
+
+    static populateMemberCard(newCard, teamData) {
+        const { Position, Name, Description, Picture } = teamData;
+        newCard.querySelector("h4").innerText = `${Position}`;
+        newCard.querySelector("h6").innerText = `${Name}`;
+        newCard.querySelector("p").innerText = `${Description}`;
+        newCard.querySelector("img").src = `${Picture}`;
     }
 }
 

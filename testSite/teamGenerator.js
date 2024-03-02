@@ -1,16 +1,5 @@
-// start of populating tables
-function createMemberCard(membersContainer) {
-    const newCard = document.createElement("my-member-card");
-    return membersContainer.appendChild(newCard);
-}
-
-function populateMemberCard(newCard, teamData) {
-    const { Position, Name, Description, Picture } = teamData;
-    newCard.querySelector("h4").innerText = `${Position}`;
-    newCard.querySelector("h6").innerText = `${Name}`;
-    newCard.querySelector("p").innerText = `${Description}`;
-    newCard.querySelector("img").src = `${Picture}`;
-}
+// used for creation and updating data of memberCard, components.
+import { MemberCard } from "./Components/memberCard/memberCard.js";
 
 async function getMembers(filePath) {
     const response = await fetch(`${filePath}`)
@@ -29,7 +18,7 @@ async function getMembers(filePath) {
         // Initialize TeamMember Arr from JSON file.
         const membersContainer = document.body.querySelector(".members-carousel");
         membersJson.forEach(memberData => {
-            populateMemberCard(createMemberCard(membersContainer), memberData);
+            MemberCard.populateMemberCard(MemberCard.createMemberCard(membersContainer), memberData);
         });
     }
     catch (error) {
