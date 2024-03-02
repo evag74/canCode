@@ -18,7 +18,7 @@ async function getMembers(filePath) {
         // Initialize TeamMember Arr from JSON file.
         const membersContainer = document.body.querySelector(".members-carousel");
         membersJson.forEach(memberData => {
-            MemberCard.populateMemberCard(MemberCard.createMemberCard(membersContainer), memberData);
+            MemberCard.createMemberCard(membersContainer, memberData);
         });
     }
     catch (error) {
