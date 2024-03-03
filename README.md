@@ -11,7 +11,7 @@ HTML pages all have their own CSS file however they also use the index.css file 
 
 Big pieces of functionality are placed in their own js files and sourced only on the pages that use them.
 
-Components are reusable pieces of html that can be dynamically populated with structured data. All components are js classes and they have an accompaning css file for styling of only said component.
+Components are reusable pieces of html that can be dynamically populated with structured data. All components are js classes and they have an accompaning css file for styling of only that component.
 
 
 ## Components Folder
