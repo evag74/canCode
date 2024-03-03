@@ -1,4 +1,4 @@
-### Cancode Front-end.
+# Cancode Front-end.
 
 Coolest coding institution in South Florida, on a mission to share the knowledge of programming with under-privileged kids.
 
@@ -21,7 +21,7 @@ This is where reusable web components are stored in the form of custom elements.
 read up on it here: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements
 
 
-# Json as data files.
+### Json as data files.
 
 Json should be used as the standard format for storing structured information like team members and contributors.
 
