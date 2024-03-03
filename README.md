@@ -14,7 +14,7 @@ Big pieces of functionality are placed in their own js files and sourced only on
 Components are reusable pieces of html that can be dynamically populated with structured data. All components are js classes and they have an accompaning css file for styling of only said component.
 
 
-## Components
+## Components Folder
 
 This is where reusable web components are stored in the form of custom elements. 
 
