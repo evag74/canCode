@@ -5,7 +5,7 @@ Coolest coding institution in South Florida, on a mission to share the knowledge
 
 ## High-level structure.
 
-Most of the functionality on this website had to be designed so that all files were part of the front end.
+The functionality on this website had to be designed so that all files were part of the front end due to our lack of a back-end server.
 
 HTML pages all have their own CSS file however they also use the index.css file to share some sane standards.
 
