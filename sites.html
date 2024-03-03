@@ -1,186 +1,74 @@
 <!DOCTYPE html>
-<html>
-<title>canCode</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="mobile.css">
-<link rel="shortcut icon" href="Images/small_icon.png" />
-<style>
-div#schedule_div {
-  overflow-x: scroll;
-  width: 100%;
-}
-</style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A non-profit dedicated to teaching under-privileged kids how to code.">
+    <title>Sites</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <script src="https://kit.fontawesome.com/d65597d785.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <link rel="stylesheet" type="text/css" href="./Components/footer/footer.css">
+    <script type="module" src="./Components/footer/footer.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./Components/navbar/navbar.css">
+    <script type="module" src="./Components/navbar/navbar.js"></script>
+
+    <script type="module" src="./Components/layouts/imgContentLayout.js"></script>
+
+    <script type="module" src="./progressBars.js"></script>
+</head>
+
 <body>
+    <my-navbar>
+    </my-navbar>
 
-<!-- Navbar (sit on top) -->
-<div class="navbar">
-	<!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
-</div>
-<HEAD>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124637206-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <my-mini-hero>
+    </my-mini-hero>
 
-  gtag('config', 'UA-124637206-1');
-</script>
+    <my-image-content-layout
+        image1="./Images/students1.jpg" image2="./Images/students2.jpg" section=""
+        title="Palm Beach Public Library"
+        description="canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops."
+        buttonContent="Learn More"
+        >
+    </my-image-content-layout>
+    <my-image-content-layout
+        image1="./Images/students1.jpg" image2="./Images/students2.jpg" section=""
+        title="Palm Beach Public Library"
+        description="canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops."
+        buttonContent="Learn More"
+        >
+    </my-image-content-layout>
+    <my-image-content-layout
+        image1="./Images/students1.jpg" image2="./Images/students2.jpg" section=""
+        title="Palm Beach Public Library"
+        description="canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops."
+        buttonContent="Learn More"
+        >
+    </my-image-content-layout>
+    <my-image-content-layout
+        image1="./Images/students1.jpg" image2="./Images/students2.jpg" section=""
+        title="Palm Beach Public Library"
+        description="canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops."
+        buttonContent="Learn More"
+        >
+    </my-image-content-layout>
+    <my-image-content-layout
+        image1="./Images/students1.jpg" image2="./Images/students2.jpg" section=""
+        title="Palm Beach Public Library"
+        description="canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops."
+        buttonContent="Learn More"
+        >
+    </my-image-content-layout>
 
-</HEAD>
-<a id="covid_banner"></a>
+    <my-footer>
+    </my-footer>
 
-<!-- Page content -->
-<div class="limitContent">
-<br>
-<div class="bigPicture tallerHeading"><img src="Images/meet_teachers.jpg"></div>
-
-<h1>Where do we Teach?</h1>
-<div>
-<div class="divTable"><div class="divTableBody">
-  <div id="teachers">
-  <div class="divTableRow">
-    <div class="divTableCell">
-		<h2>Boys & Girls Clubs</h2>
-      <img class="profilePicture" src="Images/BGC.png"><br>
-      <!-- <p>In 2019, we taught a Winter Camp at the <a href="https://www.bgca.org" target="_blank">Boys & Girls Clubs</a>
-        location in Palm Beach County. Since then we have been continuing to teach there!</p> -->
-    </div>
-
-
-	<div class="divTableCell">
-		<h2>Florence Fuller East and West</h2>
-     <img class="profilePicture" src="Images/FF.png"><br>
-     <!-- <p>In 2018, we started teaching at the Western location of
-       <a href="https://www.ffcdc.org" target="_blank">Florence Fuller Child Development Centers</a> (FFCDC). -->
-       <!-- We loved it so much that we wanted to teach more kids there! We expanded to FFCDC East,
-       where the staff had already heard about us from FFCDC West.</p> -->
-    </div>
-</div>
-
-	<div class="divTableRow">
-    <div class="divTableCell">
-      <h2>Adopt a Family</h2>
-      <img class="profilePicture" src="Images/adoptAFamilyProfilePicture.png"><br>
-      <!-- <p>As a part of our 2020 workshop expansion, we began serving elementary schoolers as a part of
-        the <a href="https://adoptafamilypbc.org/" target="_blank">Adopt a Family’s</a> Project Grow summer
-        program. Adopt a Family’s Project Grow gives formerly homeless children and foster
-        children free child care and resources.</p> -->
-      </div>
-	<div class="divTableCell">
-    <h2>Pearl CATS</h2>
-     <img class="profilePicture" src="Images/CATS.jpeg"><br>
-     <!-- <p>We started teaching at Pearl CATS in 2019. We continue to have programs there including for the 2021 summer!</p> -->
-  </div>
-</div>
-<div class="divTableRow">
-  <div class="divTableCell">
-    <h2>SOS Foster Village</h2>
-    <img class="profilePicture" src="Images/SOSicon.jpg"><br>
-    <!-- <p>To kick off 2020, canCode expanded into SOS’s Foster Village
-      in Coconut Creek. The children at SOS absolutely love the canCode workshops. We are so happy to teach
-      there and continue to expand our impact out of Boca Raton.</p> -->
-    </div>
-    <div class="divTableCell">
-      <h2>Public Library</h2>
-       <img class="profilePicture" src="Images/publicLibraryLogo.png"><br>
-       <!-- <p>canCode workshops are available to the general public! With our
-         partnership with the Palm Beach County Library System, canCode has been offered online in the 2020-2021 school year. We plan to contine to teach there for the upcoming school year too! Visit the
-          <a href="http://events.pbclibrary.org/events/digital-activities?field_title_of_activity_value=cancode&field_location_tid_selective=All&field_digital_activity_type_value_selective=All" target="_blank">county library’s website</a>
-          to learn more and sign up for canCode workshops.</p> -->
-      </div>
-</div>
-<div class="divTableRow">
-  <div class="divTableCell">
-    <h2>Youth Activity Center</h2>
-    <img class="profilePicture" src="Images/YAC_logo.jpg"><br>
-    <!-- <p>Ever since 2016, canCode has been constantly teaching at the Youth Activity Center! We utilize their computer lab to teach up to ten students once a week. </p> -->
-    </div>
-    <div class="divTableCell">
-      <h2>Guatemalan-Maya Center</h2>
-       <img class="profilePicture" src="Images/GM_logo.jpg"><br>
-       <!-- <p>Returning back to in-person, canCode began a partnership with the Guatemalan-Mayan center in 2021. We look forward to teaching and helping out their students for years to come with our dedicated volunteers!</p> -->
-      </div>
-</div>
-<div class="divTableCell">
-  <h2>Your Site!</h2>
-   <img class="profilePicture" src="Images/hand.jpg"><br>
-  <p>Want to have canCode at your Youth Center? Please visit our <a href="https://www.cancode.us/contribute">contribute page</a></b>.</p>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-<!-- <center><p>Our schedule is still not filled up for the summer!<br>Feel free to apply!</p></center>
-<div id="schedule_div">
-<table class="schedule" cellspacing="0"><tbody>
-  <tr>
-    <th colspan="100%" class="year">2022 - Summer</th>
-  </tr>
-  <tr>
-    <th colspan="2" class="time">Time</th>
-    <th colspan="2" class="day">Monday</th>
-    <th colspan="2" class="day">Tuesday</th>
-    <th colspan="2" class="day">Wednesday</th>
-    <th colspan="2" class="day">Thursday</th>
-    <th colspan="2" class="day">Friday</th>
-  </tr>
-  <tr>
-    <td colspan="2" class="site">3:30-4:00</td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-  </tr>
-  <tr>
-    <td colspan="2" class="site">4:00-4:30</td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-  </tr>
-  <tr>
-    <td colspan="2" class="site">4:30-5:00</td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-  </tr>
-  <tr>
-    <td colspan="2" class="site">5:00-5:30</td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-  </tr>
-  <tr>
-    <td colspan="2" class="site">5:30-6:00</td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-    <td colspan="2" class="blank"></td>
-  </tr>
-</tbody></table></div> -->
-
-</div>
-
-<!-- Footer (edit footer.js to edit content of footer)-->
-<div id="footer"></div>
-<script src="footer.js"></script>
-
-<!-- Mobile compatibility -->
-<script src="mobile.js"></script>
-
-<script src="main.js"></script>
 
 </body>
+
 </html>

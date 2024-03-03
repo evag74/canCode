@@ -1,482 +1,185 @@
 <!DOCTYPE html>
-<html>
-<title>canCode</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="mobile.css">
-<link rel="shortcut icon" href="Images/small_icon.png" />
-<body onload=slideshow()>
 
-	<!-- Navbar (sit on top) -->
-	<div class="navbar">
-		<!-- navbar is handled automatically by JavaScript to be consistent across pages, see mobile.js -->
-	</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A non-profit dedicated to teaching under-privileged kids how to code.">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <script src="https://kit.fontawesome.com/d65597d785.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right-o.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./index.css">
 
-	<HEAD>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124637206-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-			gtag('config', 'UA-124637206-1');
-		</script>
+    <link rel="stylesheet" type="text/css" href="./Components/footer/footer.css">
+    <script type="module" src="./Components/footer/footer.js"></script>
 
-		<meta name="google-site-verification" content="lWZCx0Bbt-7f8OV0151dIGBvCWpZeTnmr2jJ8CTLWI0" />
-	</HEAD>
+    <link rel="stylesheet" type="text/css" href="./Components/navbar/navbar.css">
+    <script type="module" src="./Components/navbar/navbar.js"></script>
 
-	<!-- Page content -->
-	<div class="limitContent">
-		<br>
-		<div class="bigPicture noBox">
-			<img src="https://www.cancode.us/Images/canCodePlain1.png" alt="canCode Logo">
-		</div>
-		<br>
-		<br><br>
+    <script type="module" src="./Components/layouts/imgContentLayout.js"></script>
 
-		<a id="covid_banner"></a>
+    <script type="module" src="./progressBars.js"></script>
+</head>
 
-		<div class="divTable">
-			<!-- About Section uses the divTable class so it behaves like a table -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<!-- The table is split into rows, each with multiple cells -->
-					<div class="divTableCell" id="slideshow">
-						<img class="coolPicture" id="slideshowpicture" src="slideshowpictures/1.jpg">
+<body>
+    <my-navbar>
+    </my-navbar>
 
-						<!-- <p class="small">Cracking code Noah Rubin, teaches, from left, Kamron Dean, Gilber Teley and Julia Arguelles how to code at the Youth Activity Center.<br /> Marci Shatzman/Staff (Marci Shatzman/Forum Publishing Group)</p> -->
-					</div>
-					<div class="divTableCell">
-						<h1 style="margin-top: 0;">About canCode</h1>
-						<p>
-							canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops.
-							These workshops are run by passionate, relatable teenagers. We teach using <a href="https://scratch.mit.edu">Scratch</a>, a free, interactive, and online coding environment developed by MIT.
-							We make coding fun and everyone involved loves what we do! Just look at the pictures!<br /><br /> Why is learning to code important?<br /> Computers already influence almost every area of our
-							lives, from cars to smartphones to video games. Knowing how to code lets you give the instructions that computers need for all these technologies and so much more. An early introduction to
-							computer science through canCode gives students problem-solving skills and prepares them for the careers of the future.
-						</p>
-					</div>
-				</div>
-				<div class="divTableRow ">
-					<div class="divTableCell buttonCenterContainer">
-						<a href="https://www.cancode.us/hackathon-2021.html" target="_blank">
-							<div class="largeButton">Checkout our past hackathons!</div>
-						</a>
-					</div>
-					<div class="divTableCell">
-						<h1 >Mission</h1>
-						<p>canCode’s Mission is to spark an interest for computer programming in young minds across Palm Beach County.</p>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		<h1>Our Impact</h1>
-		<div class="numbers">
-			<div>
-				<p class="number">0</p>
-				<p>students taught</p>
-			</div>
-			<div>
-				<p class="number">0</p>
-				<p>teenage teachers</p>
-			</div>
-			<div>
-				<p class="number">0</p>
-				<p>workshop sessions</p>
-			</div>
-			<div>
-				<p class="number">0</p>
-				<p>community service hours earned</p>
-			</div>
-			<div>
-				<p class="number">0</p>
-				<p>students completed advanced workshops</p>
-			</div>
-			<div>
-				<a href="https://www.cancode.us/sites"><p class="number">0</p><p>youth centers with canCode workshops</p></a>
-			</div>
-		</div>
-		<div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>Apply</h2>
-						<p>
-							Would you like to join us? <!-- <a href="Images/application.pdf" download>Click here</a> to learn about how to apply, -->
-							Visit the <a href="https://cancode.us/contribute">Contribute page</a>!
-						</p>
-					</div>
-					<!-- <div class="divTableCell">
-					  <a href="Images/application.pdf" download><img class="coolPicture restrict" src="Images/application.png"></a>
-					</div> -->
-				</div>
-				<!-- Maze game -->
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>Student Spotlight&mdash; Benjamin!</h2>
-						<p id="mazeGameDesc">
-							Try out a game made by Benjamin during his free time! He was so inspired
-							by canCode and scratch, that he made this game at home alone! Check out the
-							<a href="https://cancode.us/games">games page</a> to play this
-							and other games made by students.
-						</p>
-					</div>
-					<div class="divTableCell centerContents" id="mazeGame">
-						<iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/590089563/embed" frameborder="0"></iframe>
-					</div>
-				</div>
+    <header class='hero'>
+        <div class='hero--middle-text'>
+            <h3>Forging Futures</h3>
+            <h1>Making Coding Fun<br> For Kids</h1>
+            <h5>CanCode's mission is to spark an interest for computer programming<br>
+                in young minds across palm beach county</h5>
+        </div>
 
+        <div class="hero--button-section">
+            <button type="button" class="button-solid" onclick="window.location.href='./contribute.html'">Contribute
+                Now</button>
+            <button type="button" class="button-clear" onclick="window.location.href='./contribute.html'">Get
+                Involved</button>
+        </div>
+    </header>
 
-				<!-- Contact Section
-				<div class="divTableRow" id="contact">
-					<div class="divTableCell">
-					  <h1 class="center">Signup</h1>
-					  <p>We are looking for new teachers to help us on our mission. We need people in 8th grade and up who are passionate about computer programming,
-						  and specifically about teaching children how to code. Would you like to sign up? If so, please fill in the form below.</p>
-					</div>
-					<div class="divTableCell"></div>
-				</div> -->
+    <my-image-content-layout image1="./Images/students1.jpg" image2="./Images/students2.jpg" section="About Us"
+        title="Your support is really powerful"
+        description="canCode is a group of high school students in Palm Beach County, Florida, committed to teaching elementary school students computer programming through engaging workshops."
+        buttonContent="Read More">
+    </my-image-content-layout>
 
-			</div>
-		</div>
+    <!-- still here due to the bullet point piece that will make it hard to
+            change into a component -->
+    <section class="img-content-layout">
+        <div class="text-block">
+            <h4>Welcome to Cancode</h4>
+            <hr>
+            <h2>Let us come together to make difference</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo.</p>
+            <div class="mission-block-group">
+                <div class="mission-block block-one">
+                    <h5>
+                        <i class="fa-solid fa-code"></i>
+                        Teach
+                    </h5>
+                    <p>Flavor Text: Lorem impsum dolor sit amet,
+                        consetetur sadipscing elitr,
+                        sed diam</p>
+                </div>
+                <div class="mission-block block-two">
+                    <h5>
+                        <i class="fa-solid fa-star"></i>
+                        Empower
+                    </h5>
+                    <p>Flavor Text: Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr,
+                        sed diam</p>
+                </div>
+            </div>
+            <div class='progress-block'>
+                <div class='progress-container'>
+                    <div class='progress-desc'>
+                        <p>Students taught</p>
+                        <p>48%</p>
+                    </div>
+                    <div class='progress-bar-outside'>
+                        <div class='progress-bar-inside progress-one '></div>
+                    </div>
+                </div>
+                <div class='progress-container'>
+                    <div class='progress-desc'>
+                        <p>Supplies</p>
+                        <p>82%</p>
+                    </div>
+                    <div class='progress-bar-outside'>
+                        <div class='progress-bar-inside progress-two'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<br><br><hr><br><br>
+        <div>
+            <div class="image-container">
+                <img src="Images/students1.jpg" alt="" class="base-imageALT">
+                <div class="top-imageALT">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="contributions">
+        <div class="contributions-header">
+            <h2>Our Contributors</h2>
+            <p>A Heartfelt Thank You To:</p>
+        </div>
 
-		<div class="row">
-			<img class="rowImage" src="Images/students1.jpg">
-			<img class="rowImage" src="Images/students2.jpg">
-			<img class="rowImage" src="Images/students3.jpg">
-			<img class="rowImage" src="Images/yacGraphic3.jpg">
-		</div>
+        <div class="contribution-layout">
+            <img src="Images/SVGs/right-arrow-svgrepo-com.svg" alt="arrow signaling left"
+                class="contribution-arrow contribution-arrow-left">
+            <img src="Images/SVGs/right-arrow-svgrepo-com.svg" alt="arrow signaling right"
+                class="contribution-arrow contribution-arrow-right">
+        </div>
+    </section>
 
-		<div class="divTable">
-			<!-- YAC -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>YAC Workshops</h2>
-					</div>
-				</div>
-			</div>
-		</div>
+    <section class="achievements">
+        <div class="text-block">
+            <h4>What we do</h4>
+            <hr>
+            <h2>It's About Drive, It's About Power</h2>
+        </div>
 
-		<div class="divTable">
-			<!-- YAC INFO -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divPictureTableColumn">
-						<div class="divTableCell">
-							<br><img src="Images/YAC_1.jpg" class="workshop" alt="Youth Activity Center Boca Raton Photos">
-							<img src="Images/YAC_2.jpg" class="workshop" alt="Youth Activity Center Boca Raton Photos">
-						</div>
-						<div class="divTableCell">
-							<img src="Images/YAC_3.jpg" class="workshop" alt="Youth Activity Center Boca Raton Image">
-							<img src="Images/YAC_4.jpg" class="workshop" alt="Youth Activity Center Boca Raton Image">
-						</div>
-					</div>
-					<div class="divTableCell">
-						<br>
-						<p>
-							The Youth Acitivity Center of Boca Raton has been the partner location of canCode workshops since 2016!
-							Ever since Noah's first workshop at YAC, the director, students, and parents have been so supportive.
-							Ellen Vahab, the director, is always open to new ideas and programs.
-							Because of this, Noah was able to start canCode!<br><br>
+        <div class="achievement-box-container">
+            <div class="achievement-box">
+                <div class="achievement-circle-progressBar circle-progressBar-animation" style="--circle-percent: 50%;">
+                    <div class="achievement-icon-container">
+                        <i class="achievement-icon fa-solid fa-chalkboard-user"></i>
+                    </div>
+                </div>
+                <h3>1000+</h3>
+                <p>Young Coders</p>
+            </div>
+            <div class="achievement-box">
+                <div class="achievement-circle-progressBar circle-progressBar-animation" style="--circle-percent: 100%;">
+                    <div class="achievement-icon-container">
+                        <i class="achievement-icon fa-solid fa-person-chalkboard"></i>
+                    </div>
+                </div>
+                <h3>1000+</h3>
+                <p>Teachers</p>
+            </div>
+            <div class="achievement-box">
+                <div class="achievement-circle-progressBar circle-progressBar-animation" style="--circle-percent: 84%;">
+                    <div class="achievement-icon-container">
+                        <i class="achievement-icon fa-solid fa-chalkboard"></i>
+                    </div>
+                </div>
+                <h3>1000+</h3>
+                <p>Classes</p>
+            </div>
+            <div class="achievement-box">
+                <div class="achievement-circle-progressBar circle-progressBar-animation" style="--circle-percent: 24%;">
+                    <div class="achievement-icon-container">
+                        <i class="achievement-icon fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+                <h3>1000+</h3>
+                <p>Sites</p>
+            </div>
+        </div>
+    </section>
 
-							The kids at the Youth Activity Center have become family to canCode's team of teachers.
-							They are eager to attend workshops and love seeing us walk into their site. Even the young ones know about the canCode video games!
-							It is so rewarding to teach and inspire the Youth Activity Center kids.
-						</p>
-					</div>
-				</div>
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<br><!--<img src="Images/yacGraphic3.jpg" class="workshop" alt="Youth Activity Center Boca Raton Photos">-->
-					</div>
-					<!-- <div class="divTableCell">
-						<img src="Images/yacGraphic4.jpg" class="workshop" alt="Youth Activity Center Boca Raton Image">
-						<img src="Images/yacGraphic5.jpg" class="workshop" alt="Youth Activity Center Boca Raton Image">
-					</div> -->
-				</div>
-			</div>
-		</div>
-
-		<div class="divTable">
-			<!-- Florence Fuller -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>Florence Fuller Workshops</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<p>
-							Since canCode recieved funding from the Palm Beach Philanthropy Tank in early 2018, we have expanded to new sites.
-							The first of these sites was Florence Fuller West.
-							The program director, Ms. Guerrise, and the volunteer coordinater, Ms. Robinson, invited the canCode program with open arms.
-							When they heard <b>how much the kids loved canCode, how much they learned, how passionate the teachers were, and that it was absolutely FREE</b>, they were in.
-							Since we started at their center, the kids have loved the canCode program and the staff has been very accommodating.
-						</p>
-						<p>Once a few more teachers were trained, the 3rd center that we expanded to was Florence Fuller East. The staff had already heard about canCode and was 
-							so excited for us to start our workshops.</p>	
-					</div>
-					<div class="divTableCell">
-						<img class="workshop" alt="Florence Fuller West Image" src="Images/ffw1.jpg">
-						<img class="workshop" alt="Florence Fuller West Image" src="Images/ffw2.jpg">
-						<img class="workshop" alt="Florence Fuller East Image" src="Images/ffe1.JPG">
-						<img class="workshop" alt="Florence Fuller East Image" src="Images/ffe2.JPG">
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="divTable">
-			<!-- Achievement Center -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>Achievement Center</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<img class="workshop" src="Images/achievement.jpg">
-						<img class="workshop" src="Images/achievement2.jpg">
-					</div>
-					<div class="divTableCell">
-						<br>
-						<p>
-							We started at the Achievement Center over the summer of 2019 with their summer camp.
-							Noah, Adi, Nik, and Gaby introduced the kids to coding and taught for two weeks.
-							It went so well that we decided to continue teaching there during the school year! 
-							
-							<!-- Harys and Alex
-							are currently teaching workshops at the Achievement Center. -->
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="divTable">
-			<!-- Pearl CATS -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>Pearl CATS</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<br>
-						<p>
-							canCode expanded to start teaching at Dixie Manor’s community center
-							after schools in the fall of 2019. Their after school program had just
-							lost their robotics coach and their robotics team had mostly graduated,
-							so the elementary schoolers, especially, were not getting any STEM
-							introduction&mdash;until canCode came in! 
-							
-							<!-- New teachers Chris and Luca
-							were trained there and now teach there. -->
-						</p>
-					</div>
-					<div class="divTableCell">
-						<img class="workshop" src="Images/pearl1.png">
-						<img class="workshop" src="Images/pearl2.png">	
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="divTable">
-			<!-- SOS -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>SOS Foster Village</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<img class="workshop" src="Images/sos.jpg">
-					</div>
-					<div class="divTableCell">
-						<br>
-						<p>
-							To kick off 2020, canCode expanded into SOS’s Foster Village
-							in Coconut Creek. The children at SOS absolutely love the canCode workshops.
-							We are so happy to teach there and continue to expand our impact
-							out of Boca Raton.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- <div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<h2>Naoma Donnelley Haggin Boys and Girls Club</h2>
-						<h3 class="center">Delray Beach Winter Camp</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="divTable">
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<br>
-						<p>
-							As a start to the 2019 year, canCode had its first ever winter camp!
-							Noah, Alex, and Harys trained 5 new teachers, and 12 students completed the maze game curriculum.
-							The staff was so helpful in making sure everything would run smoothly.
-							This winter camp let us impact and inspire so many elementary school students in such a short amount of time;
-							in addition, it expedited the training process for 5 new teachers who joined the team!
-							Read their bios on the <a href="https://www.cancode.us/team">team page</a>.
-						</p>
-						
-					</div>
-					<div class="divTableCell">
-						<img class="workshop" src="Images/bgcdelray2019.jpeg">
-						<img class="workshop" src="Images/bgcdelray2019 2.jpeg">
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<div class="divTable">
-			<!-- About Section uses the divTable class so it behaves like a table -->
-			<div class="divTableBody">
-				<div class="divTableRow">
-					<div class="divTableCell">
-						<div class="divTableCell">
-							<h1 class="center">Questions?</h1>
-							<p class="left">Visit our FAQ Section at the bottom of the <a href="https://www.cancode.us/contribute">Contribute Page</a><br><br>Or contact us!</p>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<h1 class="center">Contact Information</h1>
-						<p class="center"><b>Phone</b>: 561-353-7208</p>
-						<p class="center"><b>Email</b>: info.cancode@gmail.com</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	</div>
-	<!-- End page content -->
-	</div>
-
-	<!-- Footer (edit footer.js to edit content of footer)-->
-	<div id="footer"></div>
-	<script src="footer.js"></script>
-
-	<!-- Mobile compatibility -->
-	<script src="mobile.js"></script>
-
-	<script src="main.js"></script>
-
-	<!-- Slideshow -->
-	<script>
-		function slideshow() { // Sets up the slideshow
-			slideshowtarget.src = "slideshowpictures/" + i + ".jpg";
-			setInterval(rotate, 3100);
-		}
-		function rotate() { // Changes the slideshow picture
-			slideshowtarget.src = "slideshowpictures/" + i + ".jpg";
-			if (i == 5) {
-				i = 1;
-			} else {
-				i++;
-			}
-		}
-		let countFinished = false;
-	    let counts = 0;
-		const MAX_COUNT = 120; // controls how fast the nums will count up
-		const numbers = document.getElementsByClassName("number");
-		let displayNumbers = [0, 0, 0, 0, 0, 0];
-		function countUp() { // counts up the stats
-				if (counts < MAX_COUNT) {
-					displayNumbers[0] += 600 / MAX_COUNT;
-					displayNumbers[1] += 20 / MAX_COUNT;
-					displayNumbers[2] += 350 / MAX_COUNT;
-					displayNumbers[3] += 2500 / MAX_COUNT;
-					displayNumbers[4] += 210 / MAX_COUNT;
-					displayNumbers[5] += 10 / MAX_COUNT;
-					for (var i = 0; i < 6; i++) {
-						numbers[i].innerHTML = Math.round(displayNumbers[i]);
-					}
-					counts++;
-				} else if (counts == MAX_COUNT) {
-					numbers[0].innerHTML += "+";
-					numbers[1].innerHTML += "+";
-					numbers[2].innerHTML += "+";
-					numbers[3].innerHTML += "+";
-					numbers[4].innerHTML += "+";
-					numbers[5].innerHTML += "+";
-					counts++;
-					countFinished=true;
-				}
-		}
-
-		// Set up observer object
-		let options = {
-			threshold: 1,
-		};
-
-		// Triggers when the target (.numbers) is visible on screen, which will then start counting up
-		function callback(entries, observer) {
-			entries.forEach(entry => {
-				if (entry.isIntersecting && !countFinished) { // !countFinished prevents the function from being redundantly called once it's run one time
-					console.log("Number viewed")
-					countUp();
-					setTimeout(function () { setInterval(countUp, 10); }, 300);
-				}
-			});
-			
-		}
-
-		const observer = new IntersectionObserver(callback, options);
-		const target = document.querySelector(".numbers");
-		observer.observe(target);
-
-
-		if (isMobile()) {
-			document.getElementById("mazeGameDesc").innerHTML = "Take a look at a game made by Adam M, a 4th Grader. Made in " +
-				"canCode's Maze Game Workshop at the Youth Activity Center in 2018. Visit this page on a computer to play.";
-			document.getElementById("mazeGame").innerHTML = "<img class='center' src='Images/maze_game_3.png' width='80%'>"
-		}
-	</script>
-	<!--                ______          __
-	  _________ _____  / ____/___  ____/ /__
-	 / ___/ __ `/ __ \/ /   / __ \/ __  / _ \
-	/ /__/ /_/ / / / / /___/ /_/ / /_/ /  __/
-	\___/\__,_/_/ /_/\____/\____/\__,_/\___/
-
-												-->
+    <my-footer>
+    </my-footer>
 </body>
+
 </html>
