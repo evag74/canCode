@@ -29,3 +29,17 @@ The reccomended approach is to programatically convert such objects into custom 
 
 For now keep in mind that these elements have to be attached before populating their entries. (PENDING: This could probably be fixed by implementing shadow DOM or template elements https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
 
+## Mobile experience
+
+Currently the page is not very responsive and the mobile experience is lack-luster. If you have time this can be tackled with the use of media queries (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
+
+To-do's:
+
+- Collapse on small screens.
+Can be likely achieved with js and by getting the viewport-width.
+
+- Fix overflow on team page.
+Could probably be fixed by changing from 3 columnds to 1 when screen is small enough or changing the card layout to display less info.
+
+- Feel free to add more to-do's after consulting with the website team.
+
