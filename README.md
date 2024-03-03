@@ -1,4 +1,4 @@
-# Cancode Front-end.
+# Cancode Front-End.
 
 Coolest coding institution in South Florida, on a mission to share the knowledge of programming with under-privileged kids.
 
