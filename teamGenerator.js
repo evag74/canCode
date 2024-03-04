@@ -3,10 +3,10 @@ import { MemberCard } from "./Components/memberCard/memberCard.js";
 
 async function getMembers(filePath) {
     const response = await fetch(`${filePath}`)
+
     if (!response.ok) {
         throw Error("Response not ok");
     }
-
     return response.json();
 }
 

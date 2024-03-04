@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A non-profit dedicated to teaching under-privileged kids how to code.">
+
+    <!-- Needed for working icons on most OSs, Currently not working when placed inside a directory.-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Main</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <script src="https://kit.fontawesome.com/d65597d785.js" crossorigin="anonymous"></script>
@@ -18,9 +29,13 @@
     <link rel="stylesheet" type="text/css" href="./Components/navbar/navbar.css">
     <script type="module" src="./Components/navbar/navbar.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="./Components/contributionContent/contributionContent.css">
+    <script type="module" src="./Components/contributionContent/contributionContent.js"></script>
+
     <script type="module" src="./Components/layouts/imgContentLayout.js"></script>
 
     <script type="module" src="./progressBars.js"></script>
+    <script type="module" src="./contributionsSlideshow.js"></script>
 </head>
 
 <body>
@@ -122,13 +137,15 @@
             <h2>Our Contributors</h2>
             <p>A Heartfelt Thank You To:</p>
         </div>
-
         <div class="contribution-layout">
             <img src="Images/SVGs/right-arrow-svgrepo-com.svg" alt="arrow signaling left"
                 class="contribution-arrow contribution-arrow-left">
+            <div class="contribution-container">
+            </div>
             <img src="Images/SVGs/right-arrow-svgrepo-com.svg" alt="arrow signaling right"
                 class="contribution-arrow contribution-arrow-right">
         </div>
+
     </section>
 
     <section class="achievements">
@@ -149,7 +166,8 @@
                 <p>Young Coders</p>
             </div>
             <div class="achievement-box">
-                <div class="achievement-circle-progressBar circle-progressBar-animation" style="--circle-percent: 100%;">
+                <div class="achievement-circle-progressBar circle-progressBar-animation"
+                    style="--circle-percent: 100%;">
                     <div class="achievement-icon-container">
                         <i class="achievement-icon fa-solid fa-person-chalkboard"></i>
                     </div>
