@@ -2,7 +2,7 @@ class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
     <footer>
-        <img src="../Images/canCodePlain1.png" alt="logo of canCode" class='footer-logo'>
+        <img src="../../Images/canCodePlain1.png" alt="logo of canCode" class='footer-logo'>
         <p>Fighting for a brighter tommorrow.</p>
         <div class="socialMediaList">
             <a href="https://www.instagram.com/cancodeus/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>

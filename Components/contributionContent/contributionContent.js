@@ -4,7 +4,7 @@ class contributionContent extends HTMLElement {
         this.innerHTML = `
             <div class="contribution-content">
                 <div class="contribution-img-container">
-                    <img class="contribution-img" src="Images/eva.jpg" alt="image of eva">
+                    <img class="contribution-img" src="../../Images/eva.jpg" alt="image of eva">
                 </div>
                 <h3>Eva Gottsfeld</h3>
                 <p class="contribution-quote">

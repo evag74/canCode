@@ -11,7 +11,6 @@ class MyNavbar extends HTMLElement {
             <ul class='navbar-middle'>
                 <li class="navbar--link"> <a href="./index.html">Home</a> </li>
                 <li class="navbar--link"> <a href="./team.html">Team</a> </li>
-                <li class="navbar--link"> <a href="./sponsors.html">Sponsors</a> </li>
                 <li class="navbar--link"> <a href="./sites.html">Sites</a> </li>
             </ul>
 
