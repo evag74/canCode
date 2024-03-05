@@ -45,15 +45,17 @@ export class ImageContentLayout extends HTMLElement {
 
     static createSiteLayout(siteContainer, siteData) {
         const newSite = document.createElement("my-image-content-layout");
-        const { Description, Image1Description, Image2Description, Name, Link } = siteData;
+        const { Description, Image1, Image2, Image1Description, Image2Description, Name, Link } = siteData;
         siteContainer.appendChild(newSite);
 
+        newSite.querySelector(".layout-section").innerHTML = `Sites`;
         newSite.querySelector(".layout-title").innerHTML = `${Name}`;
         newSite.querySelector(".layout-description").innerHTML = `${Description}`;
-        newSite.querySelector(".base-image").setAttribute("href", `${Image1}`);
+        newSite.querySelector(".base-image").setAttribute("src", `${Image1}`);
         newSite.querySelector(".base-image").setAttribute("alt", `${Image1Description}`);
-        newSite.querySelector(".top-image").setAttribute("href", `${Image2}`);
+        newSite.querySelector(".top-image").setAttribute("src", `${Image2}`);
         newSite.querySelector(".top-image").setAttribute("alt", `${Image2Description}`);
+        newSite.querySelector(".layout-button").innerHTML = `Learn More`;
         newSite.querySelector(".layout-button").addEventListener("click", () => location.href = `${Link}`);;
 
         return newSite;

@@ -22,7 +22,7 @@ async function getMembers(filePath) {
         });
     }
     catch (error) {
-        console.log(error);
+        console.error(error);
     }
 
     // start of button interactity

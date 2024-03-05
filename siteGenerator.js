@@ -13,7 +13,6 @@ async function getSites(filePath) {
 (async function() {
     const siteData = await getSites("./Data/siteData.json");
 
-    console.log(siteData);
     const siteContainer = document.querySelector(".sites-container");
 
     siteData.forEach((site) => {

@@ -31,7 +31,7 @@ async function getContributors(filePath) {
         console.error(error);
     }
 
-    console.log(contribArr);
+    //console.log(contribArr);
     // INITIALIZE first object.
     contribArr[0].classList.remove("hidden");
     // Variable for cleaning intervals.
