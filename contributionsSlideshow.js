@@ -20,7 +20,7 @@ async function getContributors(filePath) {
     let contribArr = [];
 
     try {
-        const contribJson = await getContributors("./ContributorData.json");
+        const contribJson = await getContributors("./Data/ContributorData.json");
 
         contribJson.forEach((contribData) => {
             ContributionContent.createContributionContent(contribContainer, contribData).classList.add("hidden");

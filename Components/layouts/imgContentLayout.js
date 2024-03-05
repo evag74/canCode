@@ -1,4 +1,4 @@
-class ImageContentLayout extends HTMLElement {
+export class ImageContentLayout extends HTMLElement {
     static observedAttributes = ["image1", "image2", "section", "title", "description", "buttonContent", "altLayout"];
 
     connectedCallback() {
@@ -8,16 +8,16 @@ class ImageContentLayout extends HTMLElement {
         <div class="">
             <div class="image-container">
                 <img src="${this.getAttribute("image1")}" alt="" class="base-image">
-                <img src="${this.getAttribute("image2")}" class="top-image">
+                <img src="${this.getAttribute("image2")}" alt="" class="top-image">
             </div>
         </div>
 
         <div class="text-block">
-            <h4>${this.getAttribute("section")}</h4>
+            <h4 class="layout-section">${this.getAttribute("section")}</h4>
             <hr>
-            <h2>${this.getAttribute("title")}</h2>
-            <p>${this.getAttribute("description")}</p>
-            <button class="button-solid">${this.getAttribute("buttonContent")}</button>
+            <h2 class="layout-title">${this.getAttribute("title")}</h2>
+            <p class="layout-description">${this.getAttribute("description")}</p>
+            <button class="layout-button button-solid">${this.getAttribute("buttonContent")}</button>
         </div>
     </section>
             `
@@ -26,21 +26,37 @@ class ImageContentLayout extends HTMLElement {
     <section class="img-content-layout">
 
         <div class="text-block">
-            <h4>${this.getAttribute("section")}</h4>
+            <h4 class="layout-section">${this.getAttribute("section")}</h4>
             <hr>
-            <h2>${this.getAttribute("title")}</h2>
-            <p>${this.getAttribute("description")}</p>
-            <button class="button-solid">${this.getAttribute("buttonContent")}</button>
+            <h2 class="layout-title">${this.getAttribute("title")}</h2>
+            <p class="layout-description">${this.getAttribute("description")}</p>
+            <button class="layout-button button-solid">${this.getAttribute("buttonContent")}</button>
         </div>
         <div class="">
             <div class="image-container">
             <img src="${this.getAttribute("image1")}" alt="" class="base-image">
-            <img src="${this.getAttribute("image2")}" class="top-image">
+            <img src="${this.getAttribute("image2")}" alt="" class="top-image">
             </div>
         </div>
     </section>
                 `;
         }
+    }
+
+    static createSiteLayout(siteContainer, siteData) {
+        const newSite = document.createElement("my-image-content-layout");
+        const { Description, Image1Description, Image2Description, Name, Link } = siteData;
+        siteContainer.appendChild(newSite);
+
+        newSite.querySelector(".layout-title").innerHTML = `${Name}`;
+        newSite.querySelector(".layout-description").innerHTML = `${Description}`;
+        newSite.querySelector(".base-image").setAttribute("href", `${Image1}`);
+        newSite.querySelector(".base-image").setAttribute("alt", `${Image1Description}`);
+        newSite.querySelector(".top-image").setAttribute("href", `${Image2}`);
+        newSite.querySelector(".top-image").setAttribute("alt", `${Image2Description}`);
+        newSite.querySelector(".layout-button").addEventListener("click", () => location.href = `${Link}`);;
+
+        return newSite;
     }
 
 }

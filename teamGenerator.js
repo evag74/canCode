@@ -13,7 +13,7 @@ async function getMembers(filePath) {
 //it has to be async due to fetch, sucks...
 (async function() {
     try {
-        const membersJson = await getMembers("./teamData.json");
+        const membersJson = await getMembers("./Data/teamData.json");
 
         // Initialize TeamMember Arr from JSON file.
         const membersContainer = document.body.querySelector(".members-carousel");
