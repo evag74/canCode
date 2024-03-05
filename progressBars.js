@@ -12,6 +12,7 @@
 
     window.addEventListener('load', function() {
         const progressBars = document.querySelectorAll(".progress-bar-inside");
+        const
 
         progressBars.forEach(bar => observer.observe(bar));
     })

@@ -46,26 +46,19 @@ async function getContributors(filePath) {
 
     //TODO: FIX THE TWO HANDLERS BY ADDING THIS FUNCTION ^
     function prevButtonHandler() {
-        contribArr[contribIndex].classList.add("hidden");
-
-        contribIndex === 0 ? contribIndex = contribArr.length - 1 : contribIndex--;
-        contribArr[contribIndex].classList.remove("hidden");
+        contribIndex === 0 ? setCurrContrib(contribArr.length - 1) : setCurrContrib(contribIndex - 1);
 
         clearInterval(switchingInterval);
-        switchingInterval = setInterval(prevButtonHandler, 3000);
+        switchingInterval = setInterval(prevButtonHandler, 5000);
     }
 
     function nextButtonHandler() {
-        contribArr[contribIndex].classList.add("hidden");
-
-        contribIndex === contribArr.length - 1 ? contribIndex = 0 : contribIndex++;
-        contribArr[contribIndex].classList.remove("hidden");
+        contribIndex === contribArr.length - 1 ? setCurrContrib(0) : setCurrContrib(contribIndex + 1);
 
         clearInterval(switchingInterval);
-        switchingInterval = setInterval(nextButtonHandler, 3000);
+        switchingInterval = setInterval(nextButtonHandler, 5000);
     }
 
     arrowLeft.addEventListener("click", prevButtonHandler);
     arrowRight.addEventListener("click", nextButtonHandler);
-
 })();

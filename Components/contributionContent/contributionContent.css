@@ -10,3 +10,29 @@
     height: 10em;
     margin: 2em;
 }
+
+.fadeIn {
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut ease 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
