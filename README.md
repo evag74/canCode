@@ -1,6 +1,6 @@
 # Cancode Front-End.
 
-Coolest coding institution in South Florida, on a mission to share the knowledge of programming with under-privileged kids.
+Coolest coding institution in South Florida, on a mission to share the knowledge of programming with kids.
 
 
 ## High-level structure.
@@ -16,9 +16,11 @@ Components are reusable pieces of html that can be dynamically populated with st
 
 ## Components Folder
 
-This is where reusable web components are stored in the form of custom elements. 
+This is where reusable web components are stored in the form of custom elements.
 
 read up on it here: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements
+
+WARNING: these components should be directory agnostic, but they currently have some hardcoded paths that prevent such usage.
 
 
 ### Json as data files.
@@ -28,6 +30,7 @@ Json should be used as the standard format for storing structured information li
 The reccomended approach is to programatically convert such objects into custom elements that can be dynamically inserted into the DOM.
 
 For now keep in mind that these elements have to be attached before populating their entries. (PENDING: This could probably be fixed by implementing shadow DOM or template elements https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
+
 
 ## Mobile experience
 
@@ -40,6 +43,10 @@ Can be likely achieved with js and by getting the viewport-width.
 
 - Fix overflow on team page.
 Could probably be fixed by changing from 3 columnds to 1 when screen is small enough or changing the card layout to display less info.
+
+- Make Components directory agnostic. (Currently most of them have hardcoded values that depend on all pages being in the same directory.
+
+- If the above is done, then organizing the pages into their own directories would be the next step.
 
 - Feel free to add more to-do's after consulting with the website team.
 
