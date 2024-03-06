@@ -16,7 +16,7 @@ Components are reusable pieces of html that can be dynamically populated with st
 
 ## Components Folder
 
-This is where reusable web components are stored in the form of custom elements. All custom elements are named "my-element", where element is the name
+This is where reusable web components are stored in the form of custom elements. All custom elements are named "my-element-here", where element is whatever you want to name it (within reason).
 
 read up on it here: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements
 
