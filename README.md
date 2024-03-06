@@ -16,7 +16,7 @@ Components are reusable pieces of html that can be dynamically populated with st
 
 ## Components Folder
 
-This is where reusable web components are stored in the form of custom elements.
+This is where reusable web components are stored in the form of custom elements. All custom elements are named "my-element", where element is the name
 
 read up on it here: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements
 
@@ -36,7 +36,7 @@ For now keep in mind that these elements have to be attached before populating t
 
 Currently the page is not very responsive and the mobile experience is lack-luster. If you have time this can be tackled with the use of media queries (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
 
-To-do's:
+# To-do's:
 
 - Collapse on small screens.
 Can be likely achieved with js and by getting the viewport-width.
