@@ -56,7 +56,7 @@ export class ImageContentLayout extends HTMLElement {
         newSite.querySelector(".top-image").setAttribute("src", `${Image2}`);
         newSite.querySelector(".top-image").setAttribute("alt", `${Image2Description}`);
         newSite.querySelector(".layout-button").innerHTML = `Learn More`;
-        newSite.querySelector(".layout-button").addEventListener("click", () => location.href = `${Link}`);;
+        newSite.querySelector(".layout-button").addEventListener("click", () => window.open(`${Link}`, `_blank`));
 
         return newSite;
     }
