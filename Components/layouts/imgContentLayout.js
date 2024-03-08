@@ -1,5 +1,5 @@
 export class ImageContentLayout extends HTMLElement {
-    static observedAttributes = ["image1", "image2", "section", "title", "description", "buttonContent", "altLayout"];
+    static observedAttributes = ["image1", "image2", "section", "title", "description", "buttonContent", "link", "altLayout"];
 
     connectedCallback() {
         if (!this.getAttribute("altLayout")) {
@@ -41,6 +41,7 @@ export class ImageContentLayout extends HTMLElement {
     </section>
                 `;
         }
+        this.querySelector(".layout-button").addEventListener("click", () => window.open(`${Link}`, `_blank`));
     }
 
     static createSiteLayout(siteContainer, siteData) {

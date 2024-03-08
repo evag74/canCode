@@ -10,6 +10,7 @@
         })
     });
 
+
     window.addEventListener('load', function() {
         const progressBars = document.querySelectorAll(".progress-bar-inside");
 
