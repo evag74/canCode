@@ -1,0 +1,40 @@
+.achievement-box {
+    margin: 0.5em 0.5em;
+    padding: 5px;
+    height: 30vh;
+    width: 15vw;
+    background-color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-icon-container {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.achievement-icon {
+    font-size: 4em;
+    color: var(--light-blue);
+}
+
+.achievement-circle-progressBar {
+    background: conic-gradient(from 0deg, var(--light-blue) 0%, var(--light-blue) var(--circle-percent), whitesmoke var(--circle-percent), whitesmoke 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Currently not working */
+.circle-progressBar-animation {
+    animation: 1s ease-in 1;
+}
