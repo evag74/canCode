@@ -20,7 +20,7 @@
         element.innerHTML += "+";
         clearInterval(interval);
       }
-    }, 1);
+    });
   }
 
   window.addEventListener("load", function () {

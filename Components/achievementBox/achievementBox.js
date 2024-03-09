@@ -3,7 +3,6 @@ class AchievementBox extends HTMLElement {
 
     connectedCallback() {
         const percentage = Math.ceil(this.getAttribute('data-value') / this.getAttribute('data-limit') * 100);
-        console.log(percentage);
         this.innerHTML = `
             <div class="achievement-box">
                 <div class="achievement-circle-progressBar circle-progressBar-animation" style="--circle-percent: ${percentage}%;">
@@ -12,7 +11,7 @@ class AchievementBox extends HTMLElement {
                     </div>
                 </div>
                 <h3 class="running-numbers" data-limit="${this.getAttribute('data-limit')}" data-value="${this.getAttribute('data-limit')}">0</h3>
-                <p>Sites</p>
+                <p>${this.getAttribute('name')}</p>
             </div>
             `;
     }
